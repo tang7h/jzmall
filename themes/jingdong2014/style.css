@@ -4570,66 +4570,40 @@ em {
 }
 
 #categorys-2013 .mc {
-
-	display: none;
-
 	position: absolute;
 
 	left: 0;
 
-	width: 207px;
-
-	height: 404px;
-
-	padding: 3px 3px 3px 0;
-
-	background: #2F2F2F url(http://www.zhiliaogou.cn/themes/jingdong2014/images/yjj2.png) no-repeat;
-
-        background-size: cover;
+	width: 210px;
+	height: 410px;
+	background: #333;
 
 	overflow: visible
 
 }
 
-#categorys-2013 .mc {
-
-	display: block
-
-}
 
 #categorys-2013 .item {
 
-	width: 200px;
-
 	height: 28px;
+	width: 
 
 	/*border-top: 1px solid #FFF*/
 
 }
 
 #categorys-2013 span {
-
+	width: 100%;
 	display: block;
-
-	width: 203px;
-
 	position: absolute;
-
 	z-index: 1
 
 }
 
 #categorys-2013 h3 {
 
-	width: 186px;
-
-	height: 26px;
-
 	line-height: 26px;
-
-	padding-left: 13px;
-
-	border-width: 1px 0;
+	margin-left: 20px;
 
 	background-image: none;
 
@@ -4645,15 +4619,14 @@ em {
 
 #categorys-2013 h3 a:hover, #categorys-2013 h3 a:active {
 
-	color: #C2C2C2;
-
 	font-weight: 700
 
 }
 
 #categorys-2013 s {
 
-	display: block;
+	/*display: block;*/
+	display: none;
 
 	position: absolute;
 
@@ -4669,6 +4642,10 @@ em {
 
 }
 
+#categorys-2013 s {
+	
+}
+
 #categorys-2013 .item .i-mc {
 
 	display: none;
@@ -4681,19 +4658,14 @@ em {
 
 	border: 1px solid #DDD;
 
-	background: #F0EFEF;
+	background: #fff;
+	background: rgba(255,255,255,.95);
 
 	overflow: visible;
 
-	-moz-box-shadow: 0 0 10px #DDD;
-
-	-webkit-box-shadow: 0 0 10px #DDD;
-
-	box-shadow: 0 0 10px #DDD;
+	box-shadow: 0 8px 16px rgba(0,0,0,.1)
 
 	min-height: 410px;
-
-        opacity:0.9;
 
 }
 
@@ -4914,18 +4886,6 @@ h2, h3 {
 #categorys-2013 .hover span {
 
 	z-index: 13;
-
-	width: 160px
-
-}
-
-#categorys-2013 .hover h3 {
-
-	/*border: solid #DDD;*/
-
-	background-color: #E40046;
-
-	overflow: hidden;
 
 }
 
