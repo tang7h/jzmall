@@ -1,0 +1,14 @@
+<div id="append_parent"></div>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{if $user_info}
+<font style="position:relative; top:10px;color:#CFCFCF;">
+<strong>亲爱的</strong><font class="f4_b">{$user_info.username}</font>, <strong>{$lang.welcome_return}^0^</strong>&nbsp;
+<a style="color:#FFF;" href="user.php">{$lang.user_center}</a>&nbsp;
+ <a href="user.php?act=logout">{$lang.user_logout}</a>
+</font>
+{else}
+<ul>
+ <li style="margin-top: 10px;"><a href="user.php"><strong>LOG IN</strong></a></li>
+ <li style="margin-top: 10px;"><a href="user.php?act=register"><strong><b>NEW USER</b></strong></a></li>
+ </ul>
+{/if}

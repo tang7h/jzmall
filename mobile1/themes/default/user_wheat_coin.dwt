@@ -1,0 +1,46 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="tbh5v0">
+  <header id="header">
+    <div class="header_l header_return"> <a href="{:url('user/index')}"><span>返回</span></a></div>
+    <h1> {$title} </h1>
+  </header>
+  
+  <section class="wrap order_list" id="J_ItemList">
+    	<section class="order_box padd1 radius10 single_item">
+		<span style="margin-left: 13px;">可用商城券：{$wheat_coin} 个 </span><a href="{:url('user/wheat_coin_gift')}" style="float:right;padding-right:20px;color:#FF0000">赠送</a>
+	</section>
+	<div class="InfoBox">
+	  <table cellspacing="0" cellpadding="5" width="100%" border="0" class="ectouch_table">
+		<tbody>
+		<!-- {if $account_list} --> 
+        <!--{foreach from=$account_list item=item}-->
+		  <tr>
+			<td class="order_status" style="border-bottom: 1px #CCCCCC dashed;padding-bottom: 10px;font-size: 0.8rem;">
+			 操作：{$item.change_desc}<br>
+					  金额调整：{$item.wheat_coin}<br>
+					  操作时间：{$item.change_time}</td>
+				 
+			  </td>
+		  </tr>
+		   <!--{/foreach}--> 
+        <!-- {else} -->
+		 <tr>
+          <td colspan="3" align="center" bgcolor="#FFFFFF">没有操作记录</td>
+        </tr>
+        <!-- {/if} -->
+		</tbody>
+	  </table>
+	</div>
+	<!-- {if $account_list} --> 
+	  <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+	<!--  {/if} -->
+ </section>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<div style="width:1px; height:1px; overflow:hidden">{foreach from=$lang.p_y item=pv}{$pv}{/foreach}</div>
+<script type="text/javascript">
+{foreach from=$lang.profile_js item=item key=key}
+  var {$key} = "{$item}";
+{/foreach}
+</script>
+</body></html>

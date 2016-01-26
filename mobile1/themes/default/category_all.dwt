@@ -1,0 +1,30 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<header id="header">
+  <div class="header_l header_return"> <a href="javascript:history.go(-1);"><span></span></a></div>
+  <h1>商品分类</h1>
+  <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+  <div id="search_box"> <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem --> </div>
+</header>
+<div class="list p-sort radius">
+  <div class="mc">
+    <ul>
+      <!--{foreach from=$category item=cat name=no}--> 
+      <!--{if $cat.cat_id}--> 
+      <a href="{$cat.url}">
+      <li class="first"> 
+        <!--{foreach from=$cat.cat_id item=child name=no1}--> 
+        <strong class="name1">{$child.name|escape:html}</strong> <span class="menu-botton-arrow"></span> 
+        <!--{/foreach}--> 
+      </li>
+      </a> 
+      <!--{else}--> 
+      <a href="{:url('category/index',array('id'=>$this->_var['cat']['id']))}">
+      <li class="first"> <strong class="name1">{$cat.name|escape:html}</strong> <span class="menu-botton-arrow"></span> </li>
+      </a> 
+      <!--{/if}--> 
+      <!--{/foreach}-->
+    </ul>
+  </div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body></html>

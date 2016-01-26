@@ -1,0 +1,173 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="themes/tianmao/area_stock.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+</script>
+<script type="text/javascript">
+function AddFavorite(title, url) {
+  try {
+      window.external.addFavorite(url, title);
+  }
+catch (e) {
+     try {
+       window.sidebar.addPanel(title, url, "");
+    }
+     catch (e) {
+         alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+     }
+  }
+}
+</script>
+
+<div id="site-nav">
+  <div id="sn-bd">
+    <div class="sn-container" >
+     <div style="width:430px; float:left">
+      <p id="login-info" class="sn-login-info"> 
+      
+          
+      {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,jquery.SuperSlide.js'}
+        {insert_scripts files='transport_jquery.js,utils.js,ecmoban_common.js,warehouse.js'}
+        <p class="sn-back-home"><span class="mui-iconfont"></span><a href="index.php">知了首页</a></p>
+        <font id="ECS_MEMBERZONE" style="float:left;height: 26px;
+line-height: 26px;">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font>
+        <!--多城市地区切换 Add S by gounsa-->
+
+        <!--多城市地区切换 Add E by gounsa-->
+        </p></div>
+     <ul class="sn-quick-menu">
+        <li class="sn-mytaobao menu-item j_MyTaobao">
+          <div class="sn-menu"> <a  href="user.php" >我的知了</a> </div>
+        </li>
+        <li class="sn-cart mini-cart menu"><i class="mui-iconfont"></i> <a class="sn-cart-link" href="flow.php" id="mc-menu-hd" >{insert name='cart_info'}</a> </li>
+        <li class="sn-favorite menu-item">
+          <div class="sn-menu" onmouseover="this.className='sn-menu sn-menu_on'" onmouseout="this.className='sn-menu'"> <a class="menu-hd" href="javascript:void(0);" onclick="AddFavorite('我的网站',location.href)">收藏夹<b></b></a>
+            <div class="menu-bd"  id="menu-4">
+              <div class="menu-bd-panel"> <a href="user.php?act=collection_list" >收藏的宝贝</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="sn-separator"></li>
+        <li class="sn-mobile"  onmouseover="this.className='sn-mobile sn-mobile_on'" onmouseout="this.className='sn-mobile'"> <i class="mui-iconfont2"></i> <a   class="sn-mobile-link" href="#" >手机版</a>
+          <div class="sn-qrcode">
+            <div class="sn-qrcode-content"></div>
+            <b></b></div>
+        </li>
+        <li class="sn-separator"></li>
+        <li class="sn-sitemap menu-item" style="width:72px;"  onmouseover="this.className='sn-sitemap sn-sitemap_on'" onmouseout="this.className='sn-sitemap'">
+          <div class="sn-menu J_DirectPromo" > <a class="menu-hd" href="#" >网站导航<b></b></a>
+            <div class="menu-bd" id="menu-bd5">
+              <ul>
+                <li> <b>商家：</b> <a target="_top" href="#" >商家中心</a> <a class="sitemap-right" target="_top" href="#">商家入驻</a> <a target="_top" href="#">运营服务</a> </li>
+                <li> <b>帮助：</b> <a  href="#">帮助中心</a> </li>
+              </ul>
+              <a class="sitemap-more" href="#">更多内容<b class="sitemap-more-link"></b></a> </div>
+          </div>
+        </li>
+        <li class="sn-mcate j_MallCateHoverTrigger" id="J_MallCate" style="width:117px; position:relative">
+          <div class="sn-menu" style="position:relative"> <a class="menu-hd sn-mcate-hd" style="position:relative"><i class="mui-iconfont3"></i>所有商品分类<b></b></a> </div>
+        </li>
+      </ul>
+      <div class="sn-mcate-bd j_MallCateHoverTrigger " style="top: 27px;">
+        <div class="sn-mcate-ctn-con" id="J_MallCateCtnCon" >
+          <ul class="sn-mcate-ctn" id="J_MallCateCtn">
+            
+            <!--{foreach from=$categories_pro item=cat name=categories_pro name=foo}-->
+            <li class="cat_{$smarty.foreach.foo.iteration}">
+              <h4 class="sn-mcate-item-hd"><span>{$cat.name|escape:html}</span></h4>
+              <p class="sn-mcate-item-bd"> 
+                <!--{foreach from=$cat.cat_id item=child}--> 
+                <!--{foreach from=$child.cat_id item=childer}--> 
+                <a href="{$childer.url}" target="_blank">{$childer.name|escape:html}</a> 
+                <!--{/foreach}--> 
+                <!--{/foreach}--> 
+              </p>
+            </li>
+            <!-- {/foreach} -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="header" >
+  <div></div>
+  <div class="headerLayout">
+    <div class="headerCon ">
+      <h1 id="mallLogo" class="mall-logo"> <a class="fp-logo" href="index.php"><img src="../images/logo.gif" /></a> </h1>
+      <div class="header-extra">
+        <div class="header-banner">
+          <div id="J_FpEventBanner" class="fp-event-banner  hidden" style="display: block; "> {insert name='ads' id=85 num=1}</div>
+        </div>
+        <div id="mallSearch" class="mall-search">
+          <form class="mallSearch-form" id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" >
+            <div class="mallSearch-input clearfix">
+              <div class="s-combobox-input-wrap">
+                <input type="text" name="keywords" id="mq" tabindex="9"  class="s-combobox-input"  value="搜索商品" onclick="javascript:if(this.value=='搜索商品')this.value=''">
+              </div>
+              <input name="imageField" type="submit" value="搜索" class="sub_ss" />
+              <input type="hidden" name="user_action" value="initiative">
+              <input type="hidden" name="at_topsearch" value="1">
+              <input type="hidden" name="sort" value="st">
+              <input id="J_Type" type="hidden" name="type" value="p">
+              <input id="J_Cat" type="hidden" name="cat" value="all">
+              <input type="hidden" name="vmarket" value="">
+            </div>
+          </form>
+          <ul class="hot-query">
+            <script type="text/javascript">
+                        {literal}
+                        <!--
+                        function checkSearchForm()
+                        {
+                            if(document.getElementById('keyword').value)
+                            {
+                                return true;
+                            }
+                            else
+                            {
+                                alert("{$lang.no_keywords}");
+                                return false;
+                            }
+                        }
+                        -->
+                        {/literal}
+               </script> 
+            {if $searchkeywords}
+            {foreach from=$searchkeywords item=val}
+            <li class="hot-query-highlight"><a href="search.php?keywords={$val|escape:url}">{$val}</a></li>
+            {/foreach}
+            {/if}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--顶部悬浮搜索-->
+
+<div id="J_ASTotalContainer" class="as-total-container show" style="left:0">
+  <div id="J_AttachedSearchContainer" class="attached-search-container">
+    <div class="fp-iconfont top_logo"></div>
+    <div id="mallSearch2" class="mall-search">
+      <form class="mallSearch-form2" id="searchForms2" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" >
+            <div class="mallSearch-input2 clearfix">
+              <div class="s-combobox-input-wrap">
+                <input type="text" name="keywords" id="mqs" tabindex="9"  class="s-combobox-input"  value="搜索商品" onclick="javascript:if(this.value=='搜索商品')this.value=''">
+              </div>
+              <input name="imageField" type="submit" value="搜索" class="sub_ss" />
+              <input type="hidden" name="user_action" value="initiative">
+              <input type="hidden" name="at_topsearch" value="1">
+              <input type="hidden" name="sort" value="st">
+              <input id="J_Type" type="hidden" name="type" value="p">
+              <input id="J_Cat" type="hidden" name="cat" value="all">
+              <input type="hidden" name="vmarket" value="">
+            </div>
+          </form>
+      
+    </div>
+  </div>
+</div>
+
+

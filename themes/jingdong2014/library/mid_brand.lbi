@@ -1,0 +1,86 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="JS代码,图片特效,JS广告代码,JS特效代码" />
+<meta name="description" content="此代码内容为jQuery仿京东图片变亮变暗效果，属于站长常用代码，更多图片特效代码请访问懒人图库JS代码频道。" />
+<link rel="stylesheet" type="text/css" href="themes/jingdong2014/css/lrtk.css">
+<!-- 代码 开始 -->
+<div class="box">
+   <div class="one">
+      <div class="top">
+        <div class="text">
+         商品说明
+        </div>
+        <div class="img">
+         <img src="themes/jingdong2014/images/small.jpg"/>
+         </div>
+        </div>
+        
+        <div class="top">
+        <div class="text">
+         商品说明
+        </div>
+        <div class="img">
+         <img src="themes/jingdong2014/images/small1.jpg"/>
+         </div>
+        </div>    
+   </div>
+   
+   
+   <div class="two">
+   	<div class="text">
+     商品说明
+    </div>
+    <div class="img">
+     <img src="themes/jingdong2014/images/big.jpg"/>
+    </div>
+   </div>
+   
+   <div class="one">
+      <div class="top">
+        <div class="text">
+         商品说明
+        </div>
+        <div class="img">
+         <img src="themes/jingdong2014/images/small3.jpg"/>
+         </div>
+        </div>
+        
+        <div class="top">
+        <div class="text">
+         商品说明
+        </div>
+        <div class="img">
+         <img src="themes/jingdong2014/images/small4.jpg"/>
+         </div>
+        </div>    
+   </div>
+   
+    <div class="two">
+   	<div class="text">
+     商品说明
+    </div>
+    <div class="img">
+     <img src="themes/jingdong2014/images/big2.jpg"/>
+    </div>
+   </div>
+   
+      <div class="one">
+      <div class="top">
+        <div class="text">
+         商品说明
+        </div>
+        <div class="img">
+         <img src="themes/jingdong2014/images/small5.jpg"/>
+         </div>
+        </div>
+        
+        <div class="top">
+        <div class="text">
+         商品说明
+        </div>
+        <div class="img">
+         <a href="http://www.lanrentuku.com/" target="_blank"><img src="themes/jingdong2014/images/small6.jpg"/></a>
+         </div>
+        </div>    
+   </div>
+</div>
+<!-- 代码 结束 -->
