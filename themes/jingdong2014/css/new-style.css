@@ -175,8 +175,9 @@
 }
 
 .new_top-nav ul li{
-
+	
     display: inline-block;
+    background: #eee;
 
     float: left;
 
@@ -188,19 +189,19 @@
 
 .new_top-nav>ul>li>a{
 
-      color: #fff;
+    color: #fff;
 
-  font-size: 1.1em;
+    font-size: 1.1em;
 
-  text-decoration: none;
+    text-decoration: none;
 
-  display: block;
+    display: block;
 
-  padding: 1.6em 1em;
+    padding: 1.6em 1em;
 
-  text-align: center;
+    text-align: center;
 
-  font-family: 'Audiowide-Regular';
+    font-family: 'Audiowide-Regular';
 
 }
 
