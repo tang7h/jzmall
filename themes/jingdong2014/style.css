@@ -4924,17 +4924,9 @@ h2, h3 {
 
 	/*border: solid #DDD;*/
 
-	border-width: 1px 0;
-
 	background-color: #E40046;
 
 	overflow: hidden;
-
-	-moz-box-shadow: 0 0 8px #DDD;
-
-	-webkit-box-shadow: 0 0 8px #DDD;
-
-	box-shadow: 0 0 8px #DDD
 
 }
 
@@ -19428,7 +19420,7 @@ table{border-collapse:collapse;}
 
 /*订单详情页面修改*/
 
-h3{/*padding-left:25px;*/}
+{/*padding-left:25px;*/}
 
 .od_mod{margin-bottom: 10px;background: #fff;border: #D2D2D2 solid 1px;float: left; width:828px;}
 
