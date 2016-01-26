@@ -1,0 +1,75 @@
+<!-- $Id: comment_info.htm 16854 2009-12-07 06:20:09Z sxc_shop $ -->
+
+{include file="pageheader.htm"}
+<!-- comment content list -->
+
+<div class="main-div">
+<form method="post" action="sale_notice.php?act=action" name="theForm" onsubmit="return validate()">
+<table border="0" align="center">
+  <tr><th colspan="2">
+  <strong>降价通知</strong>
+  </th></tr>
+  <tr>
+    <td>用户名</td>
+    <td>{$detail.user_name}</td>
+  </tr>
+  <tr>
+    <td>商品名</td>
+    <td>{$detail.goods_name}</td>
+  </tr>
+  <tr>
+    <td>邮箱</td>
+    <td>{$detail.email}</td>
+  </tr>
+    <tr>
+    <td>手机</td>
+    <td>{$detail.cellphone}</td>
+  </tr>
+  <tr>
+    <td>备注</td>
+    <td><textarea name="mark" cols="50" rows="4" wrap="VIRTUAL">{$detail.mark}</textarea></td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+      <input name="submit" type="submit" value="{$lang.button_submit}" class="button">
+      <input type="submit" name="remail" value="{$lang.remail}" class="button">
+      <input type="submit" name="resms" value="重发短信" class="button">
+      <input type="hidden" name="id" value="{$detail.id}">
+      <input type="hidden" name="email" value="{$detail.email}">
+      <input type="hidden" name="cellphone" value="{$detail.cellphone}">
+      <input type="hidden" name="user_name" value="{$detail.user_name}">
+      <input type="hidden" name="goods_name" value="{$detail.goods_name}">
+    </td>
+  </tr>
+</table>
+</form>
+</div>
+{insert_scripts files="../js/utils.js,validator.js"}
+{literal}
+<script language="JavaScript">
+<!--
+document.forms['theForm'].elements['content'].focus();
+
+/**
+ * 检查表单输入的数据
+ */
+function validate()
+{
+    validator = new Validator("theForm");
+   var submit_btn = document.forms['theForm'].elements['submit'].value
+   if(submit_btn){
+    	//validator.required("mark",  "备注不为空");
+    }
+    return validator.passed();
+}
+
+onload = function() {
+    // 开始检查订单
+    startCheckOrder();
+}
+//-->
+</script>
+{/literal}
+{include file="pagefooter.htm"}

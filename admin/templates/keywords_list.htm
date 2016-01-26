@@ -1,0 +1,67 @@
+<!-- $Id: link_list.htm 14216 2008-03-10 02:27:21Z testyang $ -->
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+
+<form method="post" action="" name="listForm">
+<!-- start ads list -->
+<div class="list-div" id="listDiv">
+{/if}
+
+<table cellpadding="3" cellspacing="1">
+  <tr>
+    <th><a href="javascript:listTable.sort('link_name'); ">{$lang.keyword_name}</a>{$sort_link_name}</th>
+    <th><a href="javascript:listTable.sort('link_url'); ">{$lang.keyword_result}</a>{$sort_link_url}</th>
+    <th><a href="javascript:listTable.sort('link_logo'); ">{$lang.keyword_total_count}</a>{$sort_link_logo}</th>
+    <th><a href="javascript:listTable.sort('show_order'); ">{$lang.keyword_month}</a>{$sort_show_order}</th>
+    <th><a href="javascript:listTable.sort('show_order'); ">{$lang.keyword_week}</a>{$sort_show_order}</th>
+    <th><a href="javascript:listTable.sort('show_order'); ">{$lang.keyword_day}</a>{$sort_show_order}</th>
+    <!--<th><a href="javascript:listTable.sort('show_order'); ">{$lang.keyword_from}</a>{$sort_show_order}</th>-->
+    <!--<th><a href="javascript:listTable.sort('show_order'); ">{$lang.keyword_on_off}</a>{$sort_show_order}</th>-->
+    <th>{$lang.handler}</th>
+  </tr>
+  <tr>
+  {foreach from=$keywords_list item=keyword}
+  <tr>
+    <td class="first-cell" align="center"><span>{$keyword.keyword}</span></td>
+    <td align="center"><span>{$keyword.result_count}</span></td>
+    <td align="center"><span>{$keyword.count}</span></td>
+    <td align="center"><span>{$keyword.month_count}</span></td>
+    <td align="center"><span>{$keyword.week_count}</span></td>
+    <td align="center"><span>{$keyword.day_count}</span></td>
+    <!--<td align="center"><span>{if $keyword.searchengine eq 'BAIDU'}{$lang.keyword_baidu}{elseif $keyword.searchengine eq 'GOOGLE'}{$lang.keyword_google}{elseif $keyword.searchengine eq 'SOGOU'}{$lang.keyword_sougou}{elseif $keyword.searchengine eq 'YOUDAO'}{$lang.keyword_youdao}{elseif $keyword.searchengine eq 'BIYING'}{$lang.keyword_biying}{elseif $keyword.searchengine eq 'SO'}{$lang.keyword_so}{elseif $keyword.searchengine eq 'YAHOO'}{$lang.keyword_yahoo}{elseif $keyword.searchengine eq 'ecshop'}{$lang.keyword_ecshop}{elseif $keyword.searchengine eq 'IASK'}{$lang.keyword_iask}{else}{$lang.keyword_other}{/if}</span></td>-->
+    <!--<td align="center" style="background-color: rgb(255, 255, 255);">
+	<img onclick="listTable.toggle(this, 'keyword_on_off', {$keyword.keyword})" src="images/yes.gif">
+	</td>-->
+    <td align="center"><a href="../search.php?keywords={$keyword.keyword}" target="_blank"><img width="16" height="16" border="0" src="images/icon_view.gif"></a></td>
+  </tr>
+  {foreachelse}
+    <tr><td class="no-records" colspan="10">{$lang.no_links}</td></tr>
+  {/foreach}
+  <tr>
+    <td align="right" nowrap="true" colspan="10">{include file="page.htm"}</td>
+  </tr>
+</table>
+
+{if $full_page}
+</div>
+<!-- end ad_position list -->
+</form>
+
+<script type="text/javascript" language="JavaScript">
+  listTable.recordCount = {$record_count};
+  listTable.pageCount = {$page_count};
+
+  {foreach from=$filter item=item key=key}
+  listTable.filter.{$key} = '{$item}';
+  {/foreach}
+  {literal}
+  onload = function()
+  {
+    // 开始检查订单
+    startCheckOrder();
+  }
+  {/literal}
+</script>
+{include file="pagefooter.htm"}
+{/if}
