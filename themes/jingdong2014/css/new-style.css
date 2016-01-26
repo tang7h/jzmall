@@ -174,7 +174,7 @@
 
 }
 
-.new_top-nav ul li{
+.new_top-nav>ul>li{
 
     display: inline-block;
 
