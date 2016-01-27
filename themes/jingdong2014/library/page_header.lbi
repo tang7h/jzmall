@@ -40,9 +40,9 @@
         <div class="new_search">
             <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()">
           <!-- @Author guan suggest start-->
-                <input style="width:520px;height:25px;margin:8px 0 0 0;" autocomplete="off" name="keywords" onKeyUp="lookup(this.value);" class="text" accesskey="s"  type="text" id="keyword" value="{$search_keywords|escape}"/>        
+                <input type="text" id="keyword" autocomplete="off" name="keywords" onKeyUp="lookup(this.value);" class="text" accesskey="s"  value="{$search_keywords|escape}"/>        
 <!-- @Author guan suggest end-->
-                <input style="width:73px;height:30px;position:absolute;margin-top:8px; background-color:#c40000;color:#FFF;" type="submit" value="搜索" class="button">
+                <input type="submit" value="搜索" class="button">
             </form>
             <ul class="hot-query">
             <script type="text/javascript">
