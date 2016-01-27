@@ -15080,3 +15080,39 @@ table {
 .brand-subject-shgd .brand-subject-title {
     background-position: -107px -96px;
 }
+
+/*头部搜索栏的样式by唐瑞峰160127*/
+#searchForm {
+	width: 300px;
+	height: 100%;
+	display: inline-block;
+	border-radius: 2px;
+	position: absolute;
+	top: 8px;
+	left: 500px;
+}
+#searchForm .text {
+	width: 100%;
+	line-height: 28px;
+	color: #333;
+	background: #fff;
+	border-radius: 2px;
+	padding: 0 24px;
+	outline: none;
+
+}
+#searchForm .button {
+	border: none;
+	width: 16px;
+	height: 16px;
+	background: transparent url(images/iconfont-search-dark16.png) no-repeat center;
+	text-indent: 10em;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	padding: 15px;
+}
+.new_search {
+	height: 100%;
+
+}
