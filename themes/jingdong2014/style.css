@@ -6136,7 +6136,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 	position: relative;
 
 	height: 361px;
-	background: #f5f5f5;
+	/*background: #f5f5f5;*/
 	margin-right: -1px;
 	transition: all .3s;
 
@@ -6308,7 +6308,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 
 	position: relative;
 
-	height: 361px;
+	height: 362px;
 
 	margin-right: -1px;
 	transition: all .3s;
@@ -6460,9 +6460,9 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 
 }
 
-.plist .style1 .fore1 {
+.plist .style1 .fore2 {
 
-	margin-right: 467px
+	margin-left: 474px
 
 }
 
@@ -6482,7 +6482,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 	width: 137px;
 	border: 1px solid #eee;
 	margin-top: -1px;
-	margin-left: -1px;
+	margin-right: -1px;
 	z-index: 1;
 	transition: all .3s;
 }
