@@ -6137,10 +6137,17 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 
 	height: 361px;
 
-	border-left: 0;
 
-	border-bottom: 1px solid #DDD
+	border: 1px solid #DDD
+	border-top: 0;
+	margin-right: -1px;
+	transition: all .3s;
 
+}
+.catalogue .mc:hover {
+	border: 1px solid #ef383a;
+	border-top: 0;
+	z-index: 3;
 }
 
 .catalogue ul {
@@ -6165,9 +6172,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 
 .catalogue li {
 
-	height: 25px;
-
-	line-height: 25px;
+	height: 24px;
 
 	overflow: hidden;
 
@@ -6176,8 +6181,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 }
 
 .catalogue .style1 li {
-
-	width: 99px
+	margin: .1em .5em;
 
 }
 
@@ -6307,8 +6311,16 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 
 	height: 361px;
 
-	border-bottom: 1px solid #DDD
+	border: 1px solid #DDD;
+	border-top: none;
+	margin-right: -1px;
+	transition: all .3s;
 
+}
+.plist .smc:hover {
+	border: 1px solid #ef383a;
+	border-top: none;
+	z-index: 3;
 }
 
 .plist .slide {
