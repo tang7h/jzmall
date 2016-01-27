@@ -69,27 +69,13 @@
 }
 
 .shoucang a {
-
-	float: right;
-
-	margin-left: 5px;
-
 	color: #c6c6c6;
-
-	font-size: 14px;
-
-	font-family: "微软雅黑";
+	color: rgba(255,255,255,.8);
 
 }
 
 .shoucang a:hover {
-
-	font-size:130%;
-
-	color: #fd005a;
-
-	text-decoration: none;
-
+	color: #ef383a;
 }
 
 .dd {
@@ -142,11 +128,8 @@
 
 .new_login ul li a:hover {
 
-	font-size:130%;
+	color: #ef383a;
 
-	color: #fd005a;
-
-	text-decoration: none;
 
 }
 
@@ -154,6 +137,14 @@
 
 	width: 600px;
 
+}
+
+#searchForm {
+	
+}
+
+#searchForm input[type="text"] {
+	border: none !important;
 }
 
 
@@ -376,8 +367,8 @@
 	width: 100%;
 
 	height: 30px;
-	background: #000;
-
+	background: #fff;
+	background: rgba(255,255,255,.8);
 	box-shadow: 0 0 10px rgba(0,0,0,.12);
 
 }

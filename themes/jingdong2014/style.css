@@ -5338,7 +5338,7 @@ h2, h3 {
 
 	padding: 7px;
 
-	border-bottom: 2px solid #ccc;
+	border-bottom: 2px solid #ef383a;
 
 }
 
@@ -5352,7 +5352,16 @@ h2, h3 {
 	border-bottom: 2px solid #7b6859;
 }
 .root61 .w:nth-child(4) .catalogue .mt {
-	border-bottom: 2px solid #ff4500;
+	border-bottom: 2px solid #EE6C44;
+}
+.root61 .w:nth-child(5) .catalogue .mt {
+	border-bottom: 2px solid #F24C81;
+}
+.root61 .w:nth-child(6) .catalogue .mt {
+	border-bottom: 2px solid #6D3283;
+}
+.root61 .w:nth-child(7) .catalogue .mt {
+	border-bottom: 2px solid #2EBA9A;
 }
 
 
