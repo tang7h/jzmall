@@ -6155,7 +6155,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 
 	z-index: 2;
 
-	padding: 5px
+	padding: 10px
 
 }
 
@@ -6167,7 +6167,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 
 .catalogue li {
 
-	height: 24px;
+	line-height: 24px;
 
 	overflow: hidden;
 
@@ -6175,8 +6175,12 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 
 }
 
-.catalogue .style1 li {
-	margin: .1em .5em;
+.catalogue .style1 li a{
+	display: inline-block;
+	width: 80px;
+	margin: 0 8px;
+	border-bottom: 1px dotted #eee;
+	text-decoration: none;
 
 }
 
@@ -6440,9 +6444,9 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 
 	padding: 5px 10px 0;
 
-	border-left: 1px solid #F1F1F1;
+	/*border-left: 1px solid #F1F1F1;*/
 
-	border-top: 1px solid #F1F1F1;
+	/*border-top: 1px solid #F1F1F1;*/
 
 	overflow: hidden
 
@@ -6458,36 +6462,33 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 
 .plist .style1 .fore1 {
 
-	border-right: 1px solid #F1F1F1;
-
 	margin-right: 467px
 
 }
 
 .plist .style1 .fore1, .plist .style1 .fore2 {
 
-	border-top: 0
+	/*border-top: 0*/
 
 }
 
 .plist .style1 .fore1, .plist .style1 .fore3 {
-
-	border-left: 0;
-
-	width: 136px
+	/*width: 136px*/
 
 }
 
-.root61 .plist .style1 li {
-
+.plist .smc ul li {
+	position: relative;
 	width: 137px;
 	border: 1px solid #eee;
 	margin-top: -1px;
-	margin-right: -1px;
+	margin-left: -1px;
 	z-index: 1;
 	transition: all .3s;
 }
-.root61 .plist .style1 li:hover {
+
+
+.plist .smc ul li:hover {
 	border: 1px solid #ef383a;
 	z-index: 10;
 }
@@ -6542,7 +6543,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 
 .plist .style1 .fore3, .plist .style1 .fore4, .plist .style1 .fore5, .plist .style1 .fore6, .plist .style1 .fore7 {
 
-	border-bottom: 0
+	/*border-bottom: 0*/
 
 }
 
