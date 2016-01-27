@@ -3112,6 +3112,10 @@ ol, ul {
 
 }
 
+.root61 .w:first-child() {
+	margin-top: 0;
+}
+
 #shortcut-2013, #shortcut-2013 .w {
 
 	height: 30px;
@@ -4577,6 +4581,7 @@ em {
 	width: 210px;
 	height: 410px;
 	background: #333;
+	background: rgba(0,0,0,.7);
 
 	overflow: visible
 
@@ -4584,20 +4589,26 @@ em {
 
 
 #categorys-2013 .item {
-
 	height: 28px;
-	width: 
-
+	
 	/*border-top: 1px solid #FFF*/
 
+}
+
+#categorys-2013 .item:hover {
+	background: #ef383a;
+}
+
+#categorys-2013 .item:hover span {
+	transform: translateX(4px);
 }
 
 #categorys-2013 span {
 	width: 100%;
 	display: block;
 	position: absolute;
-	z-index: 1
-
+	z-index: 1;
+	transition: all .2s;
 }
 
 #categorys-2013 h3 {
@@ -5345,6 +5356,20 @@ h2, h3 {
 	border-bottom: 2px solid #ccc;
 
 }
+
+.root61 .w:nth-child(1) .catalogue .mt {
+	border-bottom: 2px solid #3e73ff;
+}
+.root61 .w:nth-child(2) .catalogue .mt {
+	border-bottom: 2px solid #a7d22d;
+}
+.root61 .w:nth-child(3) .catalogue .mt {
+	border-bottom: 2px solid #7b6859;
+}
+.root61 .w:nth-child(4) .catalogue .mt {
+	border-bottom: 2px solid #ff4500;
+}
+
 
 .m1 .mt h2 {
 
@@ -6831,15 +6856,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 }
 
 .w1 {
-
-	margin-bottom: 10px
-
-}
-
-.w1 {
-
-	padding-top: 8px
-
+	margin-top: 100px;
 }
 
 .brands ul.lh li {
