@@ -71,6 +71,7 @@
 .shoucang a {
 	color: #c6c6c6;
 	color: rgba(255,255,255,.8);
+	text-decoration: none;
 
 }
 
@@ -127,10 +128,8 @@
 }
 
 .new_login ul li a:hover {
-
+	text-decoration: none;
 	color: #ef383a;
-
-
 }
 
 .new_search {
