@@ -15093,11 +15093,12 @@ table {
 }
 #searchForm .text {
 	width: 100%;
+	font-size: 16px;
 	line-height: 28px;
 	color: #333;
 	background: #fff;
 	border-radius: 2px;
-	padding: 0 24px;
+	padding: 0 0 0 30px;
 	outline: none;
 
 }
@@ -15115,4 +15116,24 @@ table {
 .new_search {
 	height: 100%;
 
+}
+
+.suggestions_box {
+	background: #fff;
+	position: fixed;
+	top: 45px;
+	left: 500px;
+	padding: .5em 0;
+	border-radius: 0 0 2px 2px;
+	box-shadow: 0 8px 16px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.1);
+}
+
+.suggestions_list {
+	/*margin: 0 1em;*/
+}
+
+#suggestions_list_id li {
+	padding: 0 1em;
+	line-height: 2em;
+	font-size: 14px;
 }
