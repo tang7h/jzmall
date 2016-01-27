@@ -6136,18 +6136,13 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 	position: relative;
 
 	height: 361px;
-
-
-	border: 1px solid #DDD
-	border-top: 0;
+	background: #f5f5f5;
 	margin-right: -1px;
 	transition: all .3s;
 
 }
 .catalogue .mc:hover {
-	border: 1px solid #ef383a;
-	border-top: 0;
-	z-index: 3;
+	z-index: 10;
 }
 
 .catalogue ul {
@@ -6311,15 +6306,11 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 
 	height: 361px;
 
-	border: 1px solid #DDD;
-	border-top: none;
 	margin-right: -1px;
 	transition: all .3s;
 
 }
 .plist .smc:hover {
-	border: 1px solid #ef383a;
-	border-top: none;
 	z-index: 3;
 }
 
@@ -6489,14 +6480,16 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=
 
 .root61 .plist .style1 li {
 
-	width: 137px
-
+	width: 137px;
+	border: 1px solid #eee;
+	margin-top: -1px;
+	margin-right: -1px;
+	z-index: 1;
+	transition: all .3s;
 }
-
-.root61 .plist .style1 .fore1, .root61 .plist .style1 .fore3 {
-
-	width: 138px
-
+.root61 .plist .style1 li:hover {
+	border: 1px solid #ef383a;
+	z-index: 10;
 }
 
 .p-img, .p-name, .p-price, .p-market, .p-detail {
