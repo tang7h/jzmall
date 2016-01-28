@@ -89,13 +89,12 @@
 /*头部搜索栏 by唐瑞峰160127*/
 
 #searchForm {
-    width: 300px;
-    height: 100%;
     display: inline-block;
     border-radius: 2px;
     position: absolute;
     top: 8px;
     left: 500px;
+    border: none;
 }
 
 #searchForm .text {
@@ -107,13 +106,14 @@
     border-radius: 2px;
     padding: 0 0 0 30px;
     outline: none;
+    border: none;
 }
 
 #searchForm .button {
     border: none;
     width: 16px;
     height: 16px;
-    background: transparent url(images/iconfont-search-dark16.png) no-repeat center;
+    background: transparent url(../images/iconfont-search-dark16.png) no-repeat center;
     text-indent: 10em;
     position: absolute;
     left: 0;
