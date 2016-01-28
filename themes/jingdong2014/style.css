@@ -15121,9 +15121,10 @@ table {
 	width: 100%;
 	text-align: left;
 	font-size: 20px;
-	line-height: 2.5em;
-	height: 2.5em;
+	line-height: 2em;
+	height: 2em;
 	font-weight: 500;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 
 #popDiv a {
