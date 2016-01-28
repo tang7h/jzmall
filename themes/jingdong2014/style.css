@@ -3275,14 +3275,13 @@ h3 {
 
 .slide-controls span {
     display: inline-block;
-    margin: 0 1px;
+    margin: 0 2px;
     background: #999;
+    background: rgba(0,0,0,.57);
     text-align: center;
     cursor: default;
     color: #fff;
     border-radius: 12px;
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
     cursor: pointer;
 }
 
