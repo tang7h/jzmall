@@ -15100,3 +15100,28 @@ table {
 	color: #333;
 	background: #fff;
 }
+
+/*地图层*/
+.new_top-nav {
+	opacity: 1!important;
+}
+
+.box {
+	box-shadow: 0 5px 10px rgba(0,0,0,.05),0 5px 5px rgba(0,0,0,.08),0 7px 10px rgba(0,0,0,.09),0 22px 22px rgba(0,0,0,.05);
+	border-radius: 12px;
+	transform: translateZ(0);
+}
+
+.box h5{
+	color: #555;
+	background: rgba(255,255,255,.85)!important;
+	position: absolute;
+	padding-left: 1.2em;
+	z-index: 998;
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+	line-height: 2.5em;
+	height: 2.5em;
+	font-weight: 500;
+}
