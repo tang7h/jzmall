@@ -15112,6 +15112,7 @@ table {
 	left: 0;
 	top: 0px;
 	padding: 15px;
+	outline: none;
 }
 .new_search {
 	height: 100%;
