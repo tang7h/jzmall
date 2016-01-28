@@ -2929,7 +2929,7 @@ em {
     width: 210px;
     height: 410px;
     background: #333;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .9);
     overflow: visible
 }
 
@@ -3494,9 +3494,7 @@ h3 {
 
 .m1 .mc,
 .sm1 .smc {
-    border-style: solid;
-    border-color: #F1F1F1;
-    border-width: 0 1px 1px
+    border: 1px solid #eee;
 }
 
 #jdnews .mc {
@@ -3946,19 +3944,19 @@ h3 {
     position: relative;
     height: 361px;
     /*background: #f5f5f5;*/
-    margin-right: -1px;
+    margin: -1px 0 0 -1px;
     transition: all .3s;
+    z-index: 1;
 }
 
 .catalogue .mc:hover {
-    z-index: 10;
+    z-index: 2;
 }
 
 .catalogue ul {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
     padding: 10px
 }
 
@@ -3982,7 +3980,6 @@ h3 {
 
 .catalogue span {
     position: absolute;
-    z-index: 1;
     line-height: 0;
     font-size: 0
 }
@@ -4060,7 +4057,7 @@ h3 {
 }
 
 .plist .smc:hover {
-    z-index: 3;
+    z-index: 2;
 }
 
 .plist .slide {
@@ -4076,11 +4073,11 @@ h3 {
 }
 .plist .slide:hover {
 	border: 1px solid #ef383a;
-	z-index: 3;
+	z-index: 2;
 }
 
 .root61 .plist .slide {
-    left: 159px;
+    left: 158px;
     width: 473px
 }
 
@@ -4157,7 +4154,7 @@ h3 {
 }
 
 .plist .style1 .fore2 {
-    margin-left: 474px
+    margin-left: 473px
 }
 
 .plist .style1 .fore1,
@@ -4174,15 +4171,13 @@ h3 {
     position: relative;
     width: 137px;
     border: 1px solid #eee;
-    margin-top: -1px;
-    margin-right: -1px;
-    z-index: 1;
+    margin: -1px 0 0 -1px;
     transition: all .3s;
 }
 
 .plist .smc ul li:hover {
     border: 1px solid #ef383a;
-    z-index: 10;
+    z-index: 2;
 }
 
 .p-img,
@@ -4850,7 +4845,7 @@ h3 {
     height: 576px;
     border: 2px solid #0f7cbf;
     position: relative;
-    z-index: 2;
+    /*z-index: 2;*/
 }
 
 #sortlist,
@@ -8049,13 +8044,6 @@ a.d-offline {
 .jqzoom {
     position: relative;
     padding: 0
-}
-
-#spec-n1 {
-    width: 350px;
-    height: 350px;
-    border: 1px solid #ddd;
-    margin-bottom: 5px
 }
 
 #spec-list {
