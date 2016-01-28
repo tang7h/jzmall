@@ -15125,3 +15125,10 @@ table {
 	height: 2.5em;
 	font-weight: 500;
 }
+
+#popDiv a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 1px solid tomato;
+}
