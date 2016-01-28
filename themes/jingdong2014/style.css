@@ -15080,3 +15080,23 @@ table {
 .brand-subject-shgd .brand-subject-title {
     background-position: -107px -96px;
 }
+
+
+/*顶栏按钮 by唐瑞峰*/
+#ECS_MEMBERZONE ul li {
+	margin: 4px 16px 0 0 !important;
+
+}
+#ECS_MEMBERZONE ul li a {
+	color: #fff;
+	border: 1px solid #fff;
+	padding: .4em .5em;
+	font-weight: 500;
+	font-size: 14px;
+	font-family: inherit;
+	border-radius: 4px;
+}
+#ECS_MEMBERZONE ul li a:hover {
+	color: #333;
+	background: #fff;
+}
