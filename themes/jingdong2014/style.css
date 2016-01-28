@@ -4069,7 +4069,14 @@ h3 {
     left: 157px;
     width: 467px;
     height: 180px;
-    overflow: hidden
+    border: 1px solid #eee;
+    overflow: hidden;
+    margin: -1px 0 0 -1px;
+    transition: all .3s;
+}
+.plist .slide:hover {
+	border: 1px solid #ef383a;
+	z-index: 3;
 }
 
 .root61 .plist .slide {
@@ -4268,15 +4275,12 @@ h3 {
 .brands .smc {
     width: 990px;
     height: 35px;
-    border-left-width: 0
 }
 
 .root61 .brands .smc {
     width: 209px;
     height: 180px;
     padding: 0;
-    border-left-width: 1px;
-    border-right: 0
 }
 
 .brands .smc ul {
