@@ -8467,27 +8467,6 @@ a.d-offline {
     text-align: center;
 }
 
-#ranklist .tab {
-    width: 193px;
-    padding-left: 5px;
-    margin: 8px auto 0;
-    border-bottom: 1px solid #DEDFDE;
-    overflow: visible;
-    float: left
-}
-
-#ranklist .tab li {
-    width: 58px;
-    height: 20px;
-    border: solid #DEDFDE;
-    border-width: 1px 1px 0;
-    margin-right: 4px;
-    text-align: center;
-    line-height: 20px;
-    color: #333;
-    cursor: default;
-    background-color: #f7f7f7
-}
 
 #ranklist .tab .curr {
     font-weight: 700;
@@ -8506,11 +8485,11 @@ a.d-offline {
 }
 
 #ranklist .tabcon li {
+	width: 190px;
     position: relative;
     height: 50px;
     padding: 8px 0 8px 70px;
     zoom: 1;
-    border-top: 1px dotted #DEDEDE
 }
 
 #ranklist .tabcon span,
@@ -15145,4 +15124,10 @@ table {
 
 #popDiv a:hover {
 	opacity: .7;
+}
+
+#bg {
+	opacity: 1;
+	background: rgba();
+	background: radial-gradient(ellipse at center, rgba(0,0,0,.5) 0%,rgba(0,0,0,.7) 100%);
 }
