@@ -4052,7 +4052,8 @@ h3 {
 .plist .smc {
     position: relative;
     height: 362px;
-    margin-right: -1px;
+    border: 1px solid #eee;
+    margin-top: -1px;
     transition: all .3s;
 }
 
@@ -4154,13 +4155,9 @@ h3 {
 }
 
 .plist .style1 .fore2 {
-    margin-left: 473px
+    margin-left: 464px
 }
 
-.plist .style1 .fore1,
-.plist .style1 .fore2 {
-    /*border-top: 0*/
-}
 
 .plist .style1 .fore1,
 .plist .style1 .fore3 {
@@ -8037,21 +8034,18 @@ a.d-offline {
     position: absolute;
     top: 0;
     left: 0;
-    width: 352px;
-    *z-index: 4
 }
 
 .jqzoom {
-    position: relative;
-    padding: 0
+	position: absolute;
+    padding: 0;
+    float: left;
+    margin-left: 90px;
 }
 
 #spec-list {
     position: relative;
-    width: 310px;
-    height: 54px;
     overflow: hidden;
-    padding: 0 21px
 }
 
 #spec-forward {
@@ -8091,7 +8085,6 @@ a.d-offline {
 #spec-list .spec-items {
     position: relative;
     overflow: hidden;
-    width: 310px;
     height: 54px;
 }
 
