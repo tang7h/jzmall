@@ -2008,8 +2008,6 @@ ul {
 
 .w {
     width: 1210px;
-    max-height: 395px;
-    overflow: hidden;
 }
 
 .root61 .w:first-child() {
@@ -2901,7 +2899,7 @@ em {
     height: 30px;
     padding-left: 20px;
     color: #fff;
-    font: 500 16px/30px "microsoft yahei"；
+    font: 500 16px/30px "microsoft yahei";
 }
 
 #categorys-2013 .mt b,
@@ -4115,12 +4113,12 @@ h3 {
 .plist .slide-controls span b {
     display: block;
     height: 5px;
-    background: #999;
+    background: rgba(0,0,0,.5);
     overflow: hidden
 }
 
 .plist .slide-controls .curr b {
-    background: #7ABD54
+    background: rgb(255,100,100);
 }
 
 .plist .smc ul.lh {
@@ -4324,12 +4322,12 @@ h3 {
 .da209x180 .slide-controls span b {
     display: block;
     height: 5px;
-    background: #999;
+    background: rgb(0,0,0,.5);
     overflow: hidden
 }
 
 .da209x180 .slide-controls .curr b {
-    background: #7ABD54;
+    background: rgb(255,100,100);
     border-bottom: 0
 }
 
