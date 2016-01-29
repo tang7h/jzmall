@@ -3950,7 +3950,7 @@ h3 {
 }
 
 .catalogue .mc:hover {
-    z-index: 2;
+    /*z-index: 2;*/
 }
 
 .catalogue ul {
