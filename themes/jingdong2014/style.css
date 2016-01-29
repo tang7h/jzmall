@@ -24,10 +24,8 @@ Logo filename: logo.gif
 ==================== */
 
 body {
-    background: #fff;
-    font-family: 12px / 1.5 "Microsoft Yahei",Arial,sans-serif;
-    font-size: 12px;
-    line-height: 20px;
+    background: #f7f7f7;
+    font: 12px / 1.5 "Microsoft Yahei",sans-serif,Arial;
     padding: 0;
     margin: 0;
     color: #333;
@@ -3497,7 +3495,7 @@ h3 {
 
 .m1 .mc,
 .sm1 .smc {
-    /*border: 1px solid #eee;*/
+    background: #fff;
 }
 
 #jdnews .mc {
@@ -3946,7 +3944,7 @@ h3 {
 .catalogue .mc {
     position: relative;
     height: 361px;
-    background: #F7F7F7;
+    background: #fff;
     transition: all .3s;
     z-index: 1;
 }
@@ -4054,6 +4052,7 @@ h3 {
 .plist .smc {
     position: relative;
     height: 362px;
+    background: #fff;
     transition: all .3s;
 }
 
@@ -4306,9 +4305,7 @@ h3 {
     display: none;
     width: 209px;
     height: 180px;
-    background: #F8F8F8;
-    border-left: 1px solid #F1F1F1;
-    border-bottom: 1px solid #DDD
+    background: #fff;
 }
 
 .root61 .da209x180 {
@@ -4425,7 +4422,7 @@ h3 {
 }
 
 .w1 {
-    margin-top: 40px;
+    margin: 40px auto;
 }
 
 .brands ul.lh li {
