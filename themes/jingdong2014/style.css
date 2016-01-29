@@ -1922,8 +1922,8 @@ h6 span {
 .smt,
 .smc,
 .smb {
-    overflow: hidden;
-    zoom: 1
+    /*overflow: hidden;
+    zoom: 1*/
 }
 
 .mt,
@@ -1970,8 +1970,8 @@ ul {
 }
 
 .lh {
-    overflow: hidden;
-    zoom: 1
+    /*overflow: hidden;
+    zoom: 1*/
 }
 
 .lh li,
@@ -3262,7 +3262,7 @@ h3 {
 
 #slide .slide-controls {
     position: absolute;
-    bottom: 3px;
+    bottom: 8px;
     z-index: 1;
     width: 530px;
     height: 22px;
@@ -3286,9 +3286,9 @@ h3 {
 }
 
 #slide .slide-controls span {
-    width: 22px;
-    height: 22px;
-    line-height: 22px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
 }
 
 .slide-controls .curr {
@@ -3494,7 +3494,7 @@ h3 {
 
 .m1 .mc,
 .sm1 .smc {
-    border: 1px solid #eee;
+    /*border: 1px solid #eee;*/
 }
 
 #jdnews .mc {
@@ -3928,7 +3928,7 @@ h3 {
     text-align: center;
     line-height: 30px;
     font-size: 18px;
-    color: #FFF
+    color: #FFF;
 }
 
 .catalogue #cat_top .floor .b4 {
@@ -3943,8 +3943,7 @@ h3 {
 .catalogue .mc {
     position: relative;
     height: 361px;
-    /*background: #f5f5f5;*/
-    margin: -1px 0 0 -1px;
+    background: #F7F7F7;
     transition: all .3s;
     z-index: 1;
 }
@@ -4052,8 +4051,6 @@ h3 {
 .plist .smc {
     position: relative;
     height: 362px;
-    border: 1px solid #eee;
-    margin-top: -1px;
     transition: all .3s;
 }
 
@@ -4155,7 +4152,7 @@ h3 {
 }
 
 .plist .style1 .fore2 {
-    margin-left: 464px
+    margin-left: 473px;
 }
 
 
@@ -4270,7 +4267,7 @@ h3 {
 }
 
 .root61 .brands .smc {
-    width: 209px;
+    width: 210px;
     height: 180px;
     padding: 0;
 }
@@ -14531,10 +14528,6 @@ table {
 .brand-bar-pop p.seller,
 .brand-bar-pop p.evaluate {
     border-bottom: 1px solid #ddd;
-}
-
-.brand-bar-pop p.seller a {
-    color: #005ea7;
 }
 
 .brand-bar-pop p.evaluate span {
