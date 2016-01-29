@@ -2010,7 +2010,7 @@ ul {
 
 .root61 .w {
     width: 1210px;
-    height: 395px;
+    max-height: 395px;
     overflow: hidden;
 }
 
@@ -4068,6 +4068,7 @@ h3 {
     width: 467px;
     height: 180px;
     border: 1px solid #eee;
+    border-top-color: transparent;
     overflow: hidden;
     margin: -1px 0 0 -1px;
     transition: all .3s;
@@ -4168,6 +4169,7 @@ h3 {
     position: relative;
     width: 137px;
     border: 1px solid #eee;
+    border-top-color: transparent;
     margin: -1px 0 0 -1px;
     transition: all .3s;
 }
