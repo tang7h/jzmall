@@ -2006,7 +2006,7 @@ ul {
     display: block;
 }
 
-.root61 .w {
+.w {
     width: 1210px;
     max-height: 395px;
     overflow: hidden;
@@ -3397,7 +3397,7 @@ h3 {
 }
 
 .m3 {
-}
+}root61
 
 .da0x70 {
     width: 210px;
@@ -3997,13 +3997,9 @@ h3 {
 .plist {
     position: relative;
     float: left;
-    width: 780px;
+    width: 790px;
     padding-top: 32px;
     margin-bottom: 0
-}
-
-.root61 .plist {
-    width: 790px
 }
 
 .tab-arrow {
@@ -4251,12 +4247,8 @@ h3 {
 
 .brands {
     float: right;
-    width: 990px;
+    width: 210px;
     margin-bottom: 0
-}
-
-.root61 .brands {
-    width: 210px
 }
 
 .brands .smt {
