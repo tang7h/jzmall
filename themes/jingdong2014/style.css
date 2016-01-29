@@ -7492,13 +7492,13 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 }
 
 #summary {
-    float: left;
+    float: right;
     width: 452px;
     padding: 10px 0;
 }
 
 .root61 #summary {
-    width: 600px;
+    width: 488px;
 }
 
 #summary-price {
@@ -7520,7 +7520,11 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 }
 
 #summary .dt {
-    font-family: simsun
+    font-family: "微软雅黑";
+    width: 100px;
+    float: left;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 #product-intro .dd {
@@ -7539,7 +7543,8 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 
 #summary-price .p-price {
     color: #e4393c;
-    font-size: 18px
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .seller-link a,
@@ -7676,24 +7681,9 @@ a.d-offline {
     /*margin-bottom: 20px*/
 }
 
-#choose {
-    border-top: 1px dotted #ddd;
-    padding-top: 10px;
-    position: relative;
-}
-
-.root61 #choose {
-    width: 598px
-}
-
-#choose li {
-    overflow: hidden;
-    padding: 5px 0;
-    float: left;
-}
-
 #choose .dt {
-    width: 71px
+    width: 71px;
+    float: left;
 }
 
 #choose-version .dt {
@@ -7908,7 +7898,6 @@ a.d-offline {
 
 #choose #choose-btns {
     border-bottom: 0;
-    padding-left: 10px
 }
 
 #choose li#choose-btns {
@@ -13552,13 +13541,6 @@ table {
 
 .brand-bar-pop i {
     background: url(images/newicon20140417.png) no-repeat;
-}
-
-.brand-bar-pop {
-    width: 210px;
-    float: right;
-    margin: 10px 0 20px;
-    border: 1px solid #ddd;
 }
 
 .brand-bar-pop p {
