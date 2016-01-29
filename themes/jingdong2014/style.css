@@ -2900,7 +2900,7 @@ em {
     height: 30px;
     padding-left: 20px;
     color: #fff;
-    font: 700 15px/33px "microsoft yahei";
+    font: 500 16px/30px "microsoft yahei"；
 }
 
 #categorys-2013 .mt b,
@@ -3119,7 +3119,10 @@ em {
     padding: 0 1em;
 }
 
-h2,
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
 h3 {
     font-size: 14px;
     font-weight: 500;
@@ -3393,6 +3396,9 @@ h3 {
     margin-bottom: 10px
 }
 
+.m3 {
+}
+
 .da0x70 {
     width: 210px;
     height: 70px;
@@ -3479,7 +3485,6 @@ h3 {
 }
 
 .m1 .mt h2 {
-    float: left
 }
 
 .m1 .mt .extra {
@@ -4439,20 +4444,15 @@ h3 {
 }
 
 .root61 #share {
-    width: 446px
+    /*width: 446px*/
+    margin-right: 20px;
 }
 
 .m3 .mt {
-    height: 29px;
-    line-height: 29px;
-    padding: 0 8px;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-top: 2px solid #AAA
 }
 
 .m3 .mt h2 {
-    float: left
+    line-height: 32px;
 }
 
 .m3 .mt .extra {
@@ -4460,19 +4460,19 @@ h3 {
 }
 
 .m3 .mc {
-    border: solid #ddd;
-    border-width: 0 1px 1px
+
 }
 
 .club .mc {
-    height: 161px;
-    padding: 0 10px
+    height: 250px;
+    padding: 20px;
+    background: #fff;
 }
 
 .club li {
     height: 60px;
-    padding: 10px 0 10px 15px;
-    border-bottom: 1px dotted #ccc;
+    margin: 20px;
+    border-bottom: 1px solid #eee;
     overflow: hidden
 }
 
@@ -4506,21 +4506,9 @@ h3 {
     border-left: 0
 }
 
-.club .p-detail {
-    width: 225px;
-    height: 3em;
-    padding-right: 50px;
-    background: url(images/20130330B_1.png) no-repeat 240px -80px;
-    color: #999
-}
-
 .root61 .club .p-detail {
-    width: 285px;
+    height: 3em;
     background-position: 300px -80px
-}
-
-.club .mc {
-    *position: relative
 }
 
 #reading {
