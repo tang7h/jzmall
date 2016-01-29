@@ -3412,10 +3412,6 @@ h3 {
 
 #jdnews {
     float: right;
-    width: 210px
-}
-
-.root61 #jdnews {
     width: 269px
 }
 
@@ -3429,59 +3425,59 @@ h3 {
     border-bottom: 2px solid #ef383a;
 }
 
-.root61 .w:nth-child(1) .catalogue .mt {
+.w:nth-child(1) .catalogue .mt {
     border-bottom: 2px solid #3e73ff;
 }
 
-.root61 .w:nth-child(2) .catalogue .mt {
+.w:nth-child(2) .catalogue .mt {
     border-bottom: 2px solid #a7d22d;
 }
 
-.root61 .w:nth-child(3) .catalogue .mt {
+.w:nth-child(3) .catalogue .mt {
     border-bottom: 2px solid #7b6859;
 }
 
-.root61 .w:nth-child(4) .catalogue .mt {
+.w:nth-child(4) .catalogue .mt {
     border-bottom: 2px solid #EE6C44;
 }
 
-.root61 .w:nth-child(5) .catalogue .mt {
+.w:nth-child(5) .catalogue .mt {
     border-bottom: 2px solid #F24C81;
 }
 
-.root61 .w:nth-child(6) .catalogue .mt {
+.w:nth-child(6) .catalogue .mt {
     border-bottom: 2px solid #6D3283;
 }
 
-.root61 .w:nth-child(7) .catalogue .mt {
+.w:nth-child(7) .catalogue .mt {
     border-bottom: 2px solid #2EBA9A;
 }
 
-.root61 .w:nth-child(1) .catalogue .mt h2 {
+.w:nth-child(1) .catalogue .mt h2 {
     color: #3e73ff;
 }
 
-.root61 .w:nth-child(2) .catalogue .mt h2 {
+.w:nth-child(2) .catalogue .mt h2 {
     color: #a7d22d;
 }
 
-.root61 .w:nth-child(3) .catalogue .mt h2 {
+.w:nth-child(3) .catalogue .mt h2 {
     color: #7b6859;
 }
 
-.root61 .w:nth-child(4) .catalogue .mt h2 {
+.w:nth-child(4) .catalogue .mt h2 {
     color: #EE6C44;
 }
 
-.root61 .w:nth-child(5) .catalogue .mt h2 {
+.w:nth-child(5) .catalogue .mt h2 {
     color: #F24C81;
 }
 
-.root61 .w:nth-child(6) .catalogue .mt h2 {
+.w:nth-child(6) .catalogue .mt h2 {
     color: #6D3283;
 }
 
-.root61 .w:nth-child(7) .catalogue .mt h2 {
+.w:nth-child(7) .catalogue .mt h2 {
     color: #2EBA9A;
 }
 
@@ -4047,10 +4043,6 @@ h3 {
     left: 0
 }
 
-.root61 .plist .smt {
-    width: 158px
-}
-
 .plist .smc {
     position: relative;
     height: 362px;
@@ -4065,8 +4057,8 @@ h3 {
 .plist .slide {
     position: absolute;
     top: 0;
-    left: 157px;
-    width: 467px;
+    left: 158px;
+    width: 473px;
     height: 180px;
     border: 1px solid #eee;
     border-top-color: transparent;
@@ -4077,11 +4069,6 @@ h3 {
 .plist .slide:hover {
 	border: 1px solid #ef383a;
 	z-index: 2;
-}
-
-.root61 .plist .slide {
-    left: 158px;
-    width: 473px
 }
 
 .slide .slide-itemswrap {
@@ -4292,14 +4279,9 @@ h3 {
 
 
 .da209x180 {
-    display: none;
-    width: 209px;
+    width: 210px;
     height: 180px;
     background: #fff;
-}
-
-.root61 .da209x180 {
-    display: block
 }
 
 .da209x180 .slide,
@@ -4431,6 +4413,7 @@ h3 {
     float: left;
     width: 424px;
     margin-right: 20px;
+    margin-bottom: 40px;
 }
 .m3 .mt {
 }
@@ -4565,7 +4548,7 @@ h3 {
 }
 
 #subscription .text {
-    width: 216px;
+    width: 266px;
     color: #999;
     font-size: 14px;
     line-height: 2em;
@@ -4583,7 +4566,8 @@ h3 {
     background: rgb(255,100,100);
     color: #fff;
     border-radius: 2px;
-    font-weight: 700
+    font-weight: 700;
+    outline: none;
 }
 
 #subscription-prompt {
