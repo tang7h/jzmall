@@ -4170,6 +4170,7 @@ h3 {
     border: 1px solid #eee;
     border-top-color: transparent;
     margin: -1px 0 0 -1px;
+    z-index: 1;
     transition: all .3s;
 }
 
