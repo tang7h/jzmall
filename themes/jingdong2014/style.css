@@ -2136,6 +2136,7 @@ ul {
     text-align: center;
     line-height: 24px;
     font-size: 18px;
+    font-weight: 500;
     color: inherit;
     /*background: url(images/iconfont-home.png);*/
 }
@@ -4255,7 +4256,7 @@ h3 {
     display: none
 }
 
-.root61 .brands .smt {
+.brands .smt {
     display: block
 }
 
@@ -4264,11 +4265,6 @@ h3 {
 }
 
 .brands .smc {
-    width: 990px;
-    height: 35px;
-}
-
-.root61 .brands .smc {
     width: 210px;
     height: 180px;
     padding: 0;
@@ -4278,7 +4274,7 @@ h3 {
     width: 990px
 }
 
-.root61 .brands .smc ul {
+.brands .smc ul {
     width: 210px
 }
 
@@ -4294,10 +4290,6 @@ h3 {
     text-align: center
 }
 
-.root61 .brands .smc .fore1,
-.root61 .brands .smc .fore2 {
-    border-top: 0
-}
 
 .da209x180 {
     display: none;
@@ -4432,14 +4424,14 @@ h3 {
 
 #share {
     float: left;
-    width: 386px
+    width: 386px;
 }
 
-.root61 #share {
-    /*width: 446px*/
+.club {
+    float: left;
+    width: 424px;
     margin-right: 20px;
 }
-
 .m3 .mt {
 }
 
@@ -4451,10 +4443,6 @@ h3 {
     float: right
 }
 
-.m3 .mc {
-
-}
-
 .club .mc {
     height: 250px;
     padding: 20px;
@@ -4463,9 +4451,30 @@ h3 {
 
 .club li {
     height: 60px;
-    margin: 20px;
-    border-bottom: 1px solid #eee;
-    overflow: hidden
+    margin: 0 0 20px 0;
+    
+}
+
+.club li:nth-child(1) {
+    border-left-color: #E05751;
+}
+.club li:nth-child(2) {
+    border-left-color: #F5B547;
+}
+.club li:nth-child(3) {
+    border-left-color: #F8C31B;
+}
+.club li:nth-child(4) {
+    border-left-color: #78C355;
+}
+.club li:nth-child(5) {
+    border-left-color: #33C3A2;
+}
+.club li:nth-child(6) {
+    border-left-color: #0993DE;
+}
+.club li:nth-child(7) {
+    border-left-color: #6D3283;
 }
 
 .club .p-img {
@@ -4475,27 +4484,21 @@ h3 {
 }
 
 .club .p-name {
-    height: 1.5em;
-    padding: 3px 0
+    height: 2em;
 }
 
 .club .p-name a:link,
 .club .p-name a:visited {
-    color: #005EA7
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+.club .p-name a:hover {
+    color: #ef383a;
 }
 
 #index_comment {
-    float: left;
-    width: 384px
-}
-
-.root61 #index_comment {
-    width: 444px
-}
-
-#index_comment .mt,
-#index_comment .mc {
-    border-left: 0
+    /*float: left;*/
 }
 
 .root61 .club .p-detail {
@@ -4504,53 +4507,48 @@ h3 {
 }
 
 #reading {
-    float: right;
-    width: 210px;
-    margin-bottom: 6px
+    float: left;
+    width: 360px;
 }
 
-.root61 #reading {
-    width: 310px
-}
 
 #reading .mc {
-    padding: 5px 10px
+    background: #fff;
+    height: 203px;
+    margin-bottom: 10px;
 }
 
 #reading .p-img {
-    display: none;
     float: left;
     width: 100px;
     padding: 0
 }
 
-.root61 #reading .p-img {
-    display: block
-}
-
-#reading .mc a {
-    color: #005EA7
+#reading b {
+    display: none;
 }
 
 #reading ul {
-    width: auto
+    padding: 10px 0;
 }
 
-.root61 #reading ul {
-    float: right;
-    width: 280px
+#reading ul li {
+    line-height: 2;
+    list-style: none;
 }
 
-#reading li {
-    height: 25px;
-    overflow: hidden;
-    line-height: 25px
+#reading .mc a {
+    padding: 4px 20px;
+    display: block;
+}
+#reading .mc a:hover {
+    color: #fff;
+    background: rgba(255,100,100,1);
 }
 
 #subscription {
-    float: right;
+    float: left;
     width: 210px;
-    overflow: visible
 }
 
 #subscription .mt {
@@ -4563,29 +4561,28 @@ h3 {
 
 #subscription .form {
     position: relative;
-    width: 210px
+    width: 350px
 }
 
 #subscription .text {
-    width: 115px;
-    height: 21px;
-    padding: 1px 0 1px 25px;
-    background: url(http://misc.360buyimg.com/product/skin/2013/i/20130330B_1.png) no-repeat -251px -46px;
-    border: 1px inset #bbb;
-    line-height: 21px;
-    color: #999
+    width: 216px;
+    color: #999;
+    font-size: 14px;
+    line-height: 2em;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding: 4px 8px;
+    background: #fff;
+    outline: none;
 }
 
 #subscription .button {
     float: right;
-    width: 63px;
-    height: 25px;
-    background: #E4393C;
+    line-height: 2em;
+    padding: 7px 16px;
+    background: rgb(255,100,100);
     color: #fff;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    line-height: 25px;
+    border-radius: 2px;
     font-weight: 700
 }
 
@@ -4595,22 +4592,6 @@ h3 {
     width: 118px;
     padding: 2px 0;
     text-align: center
-}
-
-.root61 #subscription-prompt {
-    width: 240px
-}
-
-.root61 #subscription .text {
-    width: 215px
-}
-
-.root61 #subscription .form {
-    width: 310px
-}
-
-.root61 #subscription {
-    width: 310px
 }
 
 .ci {
@@ -4643,7 +4624,7 @@ h3 {
 
 .club .p-detail a:link,
 .club .p-detail a:visited {
-    color: #999
+    text-decoration: none;
 }
 
 .club .loading-style1 {
@@ -4809,12 +4790,6 @@ h3 {
 
 .breadcrumb span {
     font-family: "\5b8b\4f53"
-}
-
-.left {
-    float: left;
-    width: 210px;
-    margin-right: 10px;
 }
 
 #sortlist {
@@ -7224,13 +7199,6 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 
 .root61 #product-track .right {
     width: 1000px
-}
-
-#product-track .left {
-    float: left;
-    width: 210px;
-    margin: 0;
-    padding: 0
 }
 
 #product-track #maybe-like {
