@@ -3116,7 +3116,7 @@ em {
 
 #navitems-2013 li a {
     display: inline-block;
-    font: 600 16px/30px "microsoft yahei";
+    font: 500 14px/2 "microsoft yahei";
     text-decoration: none;
     padding: 0 1em;
 }
@@ -3124,6 +3124,7 @@ em {
 h2,
 h3 {
     font-size: 14px;
+    font-weight: 500;
 }
 
 #categorys-2013 .hover span {
