@@ -2009,6 +2009,7 @@ ul {
 .root61 .w {
     width: 1210px;
     max-height: 395px;
+    /*margin-top: 40px;*/
     overflow: hidden;
 }
 
@@ -8510,15 +8511,6 @@ a.d-offline {
     padding: 0 8px;
     overflow: hidden;
     zoom: 1
-}
-
-.related-buy li {
-    padding: 8px 0;
-    border-top: 1px dotted #DEDEDE
-}
-
-.related-buy .fore1 {
-    border-top: 0
 }
 
 .related-buy .p-name strong {
@@ -15068,7 +15060,7 @@ table {
 	box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 
-#popDiv>.box>a {
+#popDiv a {
 	position: absolute;
 	top: 0;
 	right: 0;
