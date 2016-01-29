@@ -25,7 +25,7 @@ Logo filename: logo.gif
 
 body {
     background: #fff;
-    font-family: Arial;
+    font-family: 12px / 1.5 "Microsoft Yahei",Arial,sans-serif;
     font-size: 12px;
     line-height: 20px;
     padding: 0;
