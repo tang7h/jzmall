@@ -2010,6 +2010,8 @@ ul {
 
 .root61 .w {
     width: 1210px;
+    height: 395px;
+    overflow: hidden;
 }
 
 .root61 .w:first-child() {
