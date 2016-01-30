@@ -3965,7 +3965,7 @@ h3 {
 }
 
 .catalogue li {
-    line-height: 24px;
+    line-height: 28px;
     overflow: hidden;
     vertical-align: bottom
 }
@@ -4413,6 +4413,11 @@ h3 {
     margin-right: 20px;
     margin-bottom: 40px;
 }
+
+.club .tempWrap {
+    height: 220px!important;
+}
+
 .m3 .mt {
 }
 
@@ -4425,7 +4430,7 @@ h3 {
 }
 
 .club .mc {
-    height: 250px;
+    height: 220px;
     padding: 20px;
     background: #fff;
 }
@@ -4478,6 +4483,9 @@ h3 {
     color: #ef383a;
 }
 
+.club .tempwrap {
+    height: 220px!important;
+}
 #index_comment {
     /*float: left;*/
 }
@@ -4495,7 +4503,8 @@ h3 {
 
 #reading .mc {
     background: #fff;
-    height: 203px;
+    height: 156px;
+    padding: 10px 0;
     margin-bottom: 10px;
 }
 
@@ -4510,7 +4519,8 @@ h3 {
 }
 
 #reading ul {
-    padding: 10px 0;
+    height: 156px;
+    overflow: hidden;
 }
 
 #reading ul li {
@@ -4530,10 +4540,6 @@ h3 {
 #subscription {
     float: left;
     width: 210px;
-}
-
-#subscription .mt {
-    margin-bottom: 2px
 }
 
 #subscription .mc {
