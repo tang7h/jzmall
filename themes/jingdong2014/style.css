@@ -3417,6 +3417,7 @@ h3 {
 .m2 .mt,
 .sm1 .smt,
 .sm2 .smt {
+    position: relative;
     height: 16px;
     line-height: 16px;
     padding: 7px;
@@ -3490,7 +3491,14 @@ h3 {
 .m .mt .extra a:visited,
 .sm .smt .extra a:link,
 .sm .smt .extra a:visited {
-    color: #005EA7
+    color: #fe596a;
+    border-radius: 2em;
+    padding: .2em .5em;
+}
+.m .mt .extra a:hover {
+    color: #fff;
+    background: #fe596a;
+    text-decoration: none;
 }
 
 .m1 .mc,
@@ -4315,14 +4323,12 @@ h3 {
     padding: 5px 0;
     background: 0;
     border-radius: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0
 }
 
 .da209x180 .slide-controls span b {
     display: block;
     height: 5px;
-    background: rgb(0,0,0,.5);
+    background: rgba(0,0,0,.5);
     overflow: hidden
 }
 
@@ -10132,7 +10138,9 @@ a.btn:hover span {
 }
 
 .mt .extra {
-    float: right;
+    position: absolute;
+    bottom: 4px;
+    right: 0;
 }
 
 #regist .mt .extra {
