@@ -146,13 +146,13 @@
     border-radius: 2px;
 }
 
-.new_top-nav ul li {
+.new_top-nav>ul>li {
     background: #eee;
     width: 50px;
     height: 50px;
 }
 
-.new_top-nav ul>li>a {/*小方块*/
+.new_top-nav>ul>li>a {/*小方块*/
     color: #333;
     text-decoration: none;
     display: block;
@@ -195,17 +195,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #29c4ca;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out
+    background: rgb(255,100,100);
+    opacity: 0;
 }
 
 .hvr-sweep-to-bottom:active,
@@ -217,8 +208,7 @@
 .hvr-sweep-to-bottom:active:before,
 .hvr-sweep-to-bottom:focus:before,
 .hvr-sweep-to-bottom:hover:before {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1)
+    opacity: 1;
 }
 /*
 .new_top-nav ul li a.color {

@@ -2515,9 +2515,6 @@ ul {
 }
 
 #my360buy-2013 .prompt {
-    padding: 6px 6px 6px 9px;
-    border-bottom: 1px solid #EEE;
-    line-height: 25px;
     overflow: hidden;
     zoom: 1
 }
@@ -2551,8 +2548,6 @@ ul {
 
 #my360buy-2013 .orderlist {
     width: 300px;
-    padding: 8px 5px;
-    border-bottom: 1px solid #E6E6E6
 }
 
 #my360buy-2013 .smt h4 {
@@ -2581,8 +2576,7 @@ ul {
 }
 
 #my360buy-2013 .uclist .fore1 {
-    border-right: 1px solid #F1F1F1;
-    width: 100px;
+    
 }
 
 #my360buy-2013 .uclist a:link,
