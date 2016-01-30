@@ -4051,7 +4051,9 @@ h3 {
 
 .plist .smc {
     position: relative;
+    width: 791px;
     height: 362px;
+    overflow: hidden;
     background: #fff;
     transition: all .3s;
 }
@@ -4063,7 +4065,7 @@ h3 {
 .plist .slide {
     position: absolute;
     top: 0;
-    left: 158px;
+    left: 159px;
     width: 473px;
     height: 180px;
     border: 1px solid #eee;
@@ -4150,7 +4152,7 @@ h3 {
 }
 
 .plist .style1 .fore2 {
-    margin-left: 473px;
+    margin-left: 474px;
 }
 
 
@@ -4164,7 +4166,7 @@ h3 {
     width: 137px;
     border: 1px solid #eee;
     border-top-color: transparent;
-    margin: -1px 0 0 -1px;
+    margin: -1px -1px 0 0;
     z-index: 1;
     transition: all .3s;
 }
