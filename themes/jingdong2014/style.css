@@ -2481,7 +2481,16 @@ ul {
 }
 
 #my360buy-2013 {
-    height: 62px;
+    /*height: 62px;*/
+}
+
+#my360buy-2013 dl>dt>a,
+.settleup-2013 dl>dt>a{
+    text-decoration: none;
+    color: #333;
+    padding: 16px 0;
+    text-align: center;
+    display: block;
 }
 
 #my360buy-2013 dt b {
@@ -2651,7 +2660,7 @@ ul {
 }
 
 .settleup-2013 {
-    height: 62px;
+    /*height: 62px;*/
 }
 
 .settleup-2013 .prompt {
