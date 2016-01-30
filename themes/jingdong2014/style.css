@@ -1394,13 +1394,6 @@ h6 span {
     background: url(images/ur_bg.gif) no-repeat 0px 0px;
 }
 
-.us_Submit {
-    border: none;
-    width: 115px;
-    height: 40px;
-    background: url(images/bnt_ur_log.gif);
-}
-
 .us_Submit_reg {
     border: none;
     width: 113px;
