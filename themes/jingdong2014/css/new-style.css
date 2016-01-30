@@ -220,7 +220,7 @@
     -webkit-transform: scaleY(1);
     transform: scaleY(1)
 }
-
+/*
 .new_top-nav ul li a.color {
     background: #e8008a
 }
@@ -234,7 +234,7 @@
     text-decoration: none;
     position: relative;
     display: block
-}
+}*/
 
 .new_top-nav ul li a:hover dd {
     position: absolute;
@@ -246,7 +246,7 @@
     top: 0;
     display: none
 }
-
+/*
 .new_top-nav ul li a.color3 {
     background: #5e2c8f
 }
@@ -254,7 +254,7 @@
 .new_top-nav ul li a.color4 {
     background: #ffc410
 }
-
+*/
 .new_blank {
     position: relative;
     z-index: 999;
