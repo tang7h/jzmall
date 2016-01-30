@@ -2506,12 +2506,12 @@ ul {
 
 #my360buy-2013 dd {
     display: none;
-    position: relative;
-    left: 70px;
+    position: absolute;
+    left: 50px;
+    top: 0;
     width: 310px;
-    top: -33px;
-    border: 1px solid #E3E3E3;
-    background: #fff
+    background: #fff;
+
 }
 
 #my360buy-2013 .prompt {
@@ -2524,22 +2524,11 @@ ul {
 
 #my360buy-2013 dl.hover dd {
     display: block;
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .12)
 }
 
 #my360buy-2013 .prompt a,
 #my360buy-2013 .orderlist a {
     color: #005EA7
-}
-
-#my360buy-2013 .prompt {
-    padding: 6px 6px 6px 9px;
-    border-bottom: 1px solid #EEE;
-    line-height: 25px;
-    overflow: hidden;
-    zoom: 1
 }
 
 #my360buy-2013 .prompt .btn-login {
@@ -2635,6 +2624,7 @@ ul {
 }
 
 #my360buy-2013 dl.hover s {
+    display: none;
     position: absolute;
     bottom: -10px;
     left: -10px;
@@ -2642,7 +2632,7 @@ ul {
     height: 10px;
     background: #fff
 }
-
+/*
 #my360buy-2013 dl.hover dt {
     height: 32px;
     border-bottom: 0;
@@ -2658,7 +2648,7 @@ ul {
     border-style: dashed dashed solid;
     border-color: transparent transparent #CCC
 }
-
+*/
 .settleup-2013 {
     /*height: 62px;*/
 }
@@ -2716,9 +2706,9 @@ ul {
 .settleup-2013 dd {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 50px;
     width: 350px;
-    left: 70px;
+    left: 50px;
 }
 
 #settleup-content {
@@ -2858,14 +2848,12 @@ ul {
     left: -10px;
     width: 134px;
     height: 10px;
-    background: #fff
+    background: #fff;
+    display: none;/*暂时隐藏*/
 }
 
 .settleup-2013 dl.hover dd {
     display: block;
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .12)
 }
 
 em {
