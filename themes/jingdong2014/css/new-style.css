@@ -473,7 +473,8 @@ body.new_active {
 }
 
 .new_mc ul li {
-    text-align: center;
+    /*text-align: center;*/
+    /*因为影响到了商品标题*/
 }
 
 .new_mc ul li a {
@@ -532,7 +533,7 @@ body.new_active {
 }
 
 .goods_mt {
-    border-bottom: 1px #000 solid
+    /*border-bottom: 1px #000 solid*/
 }
 
 .goods_mc {

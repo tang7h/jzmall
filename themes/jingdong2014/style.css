@@ -8355,20 +8355,23 @@ a.d-offline {
     overflow: hidden
 }
 
+#ranklist a {
+    padding: 0;
+}
+
 #ranklist .tab li,
 #ranklist .tab a,
 #ranklist .tab-item {
-    float: left;
-    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0 .5em;
+    cursor: pointer;
 }
 
 
 #ranklist .tab .curr {
-    font-weight: 700;
-    background-color: #fff;
-    color: #e4393c;
-    height: 21px;
-    margin-bottom: -1px
+    color: #fff;
+    background: rgb(255,100,100);
 }
 
 #ranklist .tabcon {
@@ -8376,15 +8379,14 @@ a.d-offline {
 }
 
 #ranklist .tabcon {
-    padding: 0 5px
+    /*padding: 0 5px*/
 }
 
 #ranklist .tabcon li {
-	width: 190px;
+	width: 140px;
     position: relative;
     height: 50px;
-    padding: 8px 0 8px 70px;
-    zoom: 1;
+    padding: 8px 0 8px 50px;
 }
 
 #ranklist .tabcon span,
@@ -8394,18 +8396,19 @@ a.d-offline {
 }
 
 #ranklist .tabcon span {
-    left: -3px;
+    left: 24px;
     width: 18px;
     height: 18px;
     background-position: -256px -322px;
     text-align: center;
     color: #fff;
     font-size: 10px;
-    color: #ddd
+    color: #ddd;
+    z-index: 2;
 }
 
 #ranklist .tabcon .p-img {
-    left: 15px;
+    left: -12px;
     padding: 0
 }
 
