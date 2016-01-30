@@ -5343,7 +5343,6 @@ h3 {
 .floor_cat_top .mt .extra a:visited,
 .floor_cat_top .mt .extra a:link {
     padding: 0 10px;
-    border-right: 1px solid #333;
     color: #333;
 }
 
@@ -5754,10 +5753,7 @@ h3 {
     width: 248px;
 }
 
-.right-extra {
-    float: right;
-    width: 770px
-}
+
 
 
 /*顶级分类页样式 end*/
@@ -5765,9 +5761,7 @@ h3 {
 
 /*商品列表页样式 start*/
 
-.root61 .right-extra {
-    width: 990px
-}
+
 
 .main .left {
     margin: 0;
@@ -14963,23 +14957,7 @@ table {
 
 
 /*顶栏按钮 by唐瑞峰*/
-#ECS_MEMBERZONE ul li {
-	margin: 4px 16px 0 0 !important;
 
-}
-#ECS_MEMBERZONE ul li a {
-	color: #fff;
-	border: 1px solid #fff;
-	padding: .4em .5em;
-	font-weight: 500;
-	font-size: 14px;
-	font-family: inherit;
-	border-radius: 4px;
-}
-#ECS_MEMBERZONE ul li a:hover {
-	color: #333;
-	background: #fff;
-}
 
 /*地图层*/
 .new_top-nav {
@@ -15031,4 +15009,11 @@ table {
 	opacity: 1;
 	background: rgba();
 	background: radial-gradient(ellipse at center, rgba(0,0,0,.5) 0%,rgba(0,0,0,.7) 100%);
+}
+.extra_1{
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    top: 14px;
+    float: right;
 }
