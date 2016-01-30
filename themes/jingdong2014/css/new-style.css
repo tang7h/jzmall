@@ -518,17 +518,17 @@ body.new_active {
 
 .new_goods_name {
     float: right;
-    width: 700px
+    width: 700px;
+    padding: 50px 0;
 }
 
 .new_goods_name_s {
     width: 700px;
-    margin-top: 50px;
-    border-bottom: 3px #000 solid
 }
 
 .new_goods_name_s h1 {
-    font: 700 17px/1.5em Arial, Verdana, "microsoft yahei"
+    font-size: 28px;
+    line-height: 38px;
 }
 
 .new_goods_name_s strong {
@@ -559,4 +559,34 @@ body.new_active {
 
 .new_goods {
     float: left
+}
+
+/*商品信息块*/
+#summary {
+    float: left;
+}
+
+#summary .dt {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#product-detail {
+    background: #fff;
+    margin: 20px;
+}
+
+.tab a {
+    text-decoration: none;
+    border-radius: 9px;
+    padding: 1px 7px;
+}
+
+.tab a:hover {
+    color: #fff;
+    background: rgb(255,100,100);
+}
+
+#comment .mt {
+    
 }
