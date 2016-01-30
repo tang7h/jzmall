@@ -412,7 +412,8 @@ body.new_active {
 
 .new_section {
     float: left;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 2px;
 }
 
 .web_content {
@@ -588,5 +589,5 @@ body.new_active {
 }
 
 #comment .mt {
-    
+
 }
