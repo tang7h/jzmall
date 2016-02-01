@@ -13412,8 +13412,6 @@ table {
 
 .brand-bar-pop p {
     padding: 10px 0 10px 10px;
-    float: left;
-    width: 200px;
 }
 
 .brand-bar-pop p label {
@@ -13542,8 +13540,16 @@ table {
 
 .enter-shop {
     padding-top: 10px;
-    width: 210px;
+    width: 190px;
     float: left;
+}
+
+.enter-shop a {
+    display: block;
+    line-height: 38px;
+    text-align: center;
+    color: #005ea7;
+    border-top: 1px solid #ddd;
 }
 
 .enter-shop a:hover {
@@ -14354,17 +14360,11 @@ table {
 }
 
 .brand-bar-pop {
-    width: 210px;
+    width: 190px;
     float: right;
     margin: 10px 0 20px;
     border: 1px solid #ddd;
     border-radius: 2px;
-}
-
-.brand-bar-pop p {
-    padding: 10px 0 10px 10px;
-    float: left;
-    width: 200px;
 }
 
 .brand-bar-pop p label {
@@ -14485,24 +14485,6 @@ table {
 
 .brand-bar-pop p.pop-company {
     border-top: 1px dotted #ddd;
-}
-
-.enter-shop {
-    padding-top: 10px;
-    width: 210px;
-    float: left;
-}
-
-.enter-shop a {
-    display: block;
-    line-height: 38px;
-    text-align: center;
-    color: #005ea7;
-    border-top: 1px solid #ddd;
-}
-
-.enter-shop a:hover {
-    background-color: #eee;
 }
 
 .enter-shop2 {
