@@ -11940,6 +11940,9 @@ input {
 /*商品评分系统*/
 
 #comment {
+    background: #f8f8f8;
+    padding-bottom: 33px;
+    margin-bottom: 0;
 }
 
 #comment .mt {
@@ -12073,6 +12076,7 @@ em {
 
 .slideTxtBox {
     overflow: visible;
+    margin-top: -33px;
 }
 
 .slideTxtBox .hd {
@@ -12085,10 +12089,7 @@ em {
 
 .slideTxtBox .hd ul {
     float: left;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    height: 30px;
+    margin-left: 10px;
 }
 
 .slideTxtBox .hd ul li {
