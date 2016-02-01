@@ -66,16 +66,17 @@
 }
 
 .new_login ul li a {
-    color: #FFF;
-    border: 1px solid #6A6969;
-    padding: 3px 5px;
+    text-decoration: none;
+    color: #eee;
+    border: 1px solid #eee;
+    padding: 3px 8px;
     font-family: "微软雅黑";
-    font-size: 15px
+    font-size: 14px;
 }
 
 .new_login ul li a:hover {
-    text-decoration: none;
-    color: #ef383a
+    color: #333;
+    background: #eee;
 }
 
 .new_search {
