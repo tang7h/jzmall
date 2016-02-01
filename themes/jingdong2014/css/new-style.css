@@ -417,7 +417,8 @@ body.new_active {
 }
 
 .breadcrumb_goods {
-    height: 40px;
+    height: 18px;
+    margin: 11px;
     overflow: hidden;
     vertical-align: baseline;
     width: 15%;
