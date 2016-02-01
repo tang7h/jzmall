@@ -393,7 +393,7 @@ body.new_active {
     -webkit-overflow-scrolling: touch;
     overflow-scrolling: touch;
     position: absolute;
-    overflow: hidden;
+    /*overflow: hidden;避免阴影被裁剪*/
     margin-top: 20px
 }
 
@@ -401,8 +401,12 @@ body.new_active {
     float: left;
     overflow: hidden;
     border-radius: 2px;
+    transition: all .3s;
 }
 
+.new_section:hover {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.2);
+}
 .web_content {
     width: 3862px;
     width: -moz-max-content;
@@ -514,7 +518,7 @@ body.new_active {
 }
 
 .new_goods_name_s {
-    width: 700px;
+    /*width: 700px;*/
 }
 
 .new_goods_name_s h1 {

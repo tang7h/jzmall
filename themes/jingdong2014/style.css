@@ -13543,15 +13543,6 @@ table {
     float: left;
 }
 
-.enter-shop a {
-    display: block;
-    height: 31px;
-    line-height: 31px;
-    text-align: center;
-    color: #005ea7;
-    border-top: 1px solid #ddd;
-}
-
 .enter-shop a:hover {
     background-color: #eee;
 }
@@ -14364,6 +14355,7 @@ table {
     float: right;
     margin: 10px 0 20px;
     border: 1px solid #ddd;
+    border-radius: 2px;
 }
 
 .brand-bar-pop p {
@@ -14500,8 +14492,7 @@ table {
 
 .enter-shop a {
     display: block;
-    height: 31px;
-    line-height: 31px;
+    line-height: 38px;
     text-align: center;
     color: #005ea7;
     border-top: 1px solid #ddd;
