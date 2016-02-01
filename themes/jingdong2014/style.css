@@ -55,7 +55,9 @@ p {
     border: none;
     list-style-type: none;
 }
-
+::selection {
+    background: #eee;
+}
 .tmall-mobile .join {
     width: 100px;
     height: 100px;
@@ -3094,7 +3096,7 @@ em {
 }
 
 #navitems-2013 .curr a,
-#navitems-2013 .hover a {
+#navitems-2013 a:hover {
     color: #c40000;
     border-bottom: 3px #c40000 solid;
 }
@@ -3106,7 +3108,10 @@ em {
     font-weight: 700;
     line-height: 40px;
     text-decoration: none;
-    padding: 0 2em;
+    border-bottom: 0px #c40000 solid;
+    padding: 0 1em;
+    margin: 0 1em;
+    transition: all .1s;
 }
 
 #navitems-2013 li a:hover {
@@ -4188,6 +4193,9 @@ h3 {
     margin-bottom: 2px
 }
 
+.p-name a{/*新增选择器*/
+    text-decoration: none;
+}
 .p-price {
     color: #999
 }

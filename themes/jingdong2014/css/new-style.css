@@ -35,13 +35,12 @@
 }
 
 .shoucang a {
-    color: #c6c6c6;
-    color: rgba(255, 255, 255, .8);
+    color: #ccc;
     text-decoration: none
 }
 
 .shoucang a:hover {
-    color: #ef383a
+    color: #fff;
 }
 
 .dd_phone {
@@ -75,7 +74,8 @@
 
 .new_login ul li a:hover {
     color: #333;
-    background: #eee;
+    background: #fff;
+    border-color: #fff;
 }
 
 .new_search {
