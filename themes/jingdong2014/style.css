@@ -3092,14 +3092,20 @@ em {
 
 #navitems-2013 .curr a,
 #navitems-2013 .hover a {
-    border-bottom: 3px #E40000 solid;
+    color: rgba(255,255,255,.8);
+    border-bottom: 3px rgb(255,100,100) solid;
 }
 
 #navitems-2013 li a {
+    color: rgba(255,255,255,.8);
     display: inline-block;
     font: 500 14px/2 "microsoft yahei";
     text-decoration: none;
     padding: 0 1em;
+}
+
+#navitems-2013 li a:hover {
+    color: #fff;
 }
 
 h2 {
@@ -7444,7 +7450,6 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
     width: 100px;
     float: left;
     font-weight: 500;
-    font-size: 15px;
 }
 
 #product-intro .dd {
@@ -7821,7 +7826,8 @@ a.d-offline {
 }
 
 #choose li#choose-btns {
-    overflow: visible
+    overflow: visible;
+    margin-top: 60px;/*临时修正位置*/
 }
 
 #choose-btns .btn-append {
@@ -7833,12 +7839,18 @@ a.d-offline {
     position: relative;
     font: 400 18px/38px "microsoft yahei";
     text-align: center;
-    color: #e4393c
+    color: #fff;
+    background: rgba(228,57,60,0.84);
+    border-radius: 2px;
+    transition: all .3s;
 }
 
+#choose-btns .btn a:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,.2), 0 1px 4px rgba(0,0,0,.2);
+}
 #choose-btns .btn a.btn-coll1 label {
     font: 400 12px/30px "microsoft yahei";
-    color: #000;
+    color: #999;
 }
 
 #choose-btns #compareLink_on label {
@@ -7860,7 +7872,9 @@ a.d-offline {
 }
 
 #choose-btns #choose-btn-append a {
-    line-height: 38px
+    line-height: 38px;
+    background: #e4393c;
+
 }
 
 #choose-btns .btn-append b {
@@ -7869,8 +7883,6 @@ a.d-offline {
 
 #choose-btns .btn a b,
 .nav-minicart-btn a {
-    background-image: url(images/p-btns-20140611.png);
-    background-repeat: no-repeat
 }
 
 #choose-btns .btn a b {
@@ -7926,7 +7938,12 @@ a.d-offline {
     width: 72px;
     height: 34px;
     line-height: 32px;
-    margin-right: 10px
+    margin-top: 4px;
+    background: #fff;
+}
+
+#choose-btns .btn a.btn-coll1 {
+    box-shadow: none;
 }
 
 #choose .dd {
@@ -7945,13 +7962,14 @@ a.d-offline {
     position: absolute;
     top: 0;
     left: 0;
+    margin: 20px;
 }
 
 .jqzoom {
 	position: absolute;
-    padding: 0;
+    padding: 20px;
     float: left;
-    margin-left: 90px;
+    margin-left: 100px;
 }
 
 #spec-list {
@@ -8433,14 +8451,10 @@ a.d-offline {
 }
 
 .related-buy ul {
-    padding: 0 8px;
     overflow: hidden;
-    zoom: 1
 }
 
 .related-buy li {
-    padding: 8px 0;
-    border-top: 1px dotted #DEDEDE
 }
 
 .related-buy .fore1 {

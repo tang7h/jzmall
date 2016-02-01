@@ -1,6 +1,6 @@
 .new_top {
     width: 100%;
-    background: #000;
+    background: rgba(20,20,20,.95);
     height: 45px;
     z-index: 9999;
     position: fixed;
@@ -250,8 +250,8 @@
     z-index: 999;
     width: 100%;
     height: 30px;
-    background: #fff;
-    background: rgba(255, 255, 255, .8);
+    background: #fff;    
+    background: rgba(20,20,20,.95);
     box-shadow: 0 0 10px rgba(0, 0, 0, .12)
 }
 
@@ -507,8 +507,9 @@ body.new_active {
 
 .new_goods_name {
     float: right;
-    width: 700px;
+    width: 680px;
     padding: 50px 0;
+    margin-right: 20px;
 }
 
 .new_goods_name_s {
@@ -529,7 +530,8 @@ body.new_active {
     width: 1350px;
     height: 250px;
     bottom: 0;
-    position: absolute
+    position: absolute;
+    margin: 10px 20px 0;
 }
 
 .goods_mt {
@@ -537,7 +539,7 @@ body.new_active {
 }
 
 .goods_mc {
-    margin-top: 20px
+    /*margin-top: 20px*/
 }
 
 .goods_mc ul li {
@@ -556,7 +558,6 @@ body.new_active {
 }
 
 #summary .dt {
-    font-size: 14px;
     line-height: 24px;
 }
 
