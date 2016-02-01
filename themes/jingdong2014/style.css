@@ -2912,7 +2912,7 @@ em {
     width: 210px;
     height: 410px;
     background: #333;
-    background: rgba(0, 0, 0, .9);
+    background: rgba(30,30,30,.98);
     border-radius: 0 0 2px 2px;
     animation: droplist .3s;
 }
@@ -4133,10 +4133,6 @@ h3 {
 }
 
 .plist .smc ul.lh {
-    width: 781px
-}
-
-.root61 .plist .smc ul.lh {
     width: 791px
 }
 
@@ -11951,6 +11947,10 @@ input {
 
 #comment h2 {
     text-align: left;
+    height: 22px;
+    padding-left: 40px;
+    padding-top: 10px;
+    background: url(images/iconfont-feedback.png) no-repeat;
 }
 
 #comment .mc {
