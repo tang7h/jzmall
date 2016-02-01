@@ -2857,7 +2857,6 @@ em {
 #nav-2013 {
     position: relative;
     z-index: 6;
-    height: 30px;
     padding-left: 210px;
 }
 
@@ -2880,10 +2879,12 @@ em {
 
 #categorys-2013 .mt a {
     display: block;
-    height: 30px;
     padding-left: 20px;
+    line-height: 40px;
     color: #fff;
-    font: 500 16px/30px "microsoft yahei";
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 #categorys-2013 .mt b,
@@ -2938,7 +2939,7 @@ em {
 }
 
 #categorys-2013 h3 {
-    line-height: 26px;
+    line-height: 28px;
     margin-left: 20px;
     background-image: none;
     font-weight: 400
@@ -3077,7 +3078,7 @@ em {
 #navitems-2013,
 #navitems-2013 li,
 #navitems-2013 li a {
-    height: 30px
+    /*height: 30px*/
 }
 
 #navitems-2013 li {
@@ -3092,20 +3093,22 @@ em {
 
 #navitems-2013 .curr a,
 #navitems-2013 .hover a {
-    color: rgba(255,255,255,.8);
-    border-bottom: 3px rgb(255,100,100) solid;
+    color: #c40000;
+    border-bottom: 3px #c40000 solid;
 }
 
 #navitems-2013 li a {
-    color: rgba(255,255,255,.8);
+    color: #333;
     display: inline-block;
-    font: 500 14px/2 "microsoft yahei";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
     text-decoration: none;
-    padding: 0 1em;
+    padding: 0 2em;
 }
 
 #navitems-2013 li a:hover {
-    color: #fff;
+    color: #c40000;
 }
 
 h2 {
