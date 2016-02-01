@@ -484,7 +484,8 @@ body.new_active {
 }
 
 .new_gallery li {
-    padding: 0 10px 10px
+    border: 1px solid #ddd;
+    margin: 0 10px 10px;
 }
 
 .bdshare-button-style0-16 {

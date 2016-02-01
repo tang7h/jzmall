@@ -3110,7 +3110,7 @@ em {
 
 h2 {
     font-size: 18px;
-    font-weight: 500;
+    /*font-weight: 500;*/
 }
 h3 {
     font-size: 14px;
@@ -7158,13 +7158,8 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 }
 
 #product-track {
-    border-top: 2px solid #999;
+    /*border-top: 2px solid #999;*/
     overflow: hidden;
-    *zoom: 1
-}
-
-#product-track {
-    margin-top: 10px
 }
 
 #product-track .right {
@@ -8833,25 +8828,6 @@ a.d-offline {
     font-size: 14px
 }
 
-#comment {
-    border-top: 2px solid #999;
-}
-
-#comment h2 {
-    padding: 0 12px;
-    font-size: 14px;
-    text-align: left;
-    font-weight: 400;
-}
-
-#comment .mc {
-    padding: 10px 0;
-    overflow: hidden;
-    zoom: 1;
-    border: 1px solid #ddd;
-    border-top: 0
-}
-
 #comment .mt,
 #comment .mc {
     position: static;
@@ -8904,29 +8880,6 @@ a.d-offline {
 #comment .percent dt {
     float: left;
     width: 80px
-}
-
-#comment .percent dd {
-    float: left;
-    width: 100px;
-    height: 10px;
-    margin-top: 6px;
-    overflow: hidden;
-    background: #efefef
-}
-
-#comment .percent dd div {
-    overflow: hidden;
-    height: 10px;
-    width: 0;
-    margin: 0;
-    background-color: #ED0000;
-    background-image: -ms-linear-gradient(top, #ED0000 0, #A50000 100%);
-    background-image: -moz-linear-gradient(top, #ED0000 0, #A50000 100%);
-    background-image: -o-linear-gradient(top, #ED0000 0, #A50000 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ED0000), color-stop(1, #A50000));
-    background-image: -webkit-linear-gradient(top, #ED0000 0, #A50000 100%);
-    background-image: linear-gradient(to bottom, #ED0000 0, #A50000 100%)
 }
 
 #comment .btns {
@@ -11976,31 +11929,19 @@ input {
 /*商品评分系统*/
 
 #comment {
-    border-top: 2px solid #999;
 }
 
 #comment .mt {
-    overflow: visible;
-    height: 30px;
-    background: 0;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    font: 14px/30px 'microsoft yahei';
+    border: none;
 }
 
 #comment h2 {
-    padding: 0 12px;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: "microsoft yahei";
+    text-align: left;
 }
 
 #comment .mc {
     padding: 10px 0;
     overflow: hidden;
-    zoom: 1;
-    border: 1px solid #ddd;
-    border-top: 0;
 }
 
 #comment .rate {
@@ -12056,15 +11997,15 @@ input {
     margin-top: 6px;
     overflow: hidden;
     background: #efefef;
+    border-radius: 5px;
 }
 
 #comment .percent dd div {
     overflow: hidden;
     height: 10px;
     width: 0;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ed0000), to(#a50000));
-    background: -moz-linear-gradient(top, #ed0000, #a50000);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ed0000', endColorstr='#a50000');
+    background: tomato;
+    border-radius: 5px;
     margin: 0;
 }
 
@@ -12121,19 +12062,12 @@ em {
 
 .slideTxtBox {
     overflow: visible;
-    padding-top: 2px;
-    background: url(images/tab.png) 0 -41px repeat-x;
-    _clear: both;
-    margin-top: 20px;
 }
 
 .slideTxtBox .hd {
     overflow: visible;
     height: 30px;
     line-height: 30px;
-    background: 0;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
     position: relative;
     border-bottom: none;
 }
@@ -12159,21 +12093,12 @@ em {
 }
 
 .slideTxtBox .hd ul li.on {
-    height: 34px;
-    background: #fff;
-    border-top: 2px solid #e4393c;
-    color: #e4393c;
-    background-color: #fff;
-    margin-top: -6px;
 }
 
 .slideTxtBox .hd ul li.on a {
-    height: 34px;
-    line-height: 34px;
-    padding: 0 12px;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
     color: #e4393c;
+    border-bottom: 3px solid #E4393C;
+    margin-bottom: 3px;
 }
 
 .slideTxtBox .hd ul li a:hover {
