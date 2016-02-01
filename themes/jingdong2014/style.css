@@ -2914,14 +2914,14 @@ em {
     background: #333;
     background: rgba(0, 0, 0, .9);
     border-radius: 0 0 2px 2px;
-    overflow: hidden;
     animation: droplist .3s;
 }
 @keyframes droplist {
     0%{
-        height: 0;
+        opacity: 0;
     }
     100%{
+        opacity: 1
     }
 
 }
