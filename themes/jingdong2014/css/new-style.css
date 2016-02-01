@@ -392,7 +392,7 @@ body.new_active {
     -webkit-overflow-scrolling: touch;
     overflow-scrolling: touch;
     position: absolute;
-    /*overflow: hidden;避免阴影被裁剪*/
+    overflow: hidden;
     margin-top: 20px
 }
 
