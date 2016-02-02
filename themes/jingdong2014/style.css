@@ -3083,7 +3083,7 @@ em {
 #navitems-2013,
 #navitems-2013 li,
 #navitems-2013 li a {
-    /*height: 30px*/
+    height: 30px;
 }
 
 #navitems-2013 li {
@@ -10381,8 +10381,9 @@ a.flk04:visited {
 }
 
 #entry .item {
-    height: 64px;
     line-height: 26px;
+    height: 40px;
+    margin-bottom: 20px;
     overflow: visible;
     position: relative;
     width: 320px;
@@ -10399,6 +10400,7 @@ a.flk04:visited {
     line-height: 20px;
     display: block;
     margin-top: 1px;
+    display: none;
 }
 
 #entry .item .item-ifo {
@@ -10410,14 +10412,13 @@ a.flk04:visited {
 #entry .text {
     float: none;
     width: 282px;
-    height: 24px;
-    line-height: 24px;
+    line-height: 32px;
     padding: 4px 20px 4px 3px;
     margin-right: 8px;
     border: none;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 1px solid #ccc;
     outline: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 #entry .text:focus {
     border-bottom-color: #333;
@@ -10457,6 +10458,7 @@ input:-webkit-autofill {
 #entry #autoentry {
     height: 37px;
     color: #333;
+    margin: 0;
 }
 
 #entry .checkbox {
