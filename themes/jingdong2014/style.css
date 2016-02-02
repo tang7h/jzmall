@@ -10357,17 +10357,17 @@ a.flk04:visited {
 }
 
 #entry {
-    background: #e8e8e8;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    padding: 5px;
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
     margin: 60px auto 55px;
     position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.2);
 }
 
 #entry .mc {
-    border: 1px solid #e1e1e1;
     background: #ffffff;
     height: 355px;
 }
@@ -10414,11 +10414,23 @@ a.flk04:visited {
     height: 24px;
     line-height: 24px;
     padding: 4px 20px 4px 3px;
-    border: 1px solid #cccccc;
+    margin-right: 8px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
     font-size: 14px;
-    font-family: arial, "宋体";
+}
+#entry .text:focus {
+    border-bottom-color: #333;
+}
+input:-webkit-autofill {
+    color: inherit;
+    background: #fff!important;
 }
 
+#entry-bg {/*图像占位*/
+    background: #c40000;
+}
 #entry .item-ifo .ico {
     position: absolute;
     right: 12px;
@@ -10485,12 +10497,20 @@ a.flk04:visited {
 
 #entry .btn-entry {
     width: 307px;
-    height: 34px;
+    font-size: 18px;
+    line-height: 18px;
+    padding: .6em 0;
+    border-radius: 2px;
+    color: #fff;
+    background: #e53935;
     font-family: "微软雅黑";
-    line-height: 100px;
-    text-indent: -9999px;
-    background: url(images/login-all-bg.png) no-repeat 0 -61px;
     overflow: hidden;
+    outline: none;
+    transition: all .2s;
+}
+#entry .btn-entry:hover {
+    background: #EF5350;
+    box-shadow: 0 1px 4px rgba(0,0,0,.1), 0 2px 8px rgba(0,0,0,.1);
 }
 
 #entry .text-1 {
@@ -10500,9 +10520,8 @@ a.flk04:visited {
 
 #entry .coagent {
     position: absolute;
-    right: 0;
+    left: 560px;
     bottom: 26px;
-    width: 350px;
     line-height: 26px;
     z-index: 99999;
 }
@@ -10535,35 +10554,31 @@ a.flk04:visited {
 
 .free-regist {
     position: absolute;
-    right: 42px;
-    bottom: -31px;
-    background: #E8E8E8;
-    width: 115px;
-    height: 32px;
+    right: 44px;
+    bottom: 34px;
     text-align: center;
-    line-height: 32px;
-    -moz-border-radius: 0 0 3px 3px;
-    -webkit-border-radius: 0 0 3px 3px;
-    border-radius: 0 0 3px 3px;
-    padding: 0px 5px 5px;
+}
+.free-regist span {
+    display: block;
 }
 
-.free-regist span {
+.free-regist span a{
+    text-decoration: none;
     text-align: center;
     font-size: 14px;
-    background: #7CBE56;
-    width: 115px;
-    height: 32px;
-    display: block;
-    color: white;
-    -moz-border-radius: 0 0 3px 3px;
-    -webkit-border-radius: 0 0 3px 3px;
-    border-radius: 0 0 3px 3px;
+    padding: .6em 1em;
+    background: #f8f8f8;
+    border-radius: 2px;
+    transition: all .3s;
+}
+.free-regist a:hover {
+    color: #EF5350;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.1);
 }
 
 .free-regist a:link,
 .free-regist a:visited {
-    color: white;
+    color: #E53935;
 }
 
 
