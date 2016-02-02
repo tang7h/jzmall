@@ -24,7 +24,7 @@ Logo filename: logo.gif
 ==================== */
 
 body {
-    background: #f7f7f7;
+    background: url(/images/image-background-paper.png) repeat-y center top #f7f7f7;
     font: 12px / 1.5 "Microsoft Yahei",sans-serif,Arial;
     padding: 0;
     margin: 0;
@@ -2868,7 +2868,8 @@ em {
 }
 
 #categorys-2013 .mt {
-    background: #CD2A2C
+    background: #333;
+    border-radius: 2px;
 }
 
 .mt h2,
@@ -2879,7 +2880,7 @@ em {
 #categorys-2013 .mt a {
     display: block;
     padding-left: 20px;
-    line-height: 40px;
+    line-height: 33px;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
@@ -2927,7 +2928,7 @@ em {
 }
 
 #categorys-2013 .item:hover {
-    background: #ef383a;
+    background: #333;
 }
 
 #categorys-2013 .item:hover span {
@@ -3106,7 +3107,7 @@ em {
     display: inline-block;
     font-size: 14px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 30px;
     text-decoration: none;
     border-bottom: 0px #c40000 solid;
     padding: 0 1em;
