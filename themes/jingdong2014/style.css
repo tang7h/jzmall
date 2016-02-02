@@ -3110,7 +3110,7 @@ em {
     text-decoration: none;
     border-bottom: 0px #c40000 solid;
     padding: 0 1em;
-    margin: 0 1em;
+    margin: 0 1em -3px;
     transition: all .1s;
 }
 
@@ -10571,16 +10571,16 @@ input:-webkit-autofill {
     border-radius: 2px;
     transition: all .3s;
 }
-.free-regist a:hover {
-    color: #EF5350;
-    box-shadow: 0 1px 2px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.1);
-}
 
 .free-regist a:link,
 .free-regist a:visited {
     color: #E53935;
 }
 
+.free-regist a:hover {
+    color: #EF5350;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.1);
+}
 
 /*注册登录页样式 end*/
 
