@@ -14876,9 +14876,6 @@ table {
 }
 
 
-/*顶栏按钮 by唐瑞峰*/
-
-
 /*地图层*/
 .new_top-nav {
 	opacity: 1!important;
@@ -14889,6 +14886,17 @@ table {
 	border-radius: 12px;
 	transform: translateZ(0);
 	border: 1px solid #fff;
+    animation: showmap .3s;
+}
+@keyframes showmap {
+    from {
+        transform: scale(.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+
+    }
 }
 
 .box h5{
