@@ -10042,13 +10042,7 @@ a.btn:hover span {
 
 #regist {
     background: #FFF;
-}
-
-#regist .mt,
-#regist .mt h2,
-#regist .mt span {
-    height: 32px;
-    line-height: 32px;
+    width: 450px;/*目测的宽度*/
 }
 
 #regist .mt {
@@ -10105,6 +10099,10 @@ a.btn:hover span {
     position: absolute;
     right: 20px;
     top: 5px;
+    background: #f8f8f8;
+    padding: .2em .5em;
+    border-radius: 1em;
+    border: 1px solid #eee;
 }
 
 #regist .mt,
@@ -10129,13 +10127,6 @@ a.flk13:visited {
 
 #regist .mc {
     padding: 30px 0 20px;
-    border: solid #dddddd;
-    border-width: 0px 1px 1px;
-}
-
-#regist .form {
-    float: left;
-    width: 750px;
 }
 
 #regist .form {
@@ -10143,7 +10134,7 @@ a.flk13:visited {
 }
 
 #regist .item {
-    padding-top: 9px;
+    background: #fff;
     height: 60px;
     line-height: 34px;
     position: relative;
@@ -10155,7 +10146,7 @@ a.flk13:visited {
 }
 
 #regist .label {
-    width: 190px;
+    width: 120px;
     text-align: right;
     font-size: 14px;
     color: #999;
@@ -10188,14 +10179,16 @@ a.flk04:visited {
 #regist .text {
     width: 238px;
     height: 16px;
-    padding: 10px 25px 10px 5px;
-    border: 1px solid #cccccc;
-    float: none;
+    padding: 10px 25px 2px 5px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
     font-size: 14px;
-    font-family: arial, "宋体";
-    color: #999;
 }
 
+#regist .text:focus {
+    border-bottom-color: #333;
+}
 #regist .item-ifo i {
     position: absolute;
     right: 8px;
@@ -10204,7 +10197,7 @@ a.flk04:visited {
 #regist .item-ifo .i-name {
     background: url(images/one4.jpg) no-repeat scroll 0 0 transparent;
     height: 16px;
-    top: 9px;
+    top: 6px;
     width: 16px;
 }
 
@@ -10213,61 +10206,37 @@ a.flk04:visited {
     color: #333;
 }
 
-#regist .focus,
-#regist .error {
-    color: #e4393c;
-    line-height: 36px;
-    height: 36px;
-    position: absolute;
-    top: 0px;
-    right: -275px;
-    width: 260px;
-    padding: 0 5px;
-    background: #FFEBEB;
-    border: 1px solid #ffbdbe;
-}
-
-#regist .null,
-#regist .error {
-    color: #f00;
-}
-
 #regist #username_notice {
     margin-top: 0;
     float: none;
     cursor: pointer;
 }
 
+#regist .null,
 #regist .focus,
 #regist .error {
     color: #e4393c;
-    line-height: 36px;
-    height: 36px;
+    line-height: 1.5em;
     position: absolute;
-    top: 0px;
-    right: -275px;
-    width: 260px;
-    padding: 0 5px;
+    top: 29px;
+    left: 0;
+    padding: 0 4px;
     background: #FFEBEB;
     border: 1px solid #ffbdbe;
+    border-top: none;
+    border-radius: 0 0 2px 2px;
 }
 
 #regist .focus {
     color: #666;
-    line-height: 36px;
     background: #f7f7f7;
     border: 1px solid #dddddd;
-}
-
-#regist .null,
-#regist .error {
-    color: red;
 }
 
 #regist .item-ifo .i-pass {
     background: url(images/one5.jpg) no-repeat scroll 0 0 transparent;
     height: 19px;
-    top: 11px;
+    top: 4px;
     width: 14px;
 }
 
@@ -10279,7 +10248,7 @@ a.flk04:visited {
     float: none;
     position: absolute;
     top: 41px;
-    right: -9px;
+    /*right: -9px;*/
 }
 
 .strengthA b {
@@ -10319,14 +10288,19 @@ a.flk04:visited {
 
 #regist .btn-regist {
     width: 270px;
-    height: 36px;
+    padding: 0 1em;
+    line-height: 2em;
     color: #FFF;
+    background: #e53935;
     font-family: "微软雅黑";
-    font-size: 16px;
-    text-indent: -9999px;
-    font-weight: 800;
+    font-size: 18px;
     overflow: hidden;
-    background: url(images/regist-btn.jpg) no-repeat;
+    transition: all .2s;
+}
+
+#regist .btn-regist:hover {
+    background: #EF5350;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.1);
 }
 
 @-moz-document url-prefix() {
@@ -10339,16 +10313,6 @@ a.flk04:visited {
     #regist .checkbox {
         margin-top: 11px;
     }
-}
-
-#regist .btn-regist {
-    *zoom: 1;
-    display: inline-block;
-    border: 0 none;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    color: #fff
 }
 
 #o-password .text {
