@@ -7971,7 +7971,6 @@ a.d-offline {
 
 .jqzoom {
 	position: absolute;
-    padding: 20px;
     float: left;
     margin-left: 100px;
 }
@@ -11954,6 +11953,7 @@ input {
 
 #comment {
     background: #f8f8f8;
+    padding: 20px;
     padding-bottom: 33px;
     margin-bottom: 0;
 }
@@ -12105,8 +12105,7 @@ em {
 }
 
 .slideTxtBox .hd ul {
-    float: left;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .slideTxtBox .hd ul li {
