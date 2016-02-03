@@ -10081,9 +10081,9 @@ a.btn:hover span {
 
 #regist .mt,
 #regist .mt h2,
-#regist .mt span {
+#regist .mt span {/*
     height: 32px;
-    line-height: 32px;
+    line-height: 32px;*/
 }
 
 #regist .mt span {
@@ -11199,7 +11199,7 @@ input:-webkit-autofill {
 }
 
 #duibiBtn {
-    background: url("images/duibi.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    /*background: url("images/duibi.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);*/
     border: 0 solid #FF0000;
     cursor: pointer;
     height: 32px;
@@ -11207,7 +11207,7 @@ input:-webkit-autofill {
 }
 
 #duibiBtn:hover {
-    background: url("images/duibi_on.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    /*background: url("images/duibi_on.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);*/
     border: 0 solid #FF0000;
     cursor: pointer;
     height: 32px;
