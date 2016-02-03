@@ -1941,7 +1941,7 @@ a {
 
 a:hover {
     color: #ef383a;
-    text-decoration: underline
+    /*text-decoration: underline*/
 }
 
 ol,
@@ -5775,8 +5775,9 @@ h3 {
 }
 
 #sortlist_cat {
-    border: 1px solid #ddd;
-    border-top: 2px solid #999;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    margin-right: 1em;
 }
 
 #sortlist_cat .mt {
@@ -5791,19 +5792,25 @@ h3 {
 }
 
 #sortlist_cat .mc {
-    width: 208px;
-    margin-top: -1px;
-    background: #FFF
+    background: #FFF;
+    border-radius: 2px;
+    padding: 8px 0;
+    margin-top: 2em;
 }
 
 #sortlist_cat h3 {
-    height: 30px;
-    background-color: #F7F7F7;
-    padding: 0 7px 0 10px;
-    border-top: 1px solid #ddd;
+    line-height: 2em;
+    margin-left: 1em;
+    font-weight: 600;
     cursor: pointer;
-    font: 400 14px/30px 微软雅黑;
-    overflow: hidden;
+}
+
+#sortlist_cat h3:before {
+    content: '+';
+}
+
+#sortlist_cat .current h3:before {
+    content: '- ';
 }
 
 #sortlist_cat .fore h3 {
@@ -5811,6 +5818,7 @@ h3 {
 }
 
 #sortlist_cat b {
+    display: none;/*暂时隐藏*/
     float: left;
     width: 16px;
     height: 16px;
@@ -5824,17 +5832,17 @@ h3 {
     overflow: hidden;
     display: none;
     padding: 6px 0;
-    border-top: 1px solid #ddd;
-    zoom: 1
 }
 
 #sortlist_cat li {
-    width: 159px;
-    height: 18px;
-    padding: 3px 15px 3px 35px;
-    overflow: hidden
 }
 
+#sortlist_cat li a{
+    display: block;
+    width: 100%;
+    margin-left: 2em;
+    line-height: 2em;
+}
 #sortlist_cat .curr a {
     font-weight: 700;
     color: #E4393C
@@ -6223,17 +6231,12 @@ h3 {
 }
 
 #select {
-    margin-bottom: 0;
-    zoom: 1
+    margin-top: 2em;
 }
 
 #select .mt {
     height: 30px;
     padding: 0 10px;
-    border: 1px solid #ddd;
-    border-bottom: 0;
-    background: #F7F7F7;
-    line-height: 30px
 }
 
 #select .mt h1 {
@@ -6270,21 +6273,16 @@ h3 {
 
 #select .mc {
     overflow: visible;
-    border-width: 0 1px;
-    border-style: solid;
-    border-color: #ddd;
+    background: #fff;
+
 }
 
 .attr {
-    width: 768px;
+    width: 100%;
     padding: 4px 0 2px;
     overflow: hidden;
     zoom: 1;
-    border-top: 1px dotted #ccc;
-}
-
-.root61 #select .attr {
-    width: 988px
+    /*border-top: 1px dotted #ccc;*/
 }
 
 .attrsBox {
@@ -6295,7 +6293,6 @@ h3 {
 .attr .a-key {
     float: left;
     width: 100px;
-    font-weight: 700;
     text-align: right;
     line-height: 25px
 }
@@ -6307,10 +6304,6 @@ h3 {
     float: right;
     position: relative;
     width: 668px;
-}
-
-.root61 #select .a-values {
-    width: 885px
 }
 
 .attr .a-values .v-option {
@@ -6589,10 +6582,7 @@ h3 {
 }
 
 #filter {
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    background: #F7F7F7;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .02)
+    margin: 2em 0;
 }
 
 #filter .fore1 {
@@ -6611,11 +6601,6 @@ h3 {
 }
 
 #filter .order dd {
-    height: 24px;
-    border: 1px solid #CECBCE;
-    background-position: 0 -73px;
-    background-repeat: repeat-x;
-    background-color: #fff;
     margin-right: 5px;
     line-height: 24px;
     overflow: hidden;
@@ -6623,14 +6608,13 @@ h3 {
 }
 
 #filter .order .curr {
-    border: 1px solid #E4393C;
     background: #E4393C;
-    font-weight: 700;
 }
 
 #filter .order a {
+    text-decoration: none;
     display: block;
-    padding: 0 10px;
+    padding: 0.1em 1em;
     position: relative;
 }
 
@@ -6682,22 +6666,14 @@ h3 {
     float: right;
     height: 22px;
     padding: 2px 0;
-    border-left: 1px solid #fff
 }
 
 .pagin a,
 .pagin span {
     float: left;
-    height: 20px;
-    padding: 3px 10px;
-    border: 1px solid #ccc;
-    margin-left: 2px;
-    font-family: arial;
-    line-height: 20px;
+    padding: .4em 1.2em;
+    margin-left: .2em;
     font-size: 14px;
-    overflow: hidden;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px
 }
 
 .pagin-m a,
@@ -6707,11 +6683,13 @@ h3 {
     font-size: 12px
 }
 
-.pagin .text,
+.pagin .text {
+
+}
+
 .pagin .current {
-    border: 0;
-    padding: 4px 11px;
-    font-family: verdana;
+    color: #fff;
+    background: #555;
 }
 
 .pagin .text i {
@@ -6725,9 +6703,6 @@ h3 {
 .pagin .prev-disabled,
 .pagin .next-disabled {
     position: relative;
-    padding-top: 5px;
-    height: 18px;
-    line-height: 18px
 }
 
 .pagin .prev-disabled,
@@ -6761,6 +6736,7 @@ h3 {
 
 .pagin b {
     display: block;
+    display: none;/*暂时隐藏*/
     position: absolute;
     top: 9px;
     width: 5px;
@@ -6781,7 +6757,7 @@ h3 {
 
 .pagin a:link,
 .pagin a:visited {
-    color: #005aa0
+    color: #999;
 }
 
 #filter .total {
@@ -6811,7 +6787,7 @@ h3 {
 
 .pagin a:hover,
 .pagin a:active {
-    background: #005aa0;
+    background: #555;
     color: #fff;
     text-decoration: none
 }
@@ -6828,24 +6804,22 @@ h3 {
     font-family: arial, \5b8b\4f53
 }
 
-.root61 #plist li {
-    width: 221px
-}
-
 #plist.ordinary-prebuy .list-h li {
     position: relative;
     width: 247px;
-    height: 421px;
-    padding: 0
+    padding: 0;
+    margin: 0 1em 1em 0;
+    transition: box-shadow .5s;
+}
+
+#plist.ordinary-prebuy .list-h li:hover {
+    z-index: 2;
+    box-shadow: 0 8px 16px rgba(0,0,0,.1);
 }
 
 #plist.ordinary-prebuy .list-h li .lh-wrap {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
+    position: relative;
     padding: 1px 13px 10px;
-    border: 0;
     background: #fff
 }
 
@@ -7113,7 +7087,7 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 }
 
 #plist .p-name {
-    height: 2em;
+    height: 3em;
     word-wrap: break-word
 }
 
