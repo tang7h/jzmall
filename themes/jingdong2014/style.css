@@ -14835,7 +14835,7 @@ table {
 	opacity: 1!important;
 }
 
-.box {
+.box {/*bug:这是地图层的样式，需要修改选择器，因为个人信息页也用了box类所以受到影响*/
 	box-shadow: 0 5px 10px rgba(0,0,0,.05),0 5px 5px rgba(0,0,0,.08),0 7px 10px rgba(0,0,0,.09),0 22px 22px rgba(0,0,0,.05);
 	border-radius: 12px;
 	transform: translateZ(0);
