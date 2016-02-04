@@ -5777,7 +5777,7 @@ h3 {
 #sortlist_cat {
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0,0,0,.1);
-    margin-right: 1em;
+    margin-right: 10px;
 }
 
 #sortlist_cat .mt {
@@ -6815,18 +6815,34 @@ h3 {
 #plist.ordinary-prebuy .list-h li:hover {
     z-index: 2;
     box-shadow: 0 15px 30px rgba(0,0,0,.1);
-    transform: translateY(-2px);
+    /*transform: translateY(-2px);*/
+    /*这个动画看起来头昏*/
+}
+
+#plist.ordinary-prebuy .list-h li .btns {
+    transition: .2s;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    
+}
+
+#plist.ordinary-prebuy .list-h li:hover .btns {
+    opacity: 1;
 }
 
 #plist.ordinary-prebuy .list-h li .lh-wrap {
     position: relative;
-    padding: 1px 13px 10px;
+    padding: 1px 10px 40px;
     background: #fff
 }
 
 #plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 {
-    line-height: 18px;
-    vertical-align: top;
+    /*line-height: 18px;*/
+    vertical-align: middle;
 }
 
 #plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 input,
@@ -7050,23 +7066,49 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 #plist .btn-compare,
 #plist .notice-store,
 #plist .btn-panic-buying {
-    float: left;
-    height: 19px;
-    padding: 0 9px;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    margin: 0 4px 0 0;
-    background: #F7F7F7;
-    line-height: 18px;
-    line-height: 19px\9\0;
-    *line-height: 20px;
+    /*float: left;*/
+    display: inline-block;
+    color: #333;
+    padding: 0 .5em;
+    height: 100%;
+    /*line-height: 30px;*/
     text-align: center;
     text-decoration: none;
-    color: #333;
-    background: -moz-linear-gradient(top, #f7f7f7, #f2f2f2);
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#f2f2f2));
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7", endColorstr="#f2f2f2");
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7", endColorstr="#f2f2f2")"
+    opacity: .54;
+    transition: all .1s;
+}
+#plist .btn-none:hover,
+#plist .btn-buy:hover,
+#plist .btn-coll:hover,
+#plist .btn-compare:hover,
+#plist .notice-store:hover,
+#plist .btn-panic-buying:hover {
+    opacity: 1;
+
+}
+
+#plist .btn-buy:before {
+    background: url(images/iconfont-cart.svg) no-repeat center;
+}
+#plist .btn-coll:before {
+    background: url(images/iconfont-favor.svg) no-repeat center;
+}
+
+#plist .btn-buy:before,
+#plist .btn-coll:before {/*按钮中的图标*/
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 16px;
+}
+
+#plist .btn-buy:after {/*让元素垂直居中对齐*/
+    content: '';
+    display: inline-block;
+    height: 100%
+    vertical-align: middle;
 }
 
 #plist .btn-compare {
@@ -7154,16 +7196,14 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 }
 
 #product-track .right {
-    width: 780px
+    width: 990px;
+    margin-left: 10px;
 }
 
-.root61 #product-track .right {
-    width: 1000px
-}
-
-#product-track #maybe-like {
+#product-track #maybe-like {/*
     border: 1px solid #ddd;
-    border-top: 0
+    border-top: 0*/
+    height: 277px;/*为了和左边部分对齐设置的高度*/
 }
 
 #maybe-like .mt {
@@ -7181,7 +7221,9 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 
 #product-track .m2 h2 {
     padding: 0 8px;
-    font: 14px/28px 'microsoft yahei'
+    font-size: 16px;
+    font-weight: 500;
+    border-left: 2px solid #c40000;
 }
 
 #maybe-like .extra {
@@ -7253,7 +7295,7 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
     width: 133px;
     padding: 10px 20px;
     margin: 0 1em 1em 0;
-    background: #f5f5f5;
+    background: #fff;
     text-align: center
 }
 
@@ -7266,14 +7308,13 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 }
 
 #recent-view-track {
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
     border-top: 0;
     border-right: 0
 }
 
 #product-track .left .m2 .mt {
     height: 28px;
-    line-height: 28px;
     border: 0;
     padding: 0;
     background: 0;
@@ -7283,7 +7324,7 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 
 #recent-view-track ul {
     margin-top: -1px;
-    padding: 0 8px
+    /*padding: 0 8px*/
 }
 
 #recent-view-track .mc ul {
@@ -7293,7 +7334,7 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 
 #recent-view-track li {
     overflow: hidden;
-    border-bottom: 1px dotted #ccc;
+    /*border-bottom: 1px dotted #ccc;*/
     padding-bottom: 2px;
     *zoom: 1
 }
@@ -14854,7 +14895,7 @@ table {
 .box h5{
 	color: #555;
 	background: rgba(255,255,255,.85)!important;
-	position: absolute;
+	position: relative;
 	padding-left: 1.2em;
 	z-index: 998;
 	width: 100%;
