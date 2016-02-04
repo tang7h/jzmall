@@ -6809,12 +6809,13 @@ h3 {
     width: 247px;
     padding: 0;
     margin: 0 1em 1em 0;
-    transition: box-shadow .5s;
+    transition: all .2s linear;
 }
 
 #plist.ordinary-prebuy .list-h li:hover {
     z-index: 2;
-    box-shadow: 0 8px 16px rgba(0,0,0,.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    transform: translateY(-2px);
 }
 
 #plist.ordinary-prebuy .list-h li .lh-wrap {
@@ -7252,10 +7253,6 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
     width: 133px;
     padding: 10px 20px;
     text-align: center
-}
-
-.root61 #maybe-like .mc li {
-    width: 144px
 }
 
 #maybe-like .mc .p-name {

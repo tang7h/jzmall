@@ -91,6 +91,7 @@
     position: absolute;
     top: 8px;
     right: 240px;
+    right: 365px;/*bug:避免登陆以后用户信息被遮盖的临时调整*/
 }
 
 #searchForm .text {
