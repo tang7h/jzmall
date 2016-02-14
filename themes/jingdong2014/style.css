@@ -5833,7 +5833,7 @@ h3 {
 #sortlist_cat ul {
     overflow: hidden;
     display: none;
-    padding: 6px 0;
+    padding: 0 0 6px;
 }
 
 #sortlist_cat li {
@@ -5998,14 +5998,17 @@ h3 {
 }
 
 .rank {
-    border: 1px solid #ddd
+    /*border: 1px solid #ddd*/
+    margin-right: 10px;
+    margin-top: 20px;
 }
 
-.rank .mt {
+.rank .mt {/*
     height: 31px;
     padding-left: 8px;
     background: #f7f7f7;
-    line-height: 31px
+    line-height: 31px*/
+    line-height: 16px;
 }
 
 .rank .mt h2 {
@@ -6013,14 +6016,18 @@ h3 {
 }
 
 .rank .mc {
-    padding: 0 10px
+    /*padding: 0 10px*/
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 2px;
 }
 
-.rank .tabcon li {
+.rank .tabcon li {/*
+    fix:让元素自动撑满容器;
     float: left;
-    width: 177px;
+    width: 177px;*/
     padding: 6px 5px;
-    border-top: 1px dotted #ccc;
+    /*border-top: 1px dotted #ccc;*/
     overflow: hidden;
     height: 22px;
     line-height: 22px
@@ -6030,9 +6037,9 @@ h3 {
     float: left;
     width: 16px;
     height: 16px;
-    border: 1px solid #cdcdcd;
+    /*border: 1px solid #cdcdcd;*/
     border-radius: 10px;
-    margin: 2px 3px 0 0;
+    margin: 4px 3px 0 0;
     text-align: center;
     font: 400 12px/16px arial;
     color: #cdcdcd
@@ -6080,7 +6087,7 @@ h3 {
 .rank .tabcon .fore1 span,
 .rank .tabcon .fore2 span,
 .rank .tabcon .fore3 span {
-    border: 1px solid #E4393C;
+    /*border: 1px solid #E4393C;*/
     color: #E4393C
 }
 
@@ -7189,6 +7196,7 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 #product-track {
     /*border-top: 2px solid #999;*/
     overflow: hidden;
+    margin-top: 20px;
 }
 
 #product-track .right {
@@ -7221,7 +7229,8 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
     float: left
 }
 
-#product-track .m2 h2 {
+#product-track .m2 h2,
+.rank .mt h2 {
     padding: 0 8px;
     font-size: 16px;
     font-weight: 500;
@@ -7242,6 +7251,8 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
     overflow: hidden;
     position: relative;
     display: block;
+    background: #fff;
+    border-radius: 2px;
 }
 
 #product-track .guess-control {
@@ -7296,11 +7307,16 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 #maybe-like .mc li {
     width: 133px;
     padding: 10px 20px;
-    margin: 0 1em 1em 0;
+    margin: 1em 1em 1em 0;
     background: #fff;
-    text-align: center
+    text-align: center;
+    border-radius: 2px;
+    transition: all .2s;
 }
 
+#maybe-like .mc li:hover {
+    /*box-shadow: 0 1px 2px rgba(0,0,0,.1); */
+}
 #maybe-like .mc .p-name {
     height: 3em
 }
@@ -7330,14 +7346,14 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 }
 
 #recent-view-track .mc ul {
-    height: 250px;
+    /*height: 250px;*/
     overflow-y: auto
 }
 
 #recent-view-track li {
     overflow: hidden;
     /*border-bottom: 1px dotted #ccc;*/
-    padding-bottom: 2px;
+    padding: 2px 0 0 10px;
     *zoom: 1
 }
 
