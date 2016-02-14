@@ -102,8 +102,11 @@ p {
 
 .inputBg {
     border: 1px solid #b3b3b3;
-    background: url(images/inputbg.gif) repeat-x left top;
+    /*background: url(images/inputbg.gif) repeat-x left top;*/
     height: 18px;
+    padding: .2em;
+    border-radius: 2px;
+    transition: all .2s;
 }
 
 
