@@ -6819,6 +6819,8 @@ h3 {
     padding: 0;
     margin: 0 1em 1em 0;
     transition: all .2s linear;
+    overflow: hidden;
+    border-radius: 2px;
 }
 
 #plist.ordinary-prebuy .list-h li:hover {
