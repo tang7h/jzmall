@@ -10624,17 +10624,20 @@ input:-webkit-autofill {
 
 .user_center .left {
     float: left;
-    width: 150px;
+    padding: 40px;
+    width: 130px;
+    background: #fff;
     margin-right: 10px
 }
 
-#myjd .mt {
+#myjd .mt {/*
     height: 32px;
     padding: 0 6px;
     background-color: #CCCCCC;
     border-top: 2px solid #B5B5B5;
     line-height: 32px;
-    color: #fff;
+    color: #fff;*/
+    display: none;/*暂时隐藏*/
 }
 
 #myjd .mt h2 {
@@ -10649,29 +10652,26 @@ input:-webkit-autofill {
     color: #fff;
 }
 
-#myjd .mc {
+#myjd .mc {/*
     border: solid #E6E6E6;
-    border-width: 0 1px 1px;
+    border-width: 0 1px 1px;*/
     overflow: hidden;
 }
 
 #myjd dl dt {
     position: relative;
-    margin-bottom: -1px;
-    height: 30px;
-    padding: 0 12px;
-    font-weight: bold;
-    line-height: 30px;
+    /*padding: 0 12px;*/
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 52px;
     cursor: pointer;
-    color: #333333;
-    background-color: #F9F9F9
 }
 
 #myjd dl dt b {
     display: block;
     position: absolute;
-    top: 12px;
-    left: 125px;
+    top: 24px;
+    left: 120px;
     width: 9px;
     height: 5px;
     background: url(images/jdleft.png) -64px 0;
@@ -10681,20 +10681,26 @@ input:-webkit-autofill {
 }
 
 #myjd dd {
-    padding: 4px 0 5px;
+    /*padding: 4px 0 5px;*/
+    margin-bottom: 12px;
 }
 
 #myjd dd .item {
-    padding: 2px 0 2px 24px;
+    /*padding: 2px 0 2px 24px;*/
 }
 
-#myjd dd .curr {
-    font-weight: bold;
+#myjd dl dd a {
+    font-size: 14px;
+    line-height: 34px;
+}
+
+#myjd dl dd .curr a {
+    color: #c40000;
 }
 
 #myjd dl dd a:link,
 #myjd dl dd a:visited {
-    color: #333333
+    color: #757575;
 }
 
 #myjd dl dd a:hover {
