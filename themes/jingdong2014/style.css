@@ -7097,10 +7097,10 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 }
 
 #plist .btn-buy:before {
-    background: url(images/iconfont-cart.svg) no-repeat center;
+    background: url(images/iconfont-cart.png) no-repeat center;
 }
 #plist .btn-coll:before {
-    background: url(images/iconfont-favor.svg) no-repeat center;
+    background: url(images/iconfont-favor.png) no-repeat center;
 }
 
 #plist .btn-buy:before,
@@ -7108,6 +7108,7 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
     content: '';
     width: 20px;
     height: 20px;
+    margin-top: -1px;/*位置微调*/
     display: inline-block;
     vertical-align: middle;
     background-size: 16px;
