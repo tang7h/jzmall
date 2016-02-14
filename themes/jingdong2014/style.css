@@ -5807,6 +5807,8 @@ h3 {
 
 #sortlist_cat h3:before {
     content: '+';
+    display: inline-block;
+    width: 1em;
 }
 
 #sortlist_cat .current h3:before {
