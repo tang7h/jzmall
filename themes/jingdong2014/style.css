@@ -6095,7 +6095,8 @@ h3 {
     overflow: visible;
     position: relative;
     height: 153px;
-    border: 1px solid #ddd
+    border: 1px solid #ddd;
+    margin-top: ]24px;
 }
 
 #hotsale {
@@ -6310,7 +6311,6 @@ h3 {
 .prop-attrs .a-values,
 .color-attr .a-values,
 .brand-attr .a-values {
-    float: right;
     position: relative;
     width: 668px;
 }
@@ -6371,7 +6371,6 @@ h3 {
 .prop-attrs .v-fold .f-list {
     overflow: hidden;
     width: 548px;
-    height: 20px
 }
 
 .root61 .prop-attrs .f-list {
@@ -10072,56 +10071,54 @@ a.btn:hover span {
 
 .register_warp,
 #regist .mt {
-    background: #F2F2F2;
+    /*background: #F2F2F2;*/
 }
 
 #regist {
-    background: #FFF;
     width: 450px;/*目测的宽度*/
+    margin: 40px auto;
+    position: relative;
 }
 
 #regist .mt {
     padding-right: 10px;
-    position: relative;
-    overflow: visible;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: visible;/*
     margin-bottom: -1px;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;*/
 }
 
 #regist .tab {
-    height: 33px;
+    /*height: 33px;*/
     padding-left: 0px;
 }
 
 #regist .tab li {
     margin-right: 5px;
-    margin-top: 3px;
     font-size: 14px;
     width: 100px;
-    height: 28px;
+    /*height: 28px;*/
     text-align: center;
-    line-height: 28px;
+    /*line-height: 28px;*/
+    line-height: 40px;
     color: #F79100;
-}
-
-#regist .tab li {
-    background: #f7f7f7;
-    border: 1px solid #dddddd;
 }
 
 #regist .tab .curr {
     position: relative;
     color: #fff;
     background: #ffffff;
-    color: #e4393c;
+    color: #e4393c;/*
     height: 32px;
-    line-height: 32px;
-    font-weight: bold;
-    margin-top: 0;
+    line-height: 32px;*/
+    font-weight: bold;/*
     -moz-box-shadow: 2px 0 2px #DDDDDD;
     -webkit-box-shadow: 2px 0 2px #DDDDDD;
     box-shadow: 2px 0 2px #DDDDDD;
-    border-bottom: none;
+    border-bottom: none;*/
+    border-top: 3px solid;
 }
 
 .mt .extra {
@@ -10133,7 +10130,6 @@ a.btn:hover span {
 #regist .mt .extra {
     position: absolute;
     right: 20px;
-    top: 5px;
     background: #f8f8f8;
     padding: .2em .5em;
     border-radius: 1em;
@@ -10161,7 +10157,10 @@ a.flk13:visited {
 }
 
 #regist .mc {
-    padding: 30px 0 20px;
+    padding: 60px 0 0 0;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 5px 8px rgba(0,0,0,.1), 0 10px 30px rgba(0,0,0,.2)；
 }
 
 #regist .form {
@@ -10169,9 +10168,7 @@ a.flk13:visited {
 }
 
 #regist .item {
-    background: #fff;
     height: 60px;
-    line-height: 34px;
     position: relative;
     z-index: 1;
 }
@@ -10186,6 +10183,7 @@ a.flk13:visited {
     font-size: 14px;
     color: #999;
     padding-right: 10px;
+    padding-top: 16px;
 }
 
 #regist .label b {
@@ -10214,11 +10212,11 @@ a.flk04:visited {
 #regist .text {
     width: 238px;
     height: 16px;
-    padding: 10px 25px 2px 5px;
+    padding: 17px 25px 2px 5px;
     border: none;
     border-bottom: 1px solid #ddd;
     outline: none;
-    font-size: 14px;
+    font-size: 16px;
     box-shadow: inset 0 0 0 30px #fff;
 }
 
@@ -10319,7 +10317,7 @@ a.flk04:visited {
 }
 
 #regist .checkbox {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 
 #regist .btn-regist {
