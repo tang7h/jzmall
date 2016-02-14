@@ -2869,7 +2869,7 @@ em {
 
 #categorys-2013 .mt {
     background: #333;
-    border-radius: 2px;
+    border-radius: 2px 2px 0 0;
 }
 
 .mt h2,
@@ -6095,7 +6095,8 @@ h3 {
     overflow: visible;
     position: relative;
     height: 153px;
-    border: 1px solid #ddd
+    border: 1px solid #ddd;
+    margin-top: ]24px;
 }
 
 #hotsale {
@@ -6310,7 +6311,6 @@ h3 {
 .prop-attrs .a-values,
 .color-attr .a-values,
 .brand-attr .a-values {
-    float: right;
     position: relative;
     width: 668px;
 }
@@ -6371,7 +6371,6 @@ h3 {
 .prop-attrs .v-fold .f-list {
     overflow: hidden;
     width: 548px;
-    height: 20px
 }
 
 .root61 .prop-attrs .f-list {
@@ -6815,7 +6814,7 @@ h3 {
 
 #plist.ordinary-prebuy .list-h li {
     position: relative;
-    width: 247px;
+    width: 235px;
     padding: 0;
     margin: 0 1em 1em 0;
     transition: all .2s linear;
@@ -10071,56 +10070,54 @@ a.btn:hover span {
 
 .register_warp,
 #regist .mt {
-    background: #F2F2F2;
+    /*background: #F2F2F2;*/
 }
 
 #regist {
-    background: #FFF;
-    width: 450px;/*目测的宽度*/
+    width: 800px;/*目测的宽度*/
+    margin: 40px auto;
+    position: relative;
 }
 
 #regist .mt {
     padding-right: 10px;
-    position: relative;
-    overflow: visible;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: visible;/*
     margin-bottom: -1px;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;*/
 }
 
 #regist .tab {
-    height: 33px;
+    /*height: 33px;*/
     padding-left: 0px;
 }
 
 #regist .tab li {
     margin-right: 5px;
-    margin-top: 3px;
     font-size: 14px;
     width: 100px;
-    height: 28px;
+    /*height: 28px;*/
     text-align: center;
-    line-height: 28px;
+    /*line-height: 28px;*/
+    line-height: 40px;
     color: #F79100;
-}
-
-#regist .tab li {
-    background: #f7f7f7;
-    border: 1px solid #dddddd;
 }
 
 #regist .tab .curr {
     position: relative;
     color: #fff;
     background: #ffffff;
-    color: #e4393c;
+    color: #e4393c;/*
     height: 32px;
-    line-height: 32px;
-    font-weight: bold;
-    margin-top: 0;
+    line-height: 32px;*/
+    font-weight: bold;/*
     -moz-box-shadow: 2px 0 2px #DDDDDD;
     -webkit-box-shadow: 2px 0 2px #DDDDDD;
     box-shadow: 2px 0 2px #DDDDDD;
-    border-bottom: none;
+    border-bottom: none;*/
+    border-top: 3px solid;
 }
 
 .mt .extra {
@@ -10132,7 +10129,6 @@ a.btn:hover span {
 #regist .mt .extra {
     position: absolute;
     right: 20px;
-    top: 5px;
     background: #f8f8f8;
     padding: .2em .5em;
     border-radius: 1em;
@@ -10160,7 +10156,10 @@ a.flk13:visited {
 }
 
 #regist .mc {
-    padding: 30px 0 20px;
+    padding: 60px 0 10px 0;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 5px 8px rgba(0,0,0,.1), 0 10px 30px rgba(0,0,0,.2);
 }
 
 #regist .form {
@@ -10168,9 +10167,7 @@ a.flk13:visited {
 }
 
 #regist .item {
-    background: #fff;
     height: 60px;
-    line-height: 34px;
     position: relative;
     z-index: 1;
 }
@@ -10185,6 +10182,7 @@ a.flk13:visited {
     font-size: 14px;
     color: #999;
     padding-right: 10px;
+    padding-top: 16px;
 }
 
 #regist .label b {
@@ -10213,11 +10211,11 @@ a.flk04:visited {
 #regist .text {
     width: 238px;
     height: 16px;
-    padding: 10px 25px 2px 5px;
+    padding: 17px 25px 2px 5px;
     border: none;
     border-bottom: 1px solid #ddd;
     outline: none;
-    font-size: 14px;
+    font-size: 16px;
     box-shadow: inset 0 0 0 30px #fff;
 }
 
@@ -10227,6 +10225,7 @@ a.flk04:visited {
 #regist .item-ifo i {
     position: absolute;
     right: 8px;
+    display: none;/*先不要了*/
 }
 
 #regist .item-ifo .i-name {
@@ -10244,7 +10243,7 @@ a.flk04:visited {
 #regist #username_notice {
     margin-top: 0;
     float: none;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 #regist .null,
@@ -10252,20 +10251,41 @@ a.flk04:visited {
 #regist .error {
     color: #e4393c;
     line-height: 1.5em;
-    position: absolute;
-    top: 29px;
-    left: 0;
+    position: relative;
+    top: -18px;
+    left: 272px;
     padding: 0 4px;
-    background: #FFEBEB;
+    background: #fff;
+    background: rgba(255,255,255,.9);
+    /*background: #FFEBEB;
     border: 1px solid #ffbdbe;
-    border-top: none;
-    border-radius: 0 0 2px 2px;
+    border-top: none;*/
+    border-radius: 2px;
+    animation: notice 5s;
+    animation-fill-mode: backwards;
+    transition: all .3s;
+}
+@keyframes notice {
+    0% {
+        opacity: 0;
+        /*transform: translateX(10px);*/
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #regist .focus {
     color: #666;
-    background: #f7f7f7;
-    border: 1px solid #dddddd;
+    /*background: #f7f7f7;*/
+    /*border: 1px solid #dddddd;*/
 }
 
 #regist .item-ifo .i-pass {
@@ -10318,7 +10338,7 @@ a.flk04:visited {
 }
 
 #regist .checkbox {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 
 #regist .btn-regist {
@@ -14894,9 +14914,9 @@ table {
 	opacity: 1!important;
 }
 
-.box {/*bug:这是地图层的样式，需要修改选择器，因为个人信息页也用了box类所以受到影响*/
+.mydiv .box {
 	box-shadow: 0 5px 10px rgba(0,0,0,.05),0 5px 5px rgba(0,0,0,.08),0 7px 10px rgba(0,0,0,.09),0 22px 22px rgba(0,0,0,.05);
-	border-radius: 12px;
+	border-radius: 8px;
 	transform: translateZ(0);
 	border: 1px solid #fff;
     animation: showmap .3s;
@@ -14912,7 +14932,7 @@ table {
     }
 }
 
-.box h5{
+.mydiv .box h5{
 	color: #555;
 	background: rgba(255,255,255,.85)!important;
 	position: relative;
