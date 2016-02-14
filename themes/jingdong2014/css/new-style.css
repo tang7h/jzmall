@@ -95,16 +95,22 @@
 }
 
 #searchForm .text {
-    width: 300px;
+    width: 200px;
     font-size: 16px;
     line-height: 26px;
     color: #333;
-    background: #eee;
-    border-radius: 2px;
-    border: 1px solid #333;
+    /*background: #eee;*/
+    border-radius: 2em;
+    border: 1px solid #999;
     padding: 2px 0 0 30px;
     outline: 0;
-    border: none;
+    transition: all .2s;
+    /*border: none;*/
+}
+
+#searchForm .text:focus {
+    width: 300px;
+    border-color: #555;
 }
 
 #searchForm .button {
