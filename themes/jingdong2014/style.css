@@ -139,8 +139,8 @@ p {
 }
 
 .user_center h5 span {
-    color: #C00;
-    font-size: 14px;
+    color: #555;
+    font-size: 32px;
 }
 
 .f6 {
@@ -221,12 +221,12 @@ p {
     /*padding-bottom: 2px;*/
     overflow: hidden;
 }
-
+/*
 .box_1 {
     border: 1px solid #DDDDDD;
     background-color: #fff;
 }
-
+*/
 .box_2 {
     border: 1px solid #c5e4ff;
     background: url(images/box_2Bg.gif) repeat-x top left;
@@ -236,6 +236,7 @@ p {
 
 .boxCenterList {
     /*padding: 8px;*/
+    padding: 36px;
 }
 
 
@@ -263,17 +264,17 @@ h3 span {
 }
 
 h5 {
-    border-bottom: 2px solid #C30000;
-    height: 33px;
-    line-height: 33px;
-    margin-bottom: 10px;
+    /*border-bottom: 2px solid #C30000;*/
+    /*height: 33px;*/
+    line-height: 68px;
+    /*margin-bottom: 10px;*/
 }
 
 h5 span {
-    float: left;
-    font-weight: bold;
-    background: url(images/bg.gif) no-repeat 0 -616px;
-    padding-left: 25px;
+    /*float: left;*/
+    font-weight: 300;
+    /*background: url(images/bg.gif) no-repeat 0 -616px;*/
+    /*padding-left: 25px;*/
 }
 
 h6 {
@@ -1372,7 +1373,7 @@ h6 span {
 ==================== */
 
 .box_1 .userCenterBox {
-    border: 4px solid #fff;
+    /*border: 4px solid #fff;*/
     background-color: #fff;
 }
 
@@ -10627,7 +10628,8 @@ input:-webkit-autofill {
     padding: 40px;
     width: 130px;
     background: #fff;
-    margin-right: 10px
+    margin-right: 1em;
+    margin-top: 2em;
 }
 
 #myjd .mt {/*
@@ -10694,13 +10696,13 @@ input:-webkit-autofill {
     line-height: 34px;
 }
 
-#myjd dl dd .curr a {
-    color: #c40000;
-}
-
 #myjd dl dd a:link,
 #myjd dl dd a:visited {
     color: #757575;
+}
+
+#myjd dl dd .curr a {
+    color: #c40000;
 }
 
 #myjd dl dd a:hover {
@@ -10712,9 +10714,10 @@ input:-webkit-autofill {
 }
 
 .user_center .right {
-    width: 830px;
+    width: 986px;
     float: right;
-    font-family: Verdana;
+    margin-top: 2em;
+    /*font-family: Verdana;*/
 }
 
 
@@ -14065,13 +14068,13 @@ i.i_sbar_nub {
     font-size: 12px;
     float: left;
 }
-
+/*
 .userCenterBox .mc_order_hd {
     float: left;
     width: 100%;
     margin-bottom: 10px;
 }
-
+*/
 .userCenterBox .ned {
     border-bottom: 2px solid #C30000;
     padding-bottom: 8px;
