@@ -6814,7 +6814,7 @@ h3 {
 
 #plist.ordinary-prebuy .list-h li {
     position: relative;
-    width: 247px;
+    width: 235px;
     padding: 0;
     margin: 0 1em 1em 0;
     transition: all .2s linear;
@@ -10075,7 +10075,7 @@ a.btn:hover span {
 }
 
 #regist {
-    width: 450px;/*目测的宽度*/
+    width: 800px;/*目测的宽度*/
     margin: 40px auto;
     position: relative;
 }
@@ -10157,10 +10157,10 @@ a.flk13:visited {
 }
 
 #regist .mc {
-    padding: 60px 0 0 0;
+    padding: 60px 0 10px 0;
     background: #fff;
     border-radius: 2px;
-    box-shadow: 0 5px 8px rgba(0,0,0,.1), 0 10px 30px rgba(0,0,0,.2)；
+    box-shadow: 0 5px 8px rgba(0,0,0,.1), 0 10px 30px rgba(0,0,0,.2);
 }
 
 #regist .form {
@@ -10226,6 +10226,7 @@ a.flk04:visited {
 #regist .item-ifo i {
     position: absolute;
     right: 8px;
+    display: none;/*先不要了*/
 }
 
 #regist .item-ifo .i-name {
@@ -10243,7 +10244,7 @@ a.flk04:visited {
 #regist #username_notice {
     margin-top: 0;
     float: none;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 #regist .null,
@@ -10251,20 +10252,41 @@ a.flk04:visited {
 #regist .error {
     color: #e4393c;
     line-height: 1.5em;
-    position: absolute;
-    top: 29px;
-    left: 0;
+    position: relative;
+    top: -18px;
+    left: 272px;
     padding: 0 4px;
-    background: #FFEBEB;
+    background: #fff;
+    background: rgba(255,255,255,.9);
+    /*background: #FFEBEB;
     border: 1px solid #ffbdbe;
-    border-top: none;
-    border-radius: 0 0 2px 2px;
+    border-top: none;*/
+    border-radius: 2px;
+    animation: notice 5s;
+    animation-fill-mode: backwards;
+    transition: all .3s;
+}
+@keyframes notice {
+    0% {
+        opacity: 0;
+        /*transform: translateX(10px);*/
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #regist .focus {
     color: #666;
-    background: #f7f7f7;
-    border: 1px solid #dddddd;
+    /*background: #f7f7f7;*/
+    /*border: 1px solid #dddddd;*/
 }
 
 #regist .item-ifo .i-pass {
