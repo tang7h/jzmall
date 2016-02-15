@@ -475,10 +475,7 @@ body.new_active {
 }
 
 .new_mt h2 {
-    padding-left: 11px;
     margin-bottom: 5px;
-    border-left: 3px solid rgb(255,100,100);
-    margin-left: -10px;
 }
 
 .new_mc ul {
@@ -492,7 +489,8 @@ body.new_active {
 
 .new_mc ul li a {
     text-decoration: none;
-    padding: .4em;
+    padding: .4em 0;
+    margin-right: .8em;
     display: inline-block;
 }
 

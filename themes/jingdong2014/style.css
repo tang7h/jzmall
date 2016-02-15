@@ -11990,7 +11990,7 @@ input {
 
 #comment .rate strong {
     font: 400 46px/30px arial;
-    color: #e4393c;
+    color: #c40000;
 }
 
 #comment .rate strong span {
@@ -12041,7 +12041,7 @@ input {
     overflow: hidden;
     height: 10px;
     width: 0;
-    background: tomato;
+    background: #c40000;
     border-radius: 5px;
     margin: 0;
 }
@@ -12130,8 +12130,8 @@ em {
 }
 
 .slideTxtBox .hd ul li.on a {
-    color: #e4393c;
-    border-bottom: 3px solid #E4393C;
+    color: #c40000;
+    border-bottom: 3px solid;
     margin-bottom: 3px;
 }
 
