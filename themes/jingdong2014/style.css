@@ -2486,13 +2486,22 @@ ul {
     /*height: 62px;*/
 }
 
+#my360buy-2013>dl>dt {
+    background: url(images/iconfont-my-fff.png) no-repeat center;
+}
+
+.settleup-2013>dl>dt {
+    background: url(images/iconfont-cart-fff.png) no-repeat center;
+
+}
 #my360buy-2013 dl>dt>a,
 .settleup-2013 dl>dt>a{
     text-decoration: none;
     color: #333;
-    padding: 16px 0;
+    height: 36px;
     text-align: center;
     display: block;
+    text-indent: -10em;
 }
 
 #my360buy-2013 dt b {
@@ -2506,14 +2515,28 @@ ul {
     overflow: hidden
 }
 
-#my360buy-2013 dd {
+#my360buy-2013 dd,
+.settleup-2013 dd{
     display: none;
     position: absolute;
-    left: 50px;
+    left: 36px;
     top: 0;
     width: 310px;
     background: #fff;
-
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+#my360buy-2013 dd:before,
+.settleup-2013 dd:before {/*小箭头*/
+    content: '';
+    display: block;
+    position: absolute;
+    left: -6px;
+    top: 16px;
+    border-top: 5px solid transparent;
+    border-right: 6px solid #fff;
+    border-bottom: 5px solid transparent;
+    border-left: none;
 }
 
 #my360buy-2013 .prompt {
@@ -2695,14 +2718,6 @@ ul {
     border-width: 5px;
     border-color: transparent transparent transparent #CCC;
     overflow: hidden
-}
-
-.settleup-2013 dd {
-    display: none;
-    position: absolute;
-    top: 50px;
-    width: 350px;
-    left: 50px;
 }
 
 #settleup-content {
