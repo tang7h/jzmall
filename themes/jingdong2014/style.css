@@ -2912,7 +2912,8 @@ em {
     position: absolute;
     left: 0;
     width: 210px;
-    height: 410px;
+    height: 395px;
+    padding: 8px 0;
     background: #fff;
     border-radius: 0 0 2px 2px;
     box-shadow: 0 1px 3px rgba(0,0,0,.1);
@@ -2970,8 +2971,8 @@ em {
 #categorys-2013 s {
     display: inline-block;
     position: absolute;
-    top: 10px;
-    left: 196px;
+    top: 11px;
+    left: 188px;
     width: 4px;
     height: 4px;
     /*background-position: -110px -45px*/
@@ -3072,9 +3073,8 @@ em {
 
 #categorys-2013 .subitem em {
     float: left;
-    height: 14px;
-    margin: 4px 0 -1px;
-    line-height: 14px;
+    margin: 4px 0 0 -1px;
+    line-height: 16px;
     padding: 0 8px;
     border-left: 1px solid #ccc
 }
