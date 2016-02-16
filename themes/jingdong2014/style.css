@@ -2404,6 +2404,10 @@ ul {
     font-size: 12px
 }
 
+.form label.img {
+    margin-left: -100px;
+}
+
 #search-2013 input {
     margin: 0;
     padding: 0;
@@ -10197,8 +10201,7 @@ a.flk04:visited {
 
 #regist .text {
     width: 238px;
-    height: 16px;
-    padding: 17px 25px 2px 5px;
+    padding: 16px 25px 2px 5px;
     border: none;
     border-bottom: 1px solid #ddd;
     outline: none;
@@ -10315,7 +10318,7 @@ a.flk04:visited {
 }
 
 #regist .text-1 {
-    width: 100px;
+    /*width: 100px;*/
     float: left;
 }
 
@@ -10419,9 +10422,8 @@ a.flk04:visited {
     float: none;
     width: 282px;
     line-height: 32px;
-    padding: 4px 20px 4px 3px;
+    padding: 1px 20px 0px 2px;
     box-shadow: inset 0 0 0 30px #fff;
-    margin-right: 8px;
     border: none;
     border-bottom: 1px solid #ccc;
     outline: none;
@@ -10519,7 +10521,7 @@ input:-webkit-autofill {
 }
 
 #entry .text-1 {
-    width: 100px;
+    /*width: 100px;*/
     float: left;
 }
 
