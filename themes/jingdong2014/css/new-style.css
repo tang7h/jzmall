@@ -706,6 +706,8 @@ body.sideMenu {
 	opacity: 1;
 	background: #77B23C;
 	background: #fff url(../images/iconfont-close2-16-000.png) no-repeat center;
+	box-shadow: 0 -6px 14px rgba(0,0,0,.1);
+	transform: rotate(180deg);
 }
 
 #sideToggle2:checked ~ #side_wrap label[for="sideToggle2"] {
@@ -775,19 +777,19 @@ body > .lazy_side1 dt {
     z-index: 1000;/*侧栏之上*/
 }
 .lazy_side1:before,
-.lazy_side2:before {
+.lazy_side2:before {/*顶部图片*/
 	content: '';
 	display: block;
 	width: 340px;
 	height: 150px;
 	overflow: hidden;
-    background: #ccc url(../images/03_March.jpg) no-repeat 0 -81px;
+    background: #db4c3f url(../images/pictos.svg);
     background-size: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -2;
-	
+	box-shadow: 0 4px 8px rgba(0,0,0,.1);
 }
 
 .lazy_side1:after,
