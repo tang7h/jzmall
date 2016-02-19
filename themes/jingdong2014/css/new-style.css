@@ -771,7 +771,7 @@ body > .lazy_side1 dt {
     right: 0;
     /*-webkit-filter: grayscale(.8) brightness(1)contrast(2);*/
     /*height: 100%;*/
-    top: 100px;
+    top: 120px;
     z-index: 1000;/*侧栏之上*/
 }
 .lazy_side1:before,
@@ -791,7 +791,7 @@ body > .lazy_side1 dt {
 }
 
 .lazy_side1:after,
-.lazy_side2:after {
+.lazy_side2:after {/*盖住背景图的三角形*/
     content: '';
     display: block;
     border-bottom: 50px solid #fff;
@@ -800,6 +800,7 @@ body > .lazy_side1 dt {
     top: 100px;
     left: 0;
     z-index: -1;
+    display: none;
 }
 
 #side_wrap>div {/*多余的黑色背景div*/
