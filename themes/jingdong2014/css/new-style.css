@@ -1,9 +1,9 @@
 .new_top {
     width: 100%;
     background: #fff;
-    background: rgba(255,255,255,.98);
+    background: rgba(255, 255, 255, .98);
     height: 45px;
-    z-index: 9999;
+    z-index: 10;
     position: fixed;
 }
 
@@ -30,6 +30,7 @@
     opacity: .7;
     transition: all .2s;
 }
+
 .top-link a:hover {
     color: #333;
     opacity: 1;
@@ -37,9 +38,13 @@
 
 .shoucang {
     background: url(../images/iconfont-fav-16-000.png) no-repeat;
-}.guanzhu {
+}
+
+.guanzhu {
     background: url(../images/iconfont-like-16-000.png) no-repeat;
-}.shouji {
+}
+
+.shouji {
     background: url(../images/iconfont-mobile-16-000.png) no-repeat;
 }
 
@@ -55,6 +60,7 @@
     background: #fff;
     border: 1px solid #eee;
 }
+
 .top-link .shouji:hover .qrcode {
     display: block;
     transform: translateY(0);
@@ -81,7 +87,8 @@
     float: left;
 }
 
-.new_login ul li a {/*to:於靖杰 给按钮加个类，现在的选择器不好*/
+.new_login ul li a {
+    /*to:於靖杰 给按钮加个类，现在的选择器不好*/
     display: inline-block;
     text-decoration: none;
     color: #333;
@@ -105,7 +112,8 @@
     position: absolute;
     top: 8px;
     right: 240px;
-    right: 365px;/*bug:避免登陆以后用户信息被遮盖的临时调整*/
+    right: 365px;
+    /*bug:避免登陆以后用户信息被遮盖的临时调整*/
 }
 
 #searchForm .text {
@@ -165,13 +173,15 @@
     border-radius: 2px;
 }
 
-.new_top-nav>ul>li {/*小方块*/
+.new_top-nav>ul>li {
+    /*小方块*/
     background: #333;
     width: 36px;
     height: 36px;
     position: relative;
     transition: all .3s;
 }
+
 .new_top-nav>ul>li:hover {
     background: #c40000;
 }
@@ -182,9 +192,12 @@
     display: block;
     text-align: center;
     line-height: 36px;
-    text-indent: -10em;/*暂时隐藏文字*/
+    text-indent: -10em;
+    /*暂时隐藏文字*/
 }
-.new_top-nav ul li a {/*超链接*/
+
+.new_top-nav ul li a {
+    /*超链接*/
 }
 
 .new_top-nav ul li a i {
@@ -212,7 +225,8 @@
     transition-duration: .3s
 }
 
-.hvr-sweep-to-bottom:before {/*
+.hvr-sweep-to-bottom:before {
+    /*
     content: "";
     position: absolute;
     z-index: -1;
@@ -227,7 +241,7 @@
 .hvr-sweep-to-bottom:active,
 .hvr-sweep-to-bottom:focus,
 .hvr-sweep-to-bottom:hover {
-    color: #fff
+    /*color: #fff*/
 }
 
 .hvr-sweep-to-bottom:active:before,
@@ -235,6 +249,8 @@
 .hvr-sweep-to-bottom:hover:before {
     opacity: 1;
 }
+
+
 /*
 .new_top-nav ul li a.color {
     background: #e8008a
@@ -261,6 +277,8 @@
     top: 0;
     display: none
 }
+
+
 /*
 .new_top-nav ul li a.color3 {
     background: #5e2c8f
@@ -270,13 +288,14 @@
     background: #ffc410
 }
 */
+
 .new_blank {
     position: relative;
-    z-index: 999;
+    z-index: 9;
     width: 100%;
     height: 30px;
     background: #fff;
-    background: rgba(255,255,255,.98);
+    background: rgba(255, 255, 255, .98);
     /*box-shadow: 0 0 10px rgba(0, 0, 0, .12)*/
 }
 
@@ -357,7 +376,8 @@ body {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out
+    -o-transition: all .2s ease-in-out;
+    overflow-x: hidden;
 }
 
 body.new_active {
@@ -427,12 +447,13 @@ body.new_active {
     overflow: hidden;
     border-radius: 2px;
     transition: all .3s;
-    box-shadow: 0 0px 1px 0 rgba(0,0,0,0.05), 0 2px 4px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.05), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .new_section:hover {
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .web_content {
     width: 3862px;
     width: -moz-max-content;
@@ -493,7 +514,7 @@ body.new_active {
 .new_mt h2 {
     padding-left: 11px;
     margin-bottom: 5px;
-    border-left: 3px solid rgb(255,100,100);
+    border-left: 3px solid rgb(255, 100, 100);
     margin-left: -10px;
 }
 
@@ -582,7 +603,9 @@ body.new_active {
     float: left
 }
 
+
 /*商品信息块*/
+
 #summary {
     float: left;
 }
@@ -604,14 +627,14 @@ body.new_active {
 
 .tab a:hover {
     color: #fff;
-    background: rgb(255,100,100);
+    background: rgb(255, 100, 100);
 }
 
-#comment .mt {
+#comment .mt {}
 
-}
 
 /*主页弹窗*/
+
 #new_index_box {
     width: 500px;
     height: 250px;
@@ -650,4 +673,208 @@ body.new_active {
     font: 12px/25px Arial;
     text-decoration: none;
     outline: none;
+}
+
+
+/*侧边栏重做*/
+
+body.sideMenu {
+    margin: 0;
+    transform: none;
+}
+
+#sideToggle1,
+#sideToggle2{
+    display: none;
+}
+
+#sideToggle1:checked + .lazy_side1,
+#sideToggle2:checked + .lazy_side2 {
+    right: 0;
+}
+
+#sideToggle1:checked ~ #side_wrap,
+#sideToggle2:checked ~ #side_wrap {
+    right: -100px;
+}
+
+#sideToggle1:checked ~ #side_wrap label[for="sideToggle1"],
+#sideToggle2:checked ~ #side_wrap label[for="sideToggle2"] {
+	right: 100px;
+	width: 48px;
+	height: 48px;
+	opacity: 1;
+	background: #77B23C;
+	background: #fff url(../images/iconfont-close2-16-000.png) no-repeat center;
+}
+
+#sideToggle2:checked ~ #side_wrap label[for="sideToggle2"] {
+	margin-top: -48px;
+}
+
+#sideToggle1:checked ~ #side_wrap label[for="sideToggle1"]:before,
+#sideToggle1:checked ~ #side_wrap label[for="sideToggle1"]:after {/*关闭按钮*/
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1em;
+	border-bottom: 2px solid #fff;
+	top: 50%;
+    left: 50%;
+    margin-left: -.5em;
+    display: none;
+}
+
+#sideToggle1:checked ~ #side_wrap label[for="sideToggle1"]:before {
+	transform: rotate(45deg);
+
+}#sideToggle1:checked ~ #side_wrap label[for="sideToggle1"]:after {
+	transform: rotate(135deg);
+}
+
+
+body > .lazy_side1,
+body > .lazy_side2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -310px;
+    width: 310px;
+    box-sizing: border-box;
+    padding: 16px;
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    z-index: 999;
+    position: fixed;
+    margin: 0;
+    background: #fff;
+}
+
+body > .lazy_side1 > h2,
+body > .lazy_side2 > h2 {
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    font-weight: normal;
+    margin-bottom: 100px;
+}
+
+body > .lazy_side1 dt {
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+#side_wrap {
+    transition: 0.3s ease-in-out;
+    position: fixed;
+    right: 0;
+    /*-webkit-filter: grayscale(.8) brightness(1)contrast(2);*/
+    /*height: 100%;*/
+    top: 100px;
+    z-index: 1000;/*侧栏之上*/
+}
+.lazy_side1:before,
+.lazy_side2:before {
+	content: '';
+	display: block;
+	width: 340px;
+	height: 150px;
+	overflow: hidden;
+    background: #ccc url(../images/03_March.jpg) no-repeat 0 -81px;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+	
+}
+
+.lazy_side1:after,
+.lazy_side2:after {
+    content: '';
+    display: block;
+    border-bottom: 50px solid #fff;
+    border-left: 350px solid transparent;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: -1;
+}
+
+#side_wrap>div {/*多余的黑色背景div*/
+    background: none!important;
+    display: none;
+}
+
+#side_wrap > label {
+	position: relative;
+	right: 0;
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    text-indent: -100px;
+    font-size: 18px;
+    opacity: .7;
+    border-radius: 50%;
+    margin: 0 1em 1em;
+    box-shadow: 0 1px 5px rgba(0,0,0,.1);
+	transition: all .3s ease-in-out;
+}
+
+#side_wrap > label:hover {
+	opacity: 1;
+	box-shadow: 0 6px 14px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.1);
+}
+
+#side_wrap > label[for="sideToggle1"] {
+	background: #fff url(../images/iconfont-user-000-16.png) no-repeat center;
+}
+
+#side_wrap > label[for="sideToggle2"] {
+	background: #fff url(../images/iconfont-cart-000-16.png) no-repeat center;
+}
+
+
+label .shopping {
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #c40000;
+    color: #fff;
+    text-align: center;
+    z-index: 999;
+}
+
+.label11 {
+    background: url(images/iconfont-cart-fff.png) no-repeat center;
+}
+
+#settleup-content .smt,
+#settleup-content .smc {
+	overflow: hidden;/*清除边栏内部元素浮动的影响*/
+}
+
+#jduc-orderlist,
+.uclist,
+.viewlist {
+	margin: 20px 0;
+	overflow: hidden;/*清除浮动的影响*/
+}
+
+.uclist a {
+	margin-right: 1em;
+}
+
+#mcart-mj li {
+    overflow: hidden;/*清除浮动的影响*/
+}
+.p-name {
+    max-width: 216px; /*18个字*/
+    margin: 0 0 0 8px;
 }
