@@ -32,7 +32,7 @@ body {
 }
 
 div {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     padding: 0;
 }
 
@@ -2729,7 +2729,7 @@ ul {
     left: 0;
     top: 0;
     z-index: 2;
-    width: 350px;
+    width: 280px;/*原来是350*/
     background: #fff
 }
 
@@ -13850,7 +13850,7 @@ table {
     background: url(./images/tian_logo.png) no-repeat;
 }
 
-.mui-tab li {
+.mui-tab-li {
     left: 0;
     width: 35px;
     height: 35px;
@@ -13871,7 +13871,7 @@ li.mui-mbar-tab-cart {
     border-width: 1px 0;
 }
 
-.mui-tab li.on {
+.mui-tab-li:hover {
     background-color: #c40000
 }
 
