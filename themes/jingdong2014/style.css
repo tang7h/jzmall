@@ -2941,17 +2941,8 @@ em {
     background: #fff;
     border-radius: 0 0 2px 2px;
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
-    animation: droplist .3s;
 }
-@keyframes droplist {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1
-    }
 
-}
 #categorys-2013 .item {
     height: 28px;
     /*border-top: 1px solid #FFF*/
@@ -3177,7 +3168,20 @@ h3 {
 }
 
 #categorys-2013.hover .mc {
-    display: block
+    display: block;
+    animation: droplist .3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes droplist {
+    0%{
+        display: block;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1
+    }
+
 }
 
 #categorys-2013 .fr {
@@ -3234,12 +3238,24 @@ h3 {
 }
 
 .no_index #_JD_ALLSORT {
-    display: none;
+    /*display: none;*/
+    animation: hide .3s;
+    animation-fill-mode: forwards;
+}
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
 }
 
 #categorys-2013.no_index b {
     display: block;
 }
+
 
 .slide .slide-items {
     position: absolute;
