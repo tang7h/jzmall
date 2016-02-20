@@ -2729,8 +2729,9 @@ ul {
     left: 0;
     top: 0;
     z-index: 2;
-    width: 280px;/*原来是350*/
-    background: #fff
+    /*width: 350px;不再设置宽度，让它自己撑开*/
+    background: #fff;
+    padding: 16px 0;
 }
 
 .settleup-2013 .smt {
@@ -4192,7 +4193,8 @@ h3 {
 }
 
 .p-img {
-    padding: 5px 0
+    /*padding: 5px 0*/
+    /*首页侧栏item尺寸调整*/
 }
 
 .plist .p-img {

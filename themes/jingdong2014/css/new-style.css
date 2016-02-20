@@ -876,8 +876,21 @@ label .shopping {
 
 #mcart-mj li {
     overflow: hidden;/*清除浮动的影响*/
+    padding: 8px 0;
+    position: relative;
 }
+
+#mcart-mj li:after {
+	/*content: '';暂时先不要*/
+	position: absolute;
+	width: 100%;
+	border-bottom: 1px solid rgba(0,0,0,.05);
+	left: 58px;/*图片50,title边距8*/
+	bottom: 5px;/*视觉上对齐图片底部*/
+}
+
 .p-name {
-    max-width: 216px; /*18个字*/
+    max-width: 13em; /*13个字*/
+    height: 3em;/*显示两行*/
     margin: 0 0 0 8px;
 }
