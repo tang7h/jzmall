@@ -2731,7 +2731,11 @@ ul {
     z-index: 2;
     /*width: 350px;不再设置宽度，让它自己撑开*/
     background: #fff;
-    padding: 16px 0;
+    padding: 24px 0;
+}
+
+#settleup-content>div {
+    margin: 16px 0;
 }
 
 .settleup-2013 .smt {

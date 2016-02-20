@@ -706,9 +706,14 @@ body.sideMenu {
 	opacity: 1;
 	background: #77B23C;
 	background: #fff url(../images/iconfont-close2-16-000.png) no-repeat center;
-	box-shadow: 0 -6px 14px rgba(0,0,0,.1);
+	box-shadow: 0 -4px 10px rgba(0,0,0,.1);
 	transform: rotate(180deg);
 }
+#sideToggle1:checked ~ #side_wrap label[for="sideToggle1"]:hover,
+#sideToggle2:checked ~ #side_wrap label[for="sideToggle2"]:hover {
+	box-shadow: 0 -4px 30px rgba(0,0,0,.1), 0 -4px 8px rgba(0,0,0,.1);
+}
+
 
 #sideToggle2:checked ~ #side_wrap label[for="sideToggle2"] {
 	margin-top: -48px;
@@ -759,7 +764,7 @@ body > .lazy_side2 > h2 {
     font-size: 24px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .1);
     font-weight: normal;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 body > .lazy_side1 dt {
@@ -792,8 +797,9 @@ body > .lazy_side1 dt {
 	box-shadow: 0 4px 8px rgba(0,0,0,.1);
 }
 
-.lazy_side1:after,
-.lazy_side2:after {/*盖住背景图的三角形*/
+/*盖住背景图的三角形*/
+/*.lazy_side1:after,
+.lazy_side2:after {
     content: '';
     display: block;
     border-bottom: 50px solid #fff;
@@ -804,6 +810,18 @@ body > .lazy_side1 dt {
     z-index: -1;
     display: none;
 }
+*/
+
+/*左侧边框*/
+/*body > .lazy_side1:after,
+body > .lazy_side2:after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	border-left: 1px solid rgba(0,0,0,.1);
+	left: 0;
+	top: 0;
+}*/
 
 #side_wrap>div {/*多余的黑色背景div*/
     background: none!important;
