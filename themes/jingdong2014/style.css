@@ -2938,7 +2938,7 @@ em {
     width: 210px;
     height: 410px;
     /*padding: 8px 0;为了动画效果放弃*/
-    box-sizing: border-box;
+    overflow: hidden;
     background: #fff;
     border-radius: 0 0 2px 2px;
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
@@ -3181,7 +3181,7 @@ h3 {
         height: 0;
     }
     20%{
-        opacity: 1;
+        /*opacity: 1;*/
     }
     100%{
         overflow: visible;
@@ -3249,7 +3249,7 @@ h3 {
 }
 @keyframes hide {
     0% {
-        opacity: 1;
+        /*opacity: 1;*/
     }
     100% {
         overflow: hidden;
