@@ -2936,8 +2936,9 @@ em {
     position: absolute;
     left: 0;
     width: 210px;
-    height: 395px;
-    padding: 8px 0;
+    height: 410px;
+    /*padding: 8px 0;为了动画效果放弃*/
+    box-sizing: border-box;
     background: #fff;
     border-radius: 0 0 2px 2px;
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
@@ -3175,11 +3176,15 @@ h3 {
 
 @keyframes droplist {
     0%{
-        display: block;
-        opacity: 0;
+        /*opacity: 0;*/
+        overflow: hidden;
+        height: 0;
+    }
+    20%{
+        opacity: 1;
     }
     100%{
-        opacity: 1
+        overflow: visible;
     }
 
 }
@@ -3247,8 +3252,8 @@ h3 {
         opacity: 1;
     }
     100% {
-        opacity: 0;
-        display: none;
+        overflow: hidden;
+        height: 0;
     }
 }
 
