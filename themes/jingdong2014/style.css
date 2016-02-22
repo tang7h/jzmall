@@ -3159,7 +3159,8 @@ h3 {
     top: 1px
 }
 */
-#categorys-2013 .hover .i-mc {
+/*#categorys-2013 .hover .i-mc 原来的选择器*/
+#categorys-2013 .item:hover .i-mc {
     display: block;
     z-index: 12
 }
@@ -3168,7 +3169,7 @@ h3 {
     background-position: -65px -23px
 }
 
-#categorys-2013.hover .mc {
+#categorys-2013:hover .mc {
     display: block;/*
     animation: droplist .3s;
     animation-fill-mode: forwards;*/
@@ -3252,7 +3253,7 @@ h3 {
     overflow: hidden;
 }
 
-#categorys-2013.no_index.hover .mc {
+#categorys-2013.no_index:hover .mc {
     /*overflow: visible;*/
     height: 410px;
     overflow: visible;
