@@ -2938,10 +2938,10 @@ em {
     width: 210px;
     height: 410px;
     /*padding: 8px 0;为了动画效果放弃*/
-    overflow: hidden;
     background: #fff;
     border-radius: 0 0 2px 2px;
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    transition: all .3s;
 }
 
 #categorys-2013 .item {
@@ -3169,9 +3169,10 @@ h3 {
 }
 
 #categorys-2013.hover .mc {
-    display: block;
+    display: block;/*
     animation: droplist .3s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards;*/
+    overflow: visible;
 }
 
 @keyframes droplist {
@@ -3242,11 +3243,32 @@ h3 {
     background-color: #F5F5F5
 }
 
-.no_index #_JD_ALLSORT {
-    /*display: none;*/
+/*.no_index #_JD_ALLSORT 原来的选择器*/
+#categorys-2013.no_index .mc {
+    /*display: none;*//*
     animation: hide .3s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards;*/
+    height: 0;
+    overflow: hidden;
 }
+
+#categorys-2013.no_index.hover .mc {
+    /*overflow: visible;*/
+    height: 410px;
+    overflow: visible;
+    animation: overflow .3s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes overflow {
+    from{
+        overflow: hidden;
+    }
+    to{
+        overflow: visible;
+    }
+}
+
 @keyframes hide {
     0% {
         /*opacity: 1;*/
