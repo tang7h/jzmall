@@ -1,55 +1,55 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <div class="new_footer">
-<p>© 2005-2016 今知购 版权所有，并保留所有权利。 ICP备案证书号:京ICP证ace070359号</p>   
+	<p>© 2005-2016 今知购 版权所有，并保留所有权利。 ICP备案证书号:京ICP证ace070359号</p>   
 </div>
 
 <script>
-$(function(){
-	isIe6 = false;
-	
-	if ('undefined' == typeof(document.body.style.maxHeight)) {
-		isIe6 = true;
-	}
+	$(function(){
+		isIe6 = false;
 
-	var offset = $("#topcontrol").offset();		
-	var bottom = $("#topcontrol").css("bottom");		
-	$(window).scroll(function(){
-		if ($(window).scrollTop() > 500){
-			$("#topcontrol").fadeIn(800);
-			
-			if(isIe6)
-			{			
-				$("#topcontrol").css("position","absolute")	
-				$("#topcontrol").css("bottom",bottom)
+		if ('undefined' == typeof(document.body.style.maxHeight)) {
+			isIe6 = true;
+		}
+
+		var offset = $("#topcontrol").offset();		
+		var bottom = $("#topcontrol").css("bottom");		
+		$(window).scroll(function(){
+			if ($(window).scrollTop() > 500){
+				$("#topcontrol").fadeIn(800);
+
+				if(isIe6)
+				{			
+					$("#topcontrol").css("position","absolute")	
+					$("#topcontrol").css("bottom",bottom)
+				}
 			}
-		}
-		else
-		{
-			$("#topcontrol").fadeOut(500);
-		}
-		
-	});
-	
-	$("#topcontrol #sider_returntop").click(function(){
-		$('body,html').animate({scrollTop:0},500);
-		return false;
-	});
-	
-	
-	(function(){
-		$(".mui-lift-nav").click(function(){
-			$(".mui-lift-nav").removeClass("active");
-			$(this).addClass("active");
-			var index=$(".mui-lift-nav").index(this);
-			var top=$(".floor-title").eq(index).offset().top;
-			$("body,html").stop().animate({scrollTop:top});
+			else
+			{
+				$("#topcontrol").fadeOut(500);
+			}
+
 		});
-		
-		
-		var arr=[];
-		$(".floor-title").each(function(i){
-			arr[i]=$(this).offset().top;
+
+		$("#topcontrol #sider_returntop").click(function(){
+			$('body,html').animate({scrollTop:0},500);
+			return false;
 		});
+
+
+		(function(){
+			$(".mui-lift-nav").click(function(){
+				$(".mui-lift-nav").removeClass("active");
+				$(this).addClass("active");
+				var index=$(".mui-lift-nav").index(this);
+				var top=$(".floor-title").eq(index).offset().top;
+				$("body,html").stop().animate({scrollTop:top});
+			});
+
+
+			var arr=[];
+			$(".floor-title").each(function(i){
+				arr[i]=$(this).offset().top;
+			});
 		//alert(arr);
 		$(window).scroll(function(){
 			
@@ -75,192 +75,193 @@ $(function(){
 
 <div id="cart_show" class="m">
 	<div class="cart_show_wrap">
-			<div class="success">
-                <div class="success-b">
-                    <h3>商品已成功加入购物车！</h3>
-                 
-                </div>
-                	<div class="clr"></div>
-            <div id="initCart_next_go"><a class="btn-pay " href="./flow.php" id="GotoShoppingCart">去结算</a><a class="btn-continue " href="javascript:void(0)" onclick="easyDialog.close();">继续购物</a>
-            	<div class="clr"></div>
-            </div></div>
+		<div class="success">
+			<div class="success-b">
+				<h3>商品已成功加入购物车！</h3>
+
 			</div>
+			<div class="clr"></div>
+			<div id="initCart_next_go"><a class="btn-pay " href="./flow.php" id="GotoShoppingCart">去结算</a><a class="btn-continue " href="javascript:void(0)" onclick="easyDialog.close();">继续购物</a>
+				<div class="clr"></div>
+			</div></div>
 		</div>
-<script>
-$(function(){
-	$(window).scroll(function(){
-		if ($(window).scrollTop() > 300){
-			$(".backpanel").fadeIn(500);
-		}
-		else
-		{
-			$(".backpanel").fadeOut(500);
-		}
-		
-	});
-	
-	$(".backtop").click(function(){
-		$('body,html').animate({scrollTop:0},500);
-		return false;
-	});
+	</div>
+	<script>
+		$(function(){
+			$(window).scroll(function(){
+				if ($(window).scrollTop() > 300){
+					$(".backpanel").fadeIn(500);
+				}
+				else
+				{
+					$(".backpanel").fadeOut(500);
+				}
 
-})
+			});
 
-</script>
+			$(".backtop").click(function(){
+				$('body,html').animate({scrollTop:0},500);
+				return false;
+			});
+
+		})
+
+	</script>
 
 
 
 
-        <!--右侧悬浮-->
-<input type='checkbox' id='sideToggle1'>
-  <dl class="lazy_side1">
-    <h2>1111</h2>
-    <div>
-    <a href="">111</a>
-    <dl>
-					<dt class="ld"><s></s><a class="hvr-sweep-to-bottom color" href="user.php">我的</a></dt>
-					<dd>
-						<div class="prompt"> <span class="fl"><strong></strong></span> <span class="fr"><a href="user.php">去知了首页&nbsp;&gt;</a></span> </div>
-						<div id="jduc-orderlist">
-							<div class="orderlist">
-								<div class="smt">
-									<h4>订单状态：</h4>
-									<div class="extra"><a href="user.php?act=order_list" target="_blank">所有订单&nbsp;&gt;</a></div>
-								</div>
-								<div class="smc">
-									<ul>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<div class="uclist">
-							<ul class="fore1 fl">
-								<li><a target="_blank" href="user.php?act=address_list">收货地址&nbsp;&gt;</a></li>
-								<li><a target="_blank" href="user.php?act=booking_list">缺货登记&nbsp;&gt;</a></li>
-								<li><a target="_blank" href="user.php?act=profile">用户信息&nbsp;&gt;</a></li>
-								<li><a target="_blank" href="user.php?act=collection_list">我的收藏&nbsp;&gt;</a></li>
-							</ul>
-							<ul class="fore2 fl">
-								<li><a target="_blank" href="user.php?act=message_list">我的留言&nbsp;&gt;</a></li>
-								<li><a target="_blank" href="user.php?act=comment_list">我的评论&nbsp;&gt;</a></li>
-								<li><a target="_blank" href="user.php?act=bonus">我的红包&nbsp;&gt;</a></li>
-								<li><a target="_blank" href="user.php?act=bonus">资金管理&nbsp;&gt;</a></li>
-							</ul>
-						</div>
-
-						<div class="viewlist" id="history_div">
+	<!--右侧悬浮-->
+	<input type='checkbox' class="side-toggle" id='sideToggle1'>
+	<dl class="lazy_side">
+		<h2>我的</h2>
+		<div>
+			<a href="">111</a>
+			<dl>
+				<dt class="ld"><s></s><a class="hvr-sweep-to-bottom color" href="user.php">我的</a></dt>
+				<dd>
+					<div class="prompt"> <span class="fl"><strong></strong></span> <span class="fr"><a href="user.php">去知了首页&nbsp;&gt;</a></span> </div>
+					<div id="jduc-orderlist">
+						<div class="orderlist">
 							<div class="smt">
-								<h4>最近浏览：</h4>
+								<h4>订单状态：</h4>
+								<div class="extra"><a href="user.php?act=order_list" target="_blank">所有订单&nbsp;&gt;</a></div>
 							</div>
-							<div class="smc" id="jduc-viewlist">
-								<ul class="lh hide" style="display: block;" id="history_list">
-									{insert name='history2'}
+							<div class="smc">
+								<ul>
 								</ul>
 							</div>
 						</div>
-						<script type="text/javascript">
-							if (document.getElementById('history_list').innerHTML.replace(/\s/g,'').length<1)
-							{
-								document.getElementById('history_div').style.display='none';
-							}
-							else
-							{
-								document.getElementById('history_div').style.display='block';
-							}
-							function clear_history()
-							{
-								Ajax.call('user.php', 'act=clear_history',clear_history_Response, 'GET', 'TEXT',1,1);
-							}
-							function clear_history_Response(res)
-							{
-								document.getElementById('history_list').innerHTML = '<center>{$lang.no_history}</center>';
-							}
-						</script>
+					</div>
 
-					</dd>
-				</dl>
-    </div>
-    </dl>
-  <input type='checkbox' id='sideToggle2'>
-    <dl class="lazy_side2">
-    <h2>222</h2>
-    <div>
-    <a href="">222</a>
-    {insert name='cart_info'}
-    </div>
-    </dl>
-    <div id='side_wrap'>
-    <div style="float:left;width:100%;height:150px;background-color: #000;"></div>
-    <label id='sideMenuControl' for='sideToggle1'>
-    	<img src="./images/iconfont-cart-fff.png">
-    </label>
-    <label id='sideMenuControl' for='sideToggle2'><p>购物车</p></label>
+					<div class="uclist">
+						<ul class="fore1 fl">
+							<li><a target="_blank" href="user.php?act=address_list">收货地址</a></li>
+							<li><a target="_blank" href="user.php?act=booking_list">缺货登记</a></li>
+							<li><a target="_blank" href="user.php?act=profile">用户信息</a></li>
+							<li><a target="_blank" href="user.php?act=collection_list">我的收藏</a></li>
+						</ul>
+						<ul class="fore2 fl">
+							<li><a target="_blank" href="user.php?act=message_list">我的留言</a></li>
+							<li><a target="_blank" href="user.php?act=comment_list">我的评论</a></li>
+							<li><a target="_blank" href="user.php?act=bonus">我的红包</a></li>
+							<li><a target="_blank" href="user.php?act=bonus">资金管理</a></li>
+						</ul>
+					</div>
 
-    </div>
+					<div class="viewlist" id="history_div">
+						<div class="smt">
+							<h4>最近浏览：</h4>
+						</div>
+						<div class="smc" id="jduc-viewlist">
+							<ul class="lh hide" style="display: block;" id="history_list">
+								{insert name='history2'}
+							</ul>
+						</div>
+					</div>
+					<script type="text/javascript">
+						if (document.getElementById('history_list').innerHTML.replace(/\s/g,'').length<1)
+						{
+							document.getElementById('history_div').style.display='none';
+						}
+						else
+						{
+							document.getElementById('history_div').style.display='block';
+						}
+						function clear_history()
+						{
+							Ajax.call('user.php', 'act=clear_history',clear_history_Response, 'GET', 'TEXT',1,1);
+						}
+						function clear_history_Response(res)
+						{
+							document.getElementById('history_list').innerHTML = '<center>{$lang.no_history}</center>';
+						}
+					</script>
+
+				</dd>
+			</dl>
+		</div>
+	</dl>
+
+	<input type='checkbox' class="side-toggle" id='sideToggle2'>
+	<dl class="lazy_side">
+		<h2>购物车</h2>
+		<div>
+			<a href="">222</a>
+			{insert name='cart_info'}
+		</div>
+	</dl>
+
+	<input type='checkbox' id='sideToggle-map'>
+	<!-- 开关 -->
+	<div id='side_wrap'>
+		<label id='sideMenuControl' for='sideToggle1'></label>
+		<label id='sideMenuControl' for='sideToggle2'></label>
+		<label id='sideMenuControl' for='sideToggle-map'></label>
+	</div>
 
 
 
-<script type="text/javascript">
-  $(function(){
-    
-    $(".mui-tab li").hover(function(){
-      $(this).addClass("on");
-      $(this).find(".left_conts").css("display","block").stop(true,false).animate({"right":0,"opacity":1},200);
-    },function(){
-      
-      $(this).removeClass("on");
-      $(this).find(".left_conts").stop(true,false).animate({"right":70,"opacity":0},200,function(){
-        $(this).hide();
-      });
-        
-      
-    });
-    
-    $(".logo-qrcode").hover(function(){
-      $(this).children(".mui-mbarp-qrcode-tip").css("visibility","visible");
-    },function(){
-      $(this).children(".mui-mbarp-qrcode-tip").css("visibility","hidden");
-    });
-  
-  });
+	<script type="text/javascript">
+		$(function(){
+
+			$(".mui-tab li").hover(function(){
+				$(this).addClass("on");
+				$(this).find(".left_conts").css("display","block").stop(true,false).animate({"right":0,"opacity":1},200);
+			},function(){
+
+				$(this).removeClass("on");
+				$(this).find(".left_conts").stop(true,false).animate({"right":70,"opacity":0},200,function(){
+					$(this).hide();
+				});
+
+
+			});
+
+			$(".logo-qrcode").hover(function(){
+				$(this).children(".mui-mbarp-qrcode-tip").css("visibility","visible");
+			},function(){
+				$(this).children(".mui-mbarp-qrcode-tip").css("visibility","hidden");
+			});
+
+		});
   //
   var h=$(".Floatright_box").height();
   $(".Floatright_box").css({"margin-top":-h/2});        
 </script>
 
 <script>
-$(function(){
-  isIe6 = false;
-  
-  if ('undefined' == typeof(document.body.style.maxHeight)) {
-    isIe6 = true;
-  }
+	$(function(){
+		isIe6 = false;
 
-  var offset = $("#topcontrol2").offset();    
-  var bottom = $("#topcontrol2").css("bottom");   
-  $(window).scroll(function(){
-    if ($(window).scrollTop() > 500){
-      $("#topcontrol2").fadeIn(800);
-      
-      if(isIe6)
-      {     
-        $("#topcontrol2").css("position","absolute")  
-        $("#topcontrol2").css("bottom",bottom)
-      }
-    }
-    else
-    {
-      $("#topcontrol2").fadeOut(500);
-    }
-    
-  });
-  
-  $("#topcontrol2,#sider_returntop2").click(function(){
-    $('body,html').animate({scrollTop:0},500);
-    return false;
-  });
+		if ('undefined' == typeof(document.body.style.maxHeight)) {
+			isIe6 = true;
+		}
 
-})
+		var offset = $("#topcontrol2").offset();    
+		var bottom = $("#topcontrol2").css("bottom");   
+		$(window).scroll(function(){
+			if ($(window).scrollTop() > 500){
+				$("#topcontrol2").fadeIn(800);
+
+				if(isIe6)
+				{     
+					$("#topcontrol2").css("position","absolute")  
+					$("#topcontrol2").css("bottom",bottom)
+				}
+			}
+			else
+			{
+				$("#topcontrol2").fadeOut(500);
+			}
+
+		});
+
+		$("#topcontrol2,#sider_returntop2").click(function(){
+			$('body,html').animate({scrollTop:0},500);
+			return false;
+		});
+
+	})
 </script> 
 
