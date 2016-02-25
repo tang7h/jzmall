@@ -695,16 +695,14 @@ body.sideMenu {
 
 #sideToggle1:checked ~ #side_wrap label[for="sideToggle1"] .btn-icon,
 #sideToggle2:checked ~ #side_wrap label[for="sideToggle2"] .btn-icon {
-    background: #fff url(../images/iconfont-close2-16-000.png) no-repeat center;
+    background: url(../images/iconfont-close2-16-000.png) no-repeat center;
     transform: rotate(180deg);
 }
 
+#sideToggle1:checked ~ #side_wrap label[for="sideToggle1"]:hover,
+#sideToggle2:checked ~ #side_wrap label[for="sideToggle2"]:hover {
+	box-shadow: 0 4px 30px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.1);
 }
-#sideToggle1:checked ~ #side_wrap label[for="sideToggle1"] div.btn-icon:hover,
-#sideToggle2:checked ~ #side_wrap label[for="sideToggle2"] div.btn-icon:hover {
-	box-shadow: 0 4px 30px rgba(0,0,0,.1), 0 -4px 8px rgba(0,0,0,.1);
-}
-
 
 #sideToggle2:checked ~ #side_wrap label[for="sideToggle2"] {
     margin-top: -48px;
@@ -846,11 +844,6 @@ body > .lazy_side dt {
     z-index: 1000;/*侧栏之上*/
 }
 
-#side_wrap label {/*整个按钮*/
-    position: relative;
-    transition: 0.3s ease-in-out;
-}
-
 .lazy_side:before {/*顶部图片*/
 	content: '';
 	display: block;
@@ -873,41 +866,47 @@ body > .lazy_side dt {
     display: block;
     width: 30px;
     height: 30px;
-    overflow: hidden;
     text-indent: -100px;
-    font-size: 18px;
+    background: #fff;
     opacity: .7;
     border-radius: 50%;
-    margin: 0 1em 1em;
+    margin: 0 1.5em 1.5em;
     box-shadow: 0 1px 5px rgba(0,0,0,.1);
     transition: all .3s ease-in-out;
 }
-
 #side_wrap > label > .btn-icon {
     width: 100%;
     height: 100%;
-    background: #fff url(../images/iconfont-user-000-16.png) no-repeat center;
+    background: url(../images/iconfont-user-000-16.png) no-repeat center;
     transition: .3s;
 }
 
-label span.tooltips {
+#side_wrap > label > .tooltips {
     background: rgba(70,70,70,.9);
     border-radius: 2px;
     box-shadow: 0 1px 2px rgba(0,0,0,.15);
     color: #ececec;
     position: absolute;
+    right: 60px;
+    top: 4px;
     display: block;
-    right: 2em;
+    right: 3em;
     font-weight: bold;
     line-height: 1em;
     max-width: 200px;
     overflow: hidden;
     padding: 6px 8px;
+    text-indent: 0;
     text-overflow: ellipsis;
     vertical-align: middle;
+    white-space: nowrap;
+    display: none;
+}
+#side_wrap > label:hover .tooltips {
+    display: block;
 }
 
-#side_wrap > label:hover .btn-icon {
+#side_wrap > label:hover {
     opacity: 1;
     box-shadow: 0 6px 14px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.1);
 }

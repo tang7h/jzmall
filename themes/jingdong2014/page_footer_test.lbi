@@ -267,9 +267,9 @@
 	<!-- 地图层结束 -->
 	<!-- 开关 -->
 	<div id='side_wrap'>
-		<label id='sideMenuControl' for='sideToggle1'><div class="btn-icon"></div><span class="tolltips">我的</span></label>
-		<label id='sideMenuControl' for='sideToggle2'><div class="btn-icon"></div><span class="tolltips">购物车</span></label>
-		<label id='sideMenuControl' for='sideToggle-map'><div class="btn-icon"></div><span class="tolltips">附近商家</span></label>
+		<label id='sideMenuControl' for='sideToggle1'><div class="btn-icon"></div><span class="tooltips">我的</span></label>
+		<label id='sideMenuControl' for='sideToggle2'><div class="btn-icon"></div><span class="tooltips">购物车</span></label>
+		<label id='sideMenuControl' for='sideToggle-map'><div class="btn-icon"></div><span class="tooltips">附近商家</span></label>
 	</div>
 	
 
