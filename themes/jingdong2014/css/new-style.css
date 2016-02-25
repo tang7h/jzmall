@@ -815,12 +815,11 @@ body > .lazy_side {
     position: absolute;
     top: 0;
     bottom: 0;
-    right: -310px;
+    right: -320px;
     width: 310px;
     box-sizing: border-box;
     padding: 16px;
-    transition: 0.3s ease-out;
-    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s;
     z-index: 999;
     position: fixed;
     margin: 0;
