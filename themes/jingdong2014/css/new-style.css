@@ -699,6 +699,12 @@ body.sideMenu {
     transform: rotate(180deg);
 }
 
+#sideToggle1:checked ~ #side_wrap label[for="sideToggle1"] .tooltips,
+#sideToggle2:checked ~ #side_wrap label[for="sideToggle2"] .tooltips {
+    right: 56px;/*48+8*/
+    opacity: 0;
+}
+
 #sideToggle1:checked ~ #side_wrap label[for="sideToggle1"]:hover,
 #sideToggle2:checked ~ #side_wrap label[for="sideToggle2"]:hover {
 	box-shadow: 0 4px 30px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.1);
@@ -859,7 +865,7 @@ body > .lazy_side dt {
 	box-shadow: 0 4px 8px rgba(0,0,0,.1);
 }
 
-#side_wrap > label {
+#side_wrap label {
     position: relative;
     right: 0;
     cursor: pointer;
@@ -872,25 +878,25 @@ body > .lazy_side dt {
     border-radius: 50%;
     margin: 0 1.5em 1.5em;
     box-shadow: 0 1px 5px rgba(0,0,0,.1);
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out, opacity .2s ease;
 }
-#side_wrap > label > .btn-icon {
+#side_wrap label .btn-icon {
     width: 100%;
     height: 100%;
     background: url(../images/iconfont-user-000-16.png) no-repeat center;
+    background-size: 16px;
     transition: .3s;
 }
 
-#side_wrap > label > .tooltips {
+#side_wrap label .tooltips {
     background: rgba(70,70,70,.9);
     border-radius: 2px;
     box-shadow: 0 1px 2px rgba(0,0,0,.15);
     color: #ececec;
     position: absolute;
-    right: 60px;
+    right: 38px;
     top: 4px;
     display: block;
-    right: 3em;
     font-weight: bold;
     line-height: 1em;
     max-width: 200px;
@@ -901,12 +907,13 @@ body > .lazy_side dt {
     vertical-align: middle;
     white-space: nowrap;
     display: none;
+    transition: all .3s, opacity .1s;
 }
-#side_wrap > label:hover .tooltips {
+#side_wrap label:hover .tooltips {
     display: block;
 }
 
-#side_wrap > label:hover {
+#side_wrap  label:hover {
     opacity: 1;
     box-shadow: 0 6px 14px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.1);
 }
@@ -920,9 +927,15 @@ body > .lazy_side dt {
 }
 
 #side_wrap label[for="sideToggle-map"] .btn-icon {
-	background-image: url(../images/iconfont-lbs-16-000.png);
+    background-image: url(../images/iconfont-lbs-16-000.png);
 }
 
+#side_wrap .side-btn-brand label .btn-icon {
+    background-image: url(../images/iconfont-like-32.png);
+}
+#side_wrap .side-btn-collection label .btn-icon {
+    background-image: url(../images/iconfont-favor-32.png);
+}
 
 label .shopping {
     position: absolute;
