@@ -690,14 +690,19 @@ body.sideMenu {
 	width: 48px;
 	height: 48px;
 	opacity: 1;
-	background: #77B23C;
-	background: #fff url(../images/iconfont-close2-16-000.png) no-repeat center;
-	box-shadow: 0 -4px 10px rgba(0,0,0,.1);
-	transform: rotate(180deg);
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
 }
-#sideToggle1:checked ~ #side_wrap label[for="sideToggle1"]:hover,
-#sideToggle2:checked ~ #side_wrap label[for="sideToggle2"]:hover {
-	box-shadow: 0 -4px 30px rgba(0,0,0,.1), 0 -4px 8px rgba(0,0,0,.1);
+
+#sideToggle1:checked ~ #side_wrap label[for="sideToggle1"] .btn-icon,
+#sideToggle2:checked ~ #side_wrap label[for="sideToggle2"] .btn-icon {
+    background: #fff url(../images/iconfont-close2-16-000.png) no-repeat center;
+    transform: rotate(180deg);
+}
+
+}
+#sideToggle1:checked ~ #side_wrap label[for="sideToggle1"] div.btn-icon:hover,
+#sideToggle2:checked ~ #side_wrap label[for="sideToggle2"] div.btn-icon:hover {
+	box-shadow: 0 4px 30px rgba(0,0,0,.1), 0 -4px 8px rgba(0,0,0,.1);
 }
 
 
@@ -790,7 +795,7 @@ body.sideMenu {
 
 #bg {
     opacity: 1;
-    background: rgba();
+    background: rgba(0,0,0,.7);
     background: radial-gradient(ellipse at center, rgba(0,0,0,.5) 0%,rgba(0,0,0,.7) 100%);
 }
 .extra_1{
@@ -840,6 +845,12 @@ body > .lazy_side dt {
     top: 120px;
     z-index: 1000;/*侧栏之上*/
 }
+
+#side_wrap label {/*整个按钮*/
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
 .lazy_side:before {/*顶部图片*/
 	content: '';
 	display: block;
@@ -855,40 +866,9 @@ body > .lazy_side dt {
 	box-shadow: 0 4px 8px rgba(0,0,0,.1);
 }
 
-/*盖住背景图的三角形*/
-/*.lazy_side1:after,
-.lazy_side2:after {
-    content: '';
-    display: block;
-    border-bottom: 50px solid #fff;
-    border-left: 350px solid transparent;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    z-index: -1;
-    display: none;
-}
-*/
-
-/*左侧边框*/
-/*body > .lazy_side1:after,
-body > .lazy_side2:after {
-	content: '';
-	position: absolute;
-	height: 100%;
-	border-left: 1px solid rgba(0,0,0,.1);
-	left: 0;
-	top: 0;
-}*/
-
-#side_wrap>div {/*多余的黑色背景div*/
-    background: none!important;
-    display: none;
-}
-
 #side_wrap > label {
-	position: relative;
-	right: 0;
+    position: relative;
+    right: 0;
     cursor: pointer;
     display: block;
     width: 30px;
@@ -900,24 +880,47 @@ body > .lazy_side2:after {
     border-radius: 50%;
     margin: 0 1em 1em;
     box-shadow: 0 1px 5px rgba(0,0,0,.1);
-	transition: all .3s ease-in-out;
-	background: #fff url(../images/iconfont-user-000-16.png) no-repeat center;
+    transition: all .3s ease-in-out;
 }
 
-#side_wrap > label:hover {
+#side_wrap > label > .btn-icon {
+    width: 100%;
+    height: 100%;
+    background: #fff url(../images/iconfont-user-000-16.png) no-repeat center;
+    transition: .3s;
+}
+
+label span.tooltips {
+    background: rgba(70,70,70,.9);
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    color: #ececec;
+    position: absolute;
+    display: block;
+    right: 2em;
+    font-weight: bold;
+    line-height: 1em;
+    max-width: 200px;
+    overflow: hidden;
+    padding: 6px 8px;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+#side_wrap > label:hover .btn-icon {
     opacity: 1;
     box-shadow: 0 6px 14px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.1);
 }
 
-#side_wrap > label[for="sideToggle1"] {
+#side_wrap label[for="sideToggle1"] .btn-icon {
     background-image: url(../images/iconfont-user-000-16.png);
 }
 
-#side_wrap > label[for="sideToggle2"] {
+#side_wrap label[for="sideToggle2"] .btn-icon {
     background-image: url(../images/iconfont-cart-000-16.png);
 }
 
-#side_wrap > label[for="sideToggle-map"] {
+#side_wrap label[for="sideToggle-map"] .btn-icon {
 	background-image: url(../images/iconfont-lbs-16-000.png);
 }
 
