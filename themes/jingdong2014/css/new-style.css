@@ -683,18 +683,15 @@ body.sideMenu {
     transform: none;
 }
 
-#sideToggle1,
-#sideToggle2{
+.side-toggle {
     display: none;
 }
 
-#sideToggle1:checked + .lazy_side,
-#sideToggle2:checked + .lazy_side {
+.side-toggle:checked + .lazy_side {/*內容面板*/
     right: 0;
 }
 
-#sideToggle1:checked ~ #side_wrap,
-#sideToggle2:checked ~ #side_wrap {
+.side-toggle:checked ~ #side_wrap {/*开关的容器*/
     right: -100px;
 }
 
