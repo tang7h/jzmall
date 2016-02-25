@@ -192,42 +192,115 @@
 		</div>
 	</dl>
 
-	<input type='checkbox' id='sideToggle-map'>
+	<input type='checkbox' class="side-toggle" id='sideToggle-map'>
+	<!-- 地图层开始 -->
+	<div id="popDiv" class="mydiv">
+		<!--百度地图 Star-->
+		<div class="box-map">
+			<h5>我附近的商家</h5>
+			<div class="boxCenterList" style="padding-left: 0px; padding-right: 0px;padding-bottom: 0px;">
+				<div id="allmap"></div>
+				<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=BLuLBrTfuMSF85592olt80FC"></script>
+				<script type="text/javascript">
+							// 百度地图API功能
+							var map = new BMap.Map("allmap");
+							var point = new BMap.Point(116.331398,39.897445);
+							map.centerAndZoom(point,11);//地图默认放大倍数
+							function myFun(result){
+								var cityName = result.name;
+								map.setCenter(cityName);
+								/*******************弹窗显示地理位置**************************/
+								/* alert("当前定位城市:"+cityName);*/
+							}
+							/*******************结束**************************/
+							var myCity = new BMap.LocalCity();
+							myCity.get(myFun);
+							
+							var pointArray = new Array();
+							map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+									map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+									//设置需要在地图上显示的点
+									var json_data =  {$map_api};
+									for(var i=0;i<json_data.length;i++){
+
+								//在百度地图上添加想要显示的点的经纬度
+								var marker = new BMap.Marker(new BMap.Point(json_data[i][0], json_data[i][1])); // 创建点
+								map.addOverlay(marker);    //增加点
+								pointArray[i] = new BMap.Point(json_data[i][0], json_data[i][1]);
+								/*****************增加点击弹窗*********************/
+								marker.addEventListener("click",attribute);
+								
+								/*****************点击弹窗结束*********************/
+							}
+						//让所有点在视野范围内
+						/* map.setViewport(pointArray);*/
+
+							 //获取覆盖物位置
+							 function attribute(e){
+								var p = e.target;
+								var pointArray =  {$map_api};
+								for(var i=0;i<pointArray.length;i++){
+									if(pointArray[i][0]==p.getPosition().lng&&p.getPosition().lat==pointArray[i][1]){
+										var sContent ="<div>"+
+										"<h4 style='margin:0 0 5px 0;padding:0.2em 0'>"+json_data[i][2]+"</h4>" + 
+										"<a href='"+json_data[i][6]+"' target='_blank'>点击进入店铺</a>"+
+										"<img style='float:right;margin:4px' id='imgDemo' src='"+json_data[i][3]+"' width='139' height='104' title='"+json_data[i][4]+"'/>" + 
+										"<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>"+json_data[i][5]+"</p>" + 
+										"</div>";
+													var infoWindow = new BMap.InfoWindow(sContent,{enableMessage:false});  // 创建信息窗口对象
+													this.openInfoWindow(infoWindow); 
+												}
+											}
+
+											<!-------------------- 弹窗----------------------> 
+											<!-------------------弹窗结束----------------------> 
+
+										}
+				</script>
+			</div>
+			<a href="javascript:closeDiv()" class="btn-close">
+			<label for="sideToggle-map"></label>
+			关闭窗口</a>  
+		</div>
+		<div id="bg" class="bg"></div>   
+	</div>
+	<!-- 地图层结束 -->
 	<!-- 开关 -->
 	<div id='side_wrap'>
 		<label id='sideMenuControl' for='sideToggle1'></label>
 		<label id='sideMenuControl' for='sideToggle2'></label>
 		<label id='sideMenuControl' for='sideToggle-map'></label>
 	</div>
+	
 
 
 
-	<script type="text/javascript">
-		$(function(){
+<script type="text/javascript">
+	$(function(){
 
-			$(".mui-tab li").hover(function(){
-				$(this).addClass("on");
-				$(this).find(".left_conts").css("display","block").stop(true,false).animate({"right":0,"opacity":1},200);
-			},function(){
+		$(".mui-tab li").hover(function(){
+			$(this).addClass("on");
+			$(this).find(".left_conts").css("display","block").stop(true,false).animate({"right":0,"opacity":1},200);
+		},function(){
 
-				$(this).removeClass("on");
-				$(this).find(".left_conts").stop(true,false).animate({"right":70,"opacity":0},200,function(){
-					$(this).hide();
-				});
-
-
+			$(this).removeClass("on");
+			$(this).find(".left_conts").stop(true,false).animate({"right":70,"opacity":0},200,function(){
+				$(this).hide();
 			});
 
-			$(".logo-qrcode").hover(function(){
-				$(this).children(".mui-mbarp-qrcode-tip").css("visibility","visible");
-			},function(){
-				$(this).children(".mui-mbarp-qrcode-tip").css("visibility","hidden");
-			});
 
 		});
-  //
-  var h=$(".Floatright_box").height();
-  $(".Floatright_box").css({"margin-top":-h/2});        
+
+		$(".logo-qrcode").hover(function(){
+			$(this).children(".mui-mbarp-qrcode-tip").css("visibility","visible");
+		},function(){
+			$(this).children(".mui-mbarp-qrcode-tip").css("visibility","hidden");
+		});
+
+	});
+	//
+	var h=$(".Floatright_box").height();
+	$(".Floatright_box").css({"margin-top":-h/2});        
 </script>
 
 <script>
