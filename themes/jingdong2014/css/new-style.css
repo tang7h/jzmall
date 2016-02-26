@@ -7,9 +7,6 @@
 	position: fixed;
 	top: 0;
 }
-.new_top+div {/*原来用于顶住顶栏布局的div*/
-	display: none;
-}
 
 .new_logo {
 	float: left;
