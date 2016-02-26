@@ -726,11 +726,11 @@ body.sideMenu {
 	}
 }
 #sideToggle-map:checked + .mydiv .box-map {
-	animation: map-show .3s backwards .1s;
+	animation: map-show .2s ease-out backwards .1s;
 }
 @keyframes map-show {
 	0% {
-		transform: scale(.8);
+		transform: scale(.85);
 		opacity: 0;
 	}
 	50% {
@@ -753,6 +753,13 @@ body.sideMenu {
 	background: rgba(0,0,0,.7);
 	background: radial-gradient(ellipse at center, rgba(0,0,0,.5) 0%,rgba(0,0,0,.7) 100%);
 	animation: mydiv-hide .3s forwards;
+	vertical-align: middle;
+}
+.mydiv:after {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
 }
 
 @keyframes mydiv-hide {
@@ -777,14 +784,16 @@ body.sideMenu {
 	width: 1210px;
 	height: 520px;
 	overflow: hidden;
-	display: flex;
 	justify-content: center;
 	margin: 0 auto;
+	margin-top: 5%;
 	box-shadow: 0 5px 10px rgba(0,0,0,.05),0 5px 5px rgba(0,0,0,.08),0 7px 10px rgba(0,0,0,.09),0 22px 22px rgba(0,0,0,.05);
 	border-radius: 8px;
 	transform: translateZ(0);
 	border: 1px solid #fff;
 	animation: map-hide .3s forwards;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 @keyframes map-hide {
@@ -840,7 +849,7 @@ body.sideMenu {
 	cursor: pointer;
 }
 
-#popDiv a:hover {
+#popDiv .btn-close:hover {
 	opacity: .7;
 }
 
