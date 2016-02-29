@@ -80,16 +80,16 @@
 
 .new_login {
 	position: absolute;
-	top: 5px;
+	top: 7px;
 	right: 40px;
 }
 
 .new_login ul li {
-	float: left;
+	display: inline-block;
 }
 
 .new_login ul li a {
-	/*to:於靖杰 给按钮加个类，现在的选择器不好*/
+	/*给按钮加个类，方便统一全站风格*/
 	display: inline-block;
 	text-decoration: none;
 	color: #333;
@@ -97,8 +97,10 @@
 	padding: .4em 1em;
 	margin: 0 4px;
 	font-family: "微软雅黑";
-	font-size: 14px;
 	transition: all.2s;
+}
+.new_login ul li:nth-child(2) a {/*primary buttun*/
+	color: #c40000;
 }
 
 .new_login ul li a:hover {
