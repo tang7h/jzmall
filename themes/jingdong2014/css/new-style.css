@@ -933,6 +933,7 @@ body > .lazy_side dt {
 	top: 4px;
 	display: block;
 	font-weight: bold;
+	font-size: 10px;
 	line-height: 1em;
 	max-width: 200px;
 	overflow: hidden;
