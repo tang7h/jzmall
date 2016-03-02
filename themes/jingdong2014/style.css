@@ -754,8 +754,10 @@ h6 span {
     position: fixed;
     left: 240px;
     bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
     animation: snackbar-show 5s;
     animation-fill-mode: forwards;
+
 }
 
 @keyframes snackbar-show {
@@ -795,7 +797,7 @@ h6 span {
 }
 
 #cart_show #initCart_next_go a {
-    color: #E15151;
+    color: #f44;
     font-size: 14px;
     font-weight: 700;
     padding: 4px 8px;
@@ -811,7 +813,6 @@ h6 span {
 
 #cart_show .success-b h3 {/*snackbar的文本*/
     font-size: 14px;
-    font-weight: 700;
     color: #fff;
     color: rgba(255,255,255,.8);
     display: inline-block;
