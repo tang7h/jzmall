@@ -73,6 +73,11 @@ p {
     height: auto;
 }
 
+#overlay {
+    /*不要全屏遮罩*/
+    display: none!important;
+}
+
 .f_l {
     float: left;
 }
@@ -742,89 +747,107 @@ h6 span {
 }
 
 #cart_show {
-    width: 382px;
-    height: 152px;
-    position: absolute;
-    z-index: 10000002;
-    overflow: hidden;
-    padding: 0;
-    border: 4px solid rgba(0, 0, 0, .1);
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    min-width: 288px; /*material-design 设计规范 尺寸*/
+    max-width: 568px;
     display: none;
+    /*脱离父元素重新定位，因为父元素的内联样式难以修改*/
+    position: fixed;
+    left: 240px;
+    bottom: 50px;
+    animation: snackbar-show 5s;
+    animation-fill-mode: forwards;
 }
 
-#cart_show .success {
+@keyframes snackbar-show {
+    0%{
+        visibility: visible;
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    5%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    99%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100%{
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+
+#cart_show .success {/*
     width: 320px;
-    margin-top: 24px;
+    margin-top: 24px;*/
 }
 
 .cart_show_wrap {
-    width: 380px;
-    border: 1px solid #C4C4C4;
-    background: white;
-    height: 150px;
+    background: #323232;
+    padding: 16px 24px;
+    border-radius: 2px;
+
 }
 
 #cart_show #initCart_next_go a {
-    display: block;
+    color: #E15151;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 4px 8px;
 }
 
 #cart_show .success b,
-#cart_show .success-b {
-    float: left;
-    overflow: hidden;
-    width: 264px;
-    height: 40px;
-    padding-left: 56px;
-    background: url(images/20130425D.png) no-repeat 0 -100px;
-    font: normal 24px/40px 微软雅黑;
-    color: #7ABD54;
+#cart_show .success-b {/*snackbar的文本容器*/
 }
 
 #cart_show .success-b {
-    color: #999;
-    font: 12px/150% Arial, Verdana, "宋体";
-    height: auto;
+    display: inline-block;
 }
 
-#cart_show .success-b h3 {
-    padding-left: 0;
-    color: #7abd54;
-    font: 24px/40px 微软雅黑;
+#cart_show .success-b h3 {/*snackbar的文本*/
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    color: rgba(255,255,255,.8);
+    display: inline-block;
+
 }
 
 #cart_show .btn-pay,
 #cart_show .btn-continue,
-#cart_show .btn-append {
-    background: url(images/20130425D.png) no-repeat scroll 0 0 #ccc;
-    display: block;
-    line-height: 100px;
-    overflow: hidden;
+#cart_show .btn-append {/*snackbar内的按钮*/
 }
 
-#cart_show .btn-continue {
+#cart_show .btn-continue {/*
     background-position: -90px -37px;
     float: right;
     height: 36px;
-    width: 94px;
+    width: 94px;*/
+    display: none;
 }
 
-#cart_show #initCart_next_go {
+#cart_show #initCart_next_go {/*
     margin-top: 15px;
-    width: 360px;
+    width: 360px;*/
+    display: inline-block;/*按钮的容器*/
+    margin-left: 50px;
 }
 
-#cart_show .btn-pay {
+#cart_show .btn-pay {/*
     background-position: 0 0;
     float: right;
     height: 36px;
     margin: 0 58px 0 10px;
-    width: 189px;
+    width: 189px;*/
 }
-
-.root61 #cart_show .btn-pay {}
+#cart_show .clr {
+    display: none;/*不要使用多余的容器来清除浮动*/
+}
 
 
 /*在ie6下特价商品不存在的话品牌推荐永远靠右显示*/
@@ -9220,6 +9243,9 @@ a.hl_blue,
     height: 300px;
 }
 
+#easyDialogBox {
+
+}
 #easyDialogTitle {
     line-height: 31px;
     font-family: arial, "宋体b8b\4f53";
