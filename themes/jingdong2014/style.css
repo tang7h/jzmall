@@ -5038,6 +5038,7 @@ h3 {
 #slide {
     position: relative;
     margin-bottom: 0;
+    background: #333;/*避免首页轮播亮瞎眼*/
 }
 
 .middle #slide .slide-controls .curr {
