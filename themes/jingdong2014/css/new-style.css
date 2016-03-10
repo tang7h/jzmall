@@ -542,7 +542,7 @@ body.new_active {
 	float: left;
 	position: fixed;
 	bottom: 0;
-	z-index: 9
+	z-index: 99;
 }
 
 .new_goods_name {
@@ -859,7 +859,7 @@ body.sideMenu {
 }
 /*地图层结束*/
 
-body > .lazy_side {
+.lazy_side {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -875,7 +875,7 @@ body > .lazy_side {
 	box-shadow: 0 0px 40px 4px rgba(0,0,0,0.2);
 }
 
-body > .lazy_side > h2 {
+.lazy_side > h2 {
 	color: #fff;
 	font-size: 24px;
 	text-shadow: 0 1px 3px rgba(0, 0, 0, .1);
@@ -883,7 +883,7 @@ body > .lazy_side > h2 {
 	margin-bottom: 120px;
 }
 
-body > .lazy_side dt {
+.lazy_side dt {
 	font-size: 18px;
 	margin: 10px 0;
 }
