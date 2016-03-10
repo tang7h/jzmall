@@ -290,7 +290,6 @@
           </li>
           <!-- {/if} -->
           <li id="summary-grade">
-            <div class="dt">商品评分：</div>
             <div class="dd"> <span class="star sa5"></span> <a href="#comment" style="float: left; ">(已有{$goods.comments_number}人评价)</a> <a id="j-im" style="display:none;" class="djd-im" href="#none" ><b>联系客服</b></a></div>
           </li>
           <!-- 商品评分--> 
@@ -464,18 +463,16 @@
    
                 </div>
                 </div>
-                <div class="new_section" style="height:300px; width:1500px;background:red;margin:0 0 0 20px;">
-                    
-    <div class="left">
-        <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem --> 
-    </div>
-     <div class="right">
-                <!-- #BeginLibraryItem "/library/browse_related.lbi" --><!-- #EndLibraryItem --> 
-    </div>
-    <span class="clr"></span></div>
-                
-                <div class="new_section" style="height:300px; width:800px;background:red;margin:0 0 0 20px;">
-
+                <div class="new_section" style="width:1500px;background:#fff;margin:0 0 0 20px;">
+                    <div id="product-track">
+                      <div class="right">
+                                <!-- #BeginLibraryItem "/library/browse_related.lbi" --><!-- #EndLibraryItem --> 
+                      </div>
+                      <div class="left">
+                          <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem --> 
+                      </div>
+                    <span class="clr"></span></div>
+                </div>
                 </div>
             </div>
         </div>
