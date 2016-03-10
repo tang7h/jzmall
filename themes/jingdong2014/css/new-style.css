@@ -1,4 +1,4 @@
-.new_top {
+﻿.new_top {
 	width: 100%;
 	background: #fff;
 	background: rgba(255, 255, 255, .98);
@@ -933,7 +933,6 @@ body > .lazy_side dt {
 	top: 4px;
 	display: block;
 	font-weight: bold;
-	font-size: 10px;
 	line-height: 1em;
 	max-width: 200px;
 	overflow: hidden;
@@ -1025,4 +1024,7 @@ label .shopping {
 	max-width: 13em; /*13个字*/
 	height: 3em;/*显示两行*/
 	margin: 0 0 0 8px;
+}
+.goods_blank {
+	margin-top:0px;
 }
