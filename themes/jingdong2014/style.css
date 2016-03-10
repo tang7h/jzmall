@@ -12049,6 +12049,10 @@ input {
 
 
 /*商品评分系统*/
+.goods-detail-box>.hd {
+    /*不要这个元素*/
+    display: none;
+}
 
 #comment {
     background: #f8f8f8;

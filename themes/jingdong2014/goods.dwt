@@ -14,7 +14,7 @@
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
 
 </head>
-<body style="overflow: hidden; height:10000px;background: url('themes/jingdong2014/images/bg.jpg');background-size:100% 10%;">
+<body style="overflow: hidden; height:10000px;/*background: url('themes/jingdong2014/images/bg.jpg');background-size:100% 10%;*/">
 <!-- #BeginLibraryItem "/library/page_header_goods.lbi" --><!-- #EndLibraryItem -->
 {insert_scripts files='magiczoomplus.js,jd_goods.js'} 
 <div id="wrapper" class="wrapper-scroll" > 
@@ -122,7 +122,7 @@
                    	</div>
                 </div>
              	</div>
-                <div class="new_section" style="height:800px; width:1350px;background:#fff;margin:0 0 0 320px;">
+                <div class="new_section" style="height:800px; width:1210px;background:#fff;margin:0 0 0 320px;">
                   	<!-- #BeginLibraryItem "/library/goods_gallery.lbi" --><!-- #EndLibraryItem --> 
                   	<div class="new_goods_name">
                   		<div class="new_goods_name_s">
