@@ -431,7 +431,8 @@ body.new_active {
 }
 
 .new_section:hover {
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.14), 0 8px 16px 0 rgba(0, 0, 0, 0.28);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.14), 0 8px 16px 0 rgba(0, 0, 0, 0.14);
+	z-index: 1;
 }
 
 .new_section:last-child {
