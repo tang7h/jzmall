@@ -3279,6 +3279,7 @@ h3 {
     /*overflow: visible;*/
     height: 410px;
     overflow: visible;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     animation: overflow .3s;
     animation-fill-mode: backwards;
 }
@@ -7585,6 +7586,7 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 
 #summary-price .p-price {
     color: #e4393c;
+    color: rgba(196,0,0,0.84);
     font-size: 18px;
     line-height: 22px;
 }
@@ -8505,7 +8507,7 @@ a.d-offline {
 
 #ranklist .tab .curr {
     color: #fff;
-    background: rgb(255,100,100);
+    background: rgba(196, 0, 0,.8);
 }
 
 #ranklist .tabcon {

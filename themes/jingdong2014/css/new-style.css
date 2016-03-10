@@ -421,9 +421,9 @@ body.new_active {
 .new_section {
 	display: inline-block;
 	vertical-align: top;
-	max-width: 1400px;
+	max-width: 1340px;/*1200更合适*/
 	background: #fff;
-	margin-right: 16px;
+	margin-right: 8px;
 	overflow: hidden;
 	border-radius: 2px;
 	transition: all .3s;
@@ -498,8 +498,9 @@ body.new_active {
 .new_mt h2 {
 	padding-left: 11px;
 	margin-bottom: 5px;
-	border-left: 3px solid rgb(255, 100, 100);
+	border-left: 3px solid rgba(196, 0, 0,.8);
 	margin-left: -10px;
+	line-height: 1;
 }
 
 .new_mc ul {
@@ -520,6 +521,10 @@ body.new_active {
 .new_gallery li {
 	border: 1px solid #ddd;
 	margin: 0 10px 10px;
+	transition: all .2s;
+}
+.new_gallery li:hover {
+	border-color: rgba(196,0,0,.5);
 }
 
 .bdshare-button-style0-16 {
