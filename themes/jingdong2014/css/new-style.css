@@ -415,11 +415,15 @@ body.new_active {
 	overflow-scrolling: touch;
 	position: absolute;
 	overflow: hidden;
-	margin-top: 20px
+	margin-top: 8px
 }
 
 .new_section {
-	float: left;
+	display: inline-block;
+	vertical-align: top;
+	max-width: 1400px;
+	background: #fff;
+	margin-right: 16px;
 	overflow: hidden;
 	border-radius: 2px;
 	transition: all .3s;
@@ -427,7 +431,11 @@ body.new_active {
 }
 
 .new_section:hover {
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.14), 0 8px 16px 0 rgba(0, 0, 0, 0.28);
+}
+
+.new_section:last-child {
+	margin-right: 56px
 }
 
 .web_content {

@@ -122,7 +122,7 @@
                    	</div>
                 </div>
              	</div>
-                <div class="new_section" style="height:800px; width:1210px;background:#fff;margin:0 0 0 320px;">
+                <div class="new_section" style="height:800px; width:1340px; margin-left: 200px;">
                   	<!-- #BeginLibraryItem "/library/goods_gallery.lbi" --><!-- #EndLibraryItem --> 
                   	<div class="new_goods_name">
                   		<div class="new_goods_name_s">
@@ -396,7 +396,7 @@
     				<!--name end-->
 					<!-- TemplateBeginEditable name="购买了该商品的用户还购买了区域" --> <!-- #BeginLibraryItem "/library/bought_goods.lbi" --><!-- #EndLibraryItem --> <!-- TemplateEndEditable -->
                 </div>	 
-                <div class="new_section" style="height:800px;overflow-y: auto;background:#fff;margin:0 0 0 20px;">
+                <div class="new_section" style="height:800px;overflow-y: auto;">
                     <div class="new_goods"> 
   <!-- #BeginLibraryItem "/library/goods_fittings.lbi" --><!-- #EndLibraryItem -->
                         <div id="product-detail" class="m m1">
@@ -456,14 +456,14 @@
 
                 </div>
                 
-                <div class="new_section" style="height:800px; width:1200px;background:#fff;margin:0 0 0 20px;">
+                <div class="new_section" style="height:800px; width:1200px;">
 
                 <!-- #BeginLibraryItem "/library/comments.lbi" --><!-- #EndLibraryItem -->
                 <div id="product-track">
    
                 </div>
                 </div>
-                <div class="new_section" style="width:1500px;background:#fff;margin:0 0 0 20px;">
+                <div class="new_section" style="width:1210px;">
                     <div id="product-track">
                       <div class="right">
                                 <!-- #BeginLibraryItem "/library/browse_related.lbi" --><!-- #EndLibraryItem --> 
