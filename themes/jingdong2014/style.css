@@ -3035,6 +3035,16 @@ em {
     border-radius: 2px;
     min-height: 410px;
     z-index: 1;
+    animation: show-pannel .2s;
+}
+@keyframes show-pannel {
+    from{
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to{
+        opacity: 1
+    }
 }
 
 #categorys-2013 .close {
