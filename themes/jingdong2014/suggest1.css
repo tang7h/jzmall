@@ -1,0 +1,11 @@
+ .suggestions_box{
+	 background: none repeat scroll 0 0 white;
+    box-shadow: 0 0 5px #000;
+    top: 44px;
+    width: 597px;
+    z-index: 10;
+}
+/*.suggestions_box .suggestions_list ul li:hover{background:#6ACCE5; cursor: pointer;}*/
+/*.suggestions_class_name{background-color:#6ACCE5; cursor: pointer;}*/
+.suggestions_box .suggestions_list ul li{height:25px; line-height: 25px;}
+.suggestions_box .suggestions_list ul li .suggest_span{float: right;}
