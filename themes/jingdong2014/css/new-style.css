@@ -725,31 +725,13 @@ body.sideMenu {
 	margin-top: -48px;
 }
 #sideToggle-map:checked + .mydiv {
-	animation: my-show .3s backwards;
-}
-@keyframes my-show {
-	0% {
-		opacity: 0;
-		top: 0;
-	}
-	100% {
-		top: 0;
-	}
+	top: 0;
+	opacity: 1;
+	transition: opacity .3s;
 }
 #sideToggle-map:checked + .mydiv .box-map {
-	animation: map-show .2s ease-out backwards .1s;
-}
-@keyframes map-show {
-	0% {
-		transform: scale(.85);
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-
-	}
+	opacity: 1;
+	transform: scale(1);
 }
 
 /*地图层*/
@@ -757,34 +739,22 @@ body.sideMenu {
 	text-align: center;
 	position: fixed;
 	width: 100%;
-	top: 0;
+	left: 0;
+	top: 100%;
+	opacity: 0;
 	height: 100%;
 	z-index: 999;
 	overflow: hidden;
 	background: rgba(0,0,0,.7);
 	background: radial-gradient(ellipse at center, rgba(0,0,0,.5) 0%,rgba(0,0,0,.7) 100%);
-	animation: mydiv-hide .3s forwards;
 	vertical-align: middle;
+	transition: opacity .3s, top 0s .3s;
 }
 .mydiv:after {
 	content: '';
 	display: inline-block;
 	height: 100%;
 	vertical-align: middle;
-}
-
-@keyframes mydiv-hide {
-	0% {
-
-	}
-	99% {
-		opacity: 0;
-		top: 0;
-	}
-	100% {
-		opacity: 0;
-		top: -100%
-	}
 }
 
 .new_top-nav {
@@ -802,24 +772,10 @@ body.sideMenu {
 	border-radius: 8px;
 	transform: translateZ(0);
 	border: 1px solid #fff;
-	animation: map-hide .3s forwards;
 	display: inline-block;
 	vertical-align: middle;
-}
-
-@keyframes map-hide {
-	0% {
-
-	}
-	99% {
-		opacity: 0;
-		transform: scale(.9);
-
-	}
-	100% {
-		opacity: 0;
-		top: -100%;
-	}
+	transform: scale(.9);
+	transition: transform 200ms;
 }
 
 .box-map h5{
