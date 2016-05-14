@@ -304,6 +304,8 @@ h6 span {
 
  #sn-bd {
 	width:1190px;
+	height: 26px;
+	overflow: hidden;
 	margin:0 auto;
 }
 .sn-container {
@@ -325,6 +327,13 @@ h6 span {
 	z-index: 99999;
 	border-bottom: 1px solid #E5E5E5;
 }
+#site-nav li {
+	display: inline-block;
+}
+#site-nav dt,
+#site-nav dd {
+	display: inline-block;
+}
 #site-nav .sn-container {
 	width: 1190px; position:relative;
 	margin:0 auto;
@@ -343,12 +352,9 @@ h6 span {
 	padding:0 10px
 }
 #site-nav .sn-quick-menu {
-	/*position: absolute;
-right: 0;
-top: 0;*/ width:500px;
 	float:right;
 	height: 26px;
-	line-height: 26px; display:block
+	line-height: 26px;
 }
 #site-nav .sn-quick-menu .sn-cart {
 	position: relative;
@@ -800,7 +806,11 @@ _right: -1px;
 	width: 340px;
 	height: 85px;
 	overflow: hidden;
-	background: url("../images/logo.gif") no-repeat;
+	background: url("../images/logo.png") no-repeat;
+	background-size: contain;
+}
+#mallLogo img{
+	display: none;
 }
 #mallLogo {
 	float: left;

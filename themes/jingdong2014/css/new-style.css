@@ -10,9 +10,16 @@
 
 .new_logo {
 	float: left;
+	width: 125px;
+	height: 40px;
+	margin-left: 16px;
+	margin-top: 3px;
+	background: url(../images/logo.png) no-repeat;
+	background-size: contain;
 }
 
 .new_logo img {
+	display: none;
 	height: 40px;
 	width: 125px;
 	margin: 3px 0 0 10px
@@ -606,6 +613,7 @@ body.new_active {
 
 #product-detail {
 	background: #fff;
+	max-width: 70vw;
 	margin: 20px;
 }
 
@@ -801,7 +809,7 @@ body.sideMenu {
 
 @keyframes map-hide {
 	0% {
-		
+
 	}
 	99% {
 		opacity: 0;
