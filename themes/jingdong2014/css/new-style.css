@@ -998,9 +998,8 @@ label .shopping {
 }
 
 .p-name {
-	max-width: 13em; /*13个字*/
-	height: 3em;/*显示两行*/
 	margin: 0 0 0 8px;
+
 }
 .goods_blank {
 	margin-top:0px;

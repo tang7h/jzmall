@@ -2629,7 +2629,7 @@ ul {
 }
 
 #my360buy-2013 .uclist .fore1 {
-    
+
 }
 
 #my360buy-2013 .uclist a:link,
@@ -4540,7 +4540,7 @@ h3 {
 .club li {
     height: 60px;
     margin: 0 0 20px 0;
-    
+
 }
 
 .club li:nth-child(1) {
@@ -5952,18 +5952,15 @@ h3 {
 .j_box {
     position: relative;
     width: 208px;
-    height: 561px;
     padding: 0;
     z-index: 2;
     border: 1px solid #ddd;
-}
-
-.j_box {
-    height: 1210px;
+    background: #fff;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
 .j_logo {
-    font-family: Arial, Verdana, 宋体;
     font-weight: normal;
     height: 31px;
     padding-left: 8px;
@@ -5973,9 +5970,7 @@ h3 {
 }
 
 .j_skulist {
-    float: left;
     overflow: hidden;
-    position: absolute;
 }
 
 .j_skulist {
@@ -6928,7 +6923,7 @@ h3 {
     left: 0;
     bottom: 0;
     opacity: 0;
-    
+
 }
 
 #plist.ordinary-prebuy .list-h li:hover .btns {
@@ -7232,8 +7227,9 @@ _#plist.ordinary-prebuy .list-h li .lh-wrap .btns .f6 label {
 }
 
 #plist .p-name {
-    height: 3em;
-    word-wrap: break-word
+  margin: 0;
+  margin-top: 8px;
+  height: 3em;
 }
 
 #plist .btn-compare-s-active {
@@ -15004,4 +15000,3 @@ table {
 .brand-subject-shgd .brand-subject-title {
     background-position: -107px -96px;
 }
-
